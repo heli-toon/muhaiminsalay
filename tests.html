@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/App.css" />
+    <link rel="shortcut icon" href="/logo.webp" type="image/x-icon" />
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #card {
+        width: 580px;
+        aspect-ratio: 3456/4608;
+        overflow: hidden;
+        border: 0.25rem solid #ffffff;
+        border-radius: 6px;
+      }
+      #card > img {
+        filter: url(#noise);
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+      #card:hover > img {
+        animation: pulse ease-in-out 800ms;
+      }
+      @keyframes pulse {
+        from,
+        to {
+          scale: 1;
+        }
+        50% {
+          scale: 1.08;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card" id="card">
+      <svg style="display: none">
+        <defs>
+          <filter id="noise">
+            <feTurbulence
+              baseFrequency="0.8,0.9"
+              seed="0"
+              type="fractralNoise"
+              result="static"
+            >
+              <animate
+                attributeName="seed"
+                values="0;100"
+                dur="800ms"
+                repeatCount="1"
+                begin="card.mouseenter"
+              />
+            </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" in2="static" scale="0">
+              <animate
+                attributeName="scale"
+                values="0;40;0"
+                dur="800ms"
+                repeatCount="1"
+                begin="card.mouseenter"
+              />
+            </feDisplacementMap>
+          </filter>
+        </defs>
+      </svg>
+      <img src="/src/assets/images/laptop.jpg" alt="" />
+    </div>
+  </body>
+</html>
