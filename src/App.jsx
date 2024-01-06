@@ -4,10 +4,6 @@ import "./assets/bootstrap.min.css";
 import "./assets/bootstrap-icons.min.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Contact from "./components/Contact";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Portfolio from "./components/Portfolio";
 import Preloader from "./components/Preloader";
 
 export default function App() {
@@ -16,7 +12,7 @@ export default function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2000);
   }, []);
 
   return (
@@ -26,10 +22,6 @@ export default function App() {
       ) : (
         <>
           <Navbar />
-          <Hero />
-          <About />
-          <Portfolio />
-          <Contact />
           <Footer />
         </>
       )}

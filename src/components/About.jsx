@@ -21,8 +21,6 @@ export default function About() {
           </header>
           <div className="row">
             <div className="skills">
-              <h5>Skills</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, animi.</p>
               <div className="skills-grid glassm glassm-card">
                 <div className="grid-cell">
                   <h6>Proficient In</h6>
@@ -58,7 +56,7 @@ export default function About() {
                   <p></p>
                 </div>
                 <div className="grid-cell">
-                  <p></p>
+                  <p>Django</p>
                 </div>
               </div>
             </div>

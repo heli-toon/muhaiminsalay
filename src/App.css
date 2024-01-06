@@ -19,7 +19,7 @@ html {
   box-sizing: border-box;
 }
 html::-webkit-scrollbar {
-  width: 1.085vw;
+  width: 0.9vw;
 }
 html::-webkit-scrollbar-thumb {
   background-color: var(--primarydark);
@@ -41,19 +41,11 @@ html::-webkit-scrollbar-track {
   color: var(--white);
 }
 body {
-  animation: blur 0.7s ease-in-out;
   background: var(--black) !important;
   font-display: swap;
   color: var(--white) !important;
   overflow-x: hidden;
   font-family: "Poppins", Inter, sans-serif, system-ui !important;
-}
-@keyframes blur {
-  0% {
-    filter: blur(18px);
-  }
-  100% {
-  }
 }
 @font-face {
   font-family: "Poppins";
@@ -343,13 +335,59 @@ nav .logo h2:hover {
   padding: 10px;
 }
 
+.project-detail{
+  width: 100%;
+}
+.project-item{
+  max-width: 100%;
+}
+.project-tagsnbtns{
+  justify-content: space-between;
+  padding: 2rem;
+}
+.project-info{
+  max-width: 100%;
+  padding: 1.5rem;
+  color: var(--white) !important;
+}
+.project-img{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: .1em;
+}
+.project-img img{
+  border: none;
+  aspect-ratio: 1;
+  width: 50vw;
+}
+.project-img img.verba{
+  aspect-ratio: 1.1/2;
+}
+@media only screen and (max-width:767.98px) {
+  .project-img img{
+    width: 80vw;
+  }
+}
+.project-tags .tag{
+  background: var(--gray);
+  color: var(--white);
+  padding: .5em;
+  border-radius: 6px;
+  cursor: default;
+}
 
-
-
-
-
-
-
+.project-btns a{
+  padding: 2rem;
+  background: var(--primary);
+  color: var(--white);
+  padding: .5em;
+  border-radius: 6px;
+  margin-left: 1em;
+}
+.project-btns a:hover{
+  background: var(--primarydark);
+}
 
 
 
@@ -769,10 +807,10 @@ nav .logo h2:hover {
 }
 @keyframes loader-pulse{
   to,from{
-    transform: rotate(0deg);
+    transform: scale(1);
   }
   50%{
-    transform: rotate(180deg);
+    transform: scale(1.2);
   }
 }
 .loader-img img{

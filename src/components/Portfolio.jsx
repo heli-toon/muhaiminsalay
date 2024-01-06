@@ -191,7 +191,7 @@ export default function Portfolio() {
               </div>
             </div>
             <div className="d-flex justify-content-center align-items-center">
-                <a href="#" className="btn-get-started">
+                <a href="/showcase" className="btn-get-started">
                   See All
                 </a>
             </div>
