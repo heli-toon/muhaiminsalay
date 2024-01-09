@@ -3,7 +3,6 @@ import "./App.css";
 import "./assets/bootstrap.min.css";
 import "./assets/bootstrap-icons.min.css";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Preloader from "./components/Preloader";
 
 export default function App() {
@@ -22,7 +21,6 @@ export default function App() {
       ) : (
         <>
           <Navbar />
-          <Footer />
         </>
       )}
     </>

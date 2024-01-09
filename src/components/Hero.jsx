@@ -5,7 +5,7 @@ export default function Hero() {
         <div className="container">
           <div className="row">
             <div className="hero-description col-lg-6 d-flex flex-column justify-content-center">
-              <h1>Salay Abdul Muhaimin</h1>
+              <h1>Salay Abdul Muhaimin Kanton</h1>
               <p>
                 I meticulously craft websites with expertise and passion. I
                 don&apos;t just build websites, I create digital masterpieces
@@ -22,7 +22,7 @@ export default function Hero() {
                 <img
                   src="../src/assets/images/dotted-map-bg.webp"
                   className="img-fluid"
-                  alt=""
+                  alt="Salay Abdul Muhaimin Kanton"
                 />
               </div>
               <div className="glassm glassm-card social-links">

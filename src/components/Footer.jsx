@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.webp";
 
 export default function Footer() {
@@ -8,7 +9,7 @@ export default function Footer() {
           <div className="container">
             <div className="row gy-4">
               <div className="col-lg-5 col-md-12 footer-info">
-                <a href="index.html" className="logo d-flex align-items-center">
+                <Link element="true" to="/" className="logo d-flex align-items-center">
                   <img
                     src={logo}
                     width={70}
@@ -16,7 +17,7 @@ export default function Footer() {
                     alt="Muhaimin Salay Logo"
                   />
                   {/* <span>Salay Kanton</span> */}
-                </a>
+                </Link>
                 <p>
                   Transforming ideas into innovative web experiences. Turning
                   ideas to reality.
@@ -109,15 +110,15 @@ export default function Footer() {
                 <ul>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <a href="/#">Web Apps</a>
+                    <Link element="true" to="/showcase#webapps">Web Apps</Link>
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <a href="/#">Websites</a>
+                    <Link element="true" to="/showcase#websites">Websites</Link>
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <a href="/#">Extensions</a>
+                    <Link element="true" to="/showcase#other">Other</Link>
                   </li>
                 </ul>
               </div>
@@ -125,7 +126,7 @@ export default function Footer() {
               <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                 <h4>Contact Me</h4>
                 <p>
-                  Accra, GH 0000
+                  Accra, Ghana
                   <br />
                   Ghana <br />
                   <strong>Phone: </strong>

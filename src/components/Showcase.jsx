@@ -1,5 +1,6 @@
 import jayshoecare from "../assets/images/jayshoecare.png";
 import verba from "../assets/images/verba.png"
+import Footer from "./Footer";
 export default function Showcase() {
   return (
     <>
@@ -121,6 +122,7 @@ export default function Showcase() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

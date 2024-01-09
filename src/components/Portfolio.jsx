@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Portfolio() {
   return (
     <>
@@ -11,8 +13,7 @@ export default function Portfolio() {
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Accusantium quae neque tempore aperiam, quidem recusandae
-              repellendus nam explicabo eos ex cumque, nihil ipsa, fuga
-              reprehenderit sint aspernatur vitae enim necessitatibus.
+              repellendus nam explicabo eos ex cumque, nihil ipsa, fuga.
             </p>
           </header>
           <div className="row">
@@ -191,9 +192,9 @@ export default function Portfolio() {
               </div>
             </div>
             <div className="d-flex justify-content-center align-items-center">
-                <a href="/showcase" className="btn-get-started">
+                <Link to="/showcase" className="btn-get-started">
                   See All
-                </a>
+                </Link>
             </div>
           </div>
         </div>

@@ -1,8 +1,9 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
-import Home from "./Home.jsx"
-import Showcase from "./Showcase.jsx"
+import Home from "./Home.jsx";
+import Showcase from "./Showcase.jsx";
 import logo from "../assets/images/logo.webp";
+import About from "./About.jsx";
 
 const Navbar = () => {
   const [showNavbarCollapse, setShowNavbarCollapse] = useState(false);
@@ -35,13 +36,14 @@ const Navbar = () => {
           className="navbar navbar-expand-lg navbar-dark fixed-top"
           ref={navbarRef}
         >
-          <a
+          <Link
+            element="true"
             className="navbar-brand justify-content-center logo d-flex flex-row"
-            href="/"
+            to="/"
             title="Portfolio Home"
           >
             <img src={logo} width={70} height={35} alt="Muhaimin Salay Logo" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -62,9 +64,9 @@ const Navbar = () => {
           >
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <a className="nav-link" href="/#hero">
+                <Link className="nav-link" to="/" element="true">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/#about">
@@ -72,9 +74,9 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/showcase">
+                <Link className="nav-link" to="/showcase" element="true">
                   Portfolio
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/#contact">
@@ -86,6 +88,7 @@ const Navbar = () => {
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/showcase" element={<Showcase />} />
         </Routes>
       </BrowserRouter>
