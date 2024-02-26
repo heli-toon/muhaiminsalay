@@ -1,3 +1,4 @@
+import map from "../assets/images/dotted-map-bg.webp";
 export default function Hero() {
   return (
     <>
@@ -20,7 +21,7 @@ export default function Hero() {
             <div className="col-lg-6 hero-graph d-flex flex-column align-items-center justify-content-center">
               <div className="hero-img-conatiner glassm glassm-card">
                 <img
-                  src="../src/assets/images/dotted-map-bg.webp"
+                  src={map}
                   className="img-fluid"
                   alt="Salay Abdul Muhaimin Kanton"
                 />

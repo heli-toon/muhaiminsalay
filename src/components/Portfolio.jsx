@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import map from "../assets/images/dotted-map-bg.webp";
 export default function Portfolio() {
   return (
     <>
@@ -33,13 +33,13 @@ export default function Portfolio() {
             <div className="col-lg-4 col-md-6 portfolio-item filter-app">
               <div className="portfolio-wrap">
                 <img
-                  src="../src/assets/images/dotted-map-bg.webp"
+                  src={map}
                   className="img-fluid"
                   alt=""
                 />
                 <div className="portfolio-links">
                   <a
-                    href="../src/assets/images/dotted-map-bg.webp"
+                    href={map}
                     data-gallery="portfolioGallery"
                     className="portfolio-lightbox"
                     title="App 1"
@@ -60,13 +60,13 @@ export default function Portfolio() {
             <div className="col-lg-4 col-md-6 portfolio-item filter-web">
               <div className="portfolio-wrap">
                 <img
-                  src="../src/assets/images/dotted-map-bg.webp"
+                  src={map}
                   className="img-fluid"
                   alt=""
                 />
                 <div className="portfolio-links">
                   <a
-                    href="../src/assets/images/dotted-map-bg.webp"
+                    href={map}
                     data-gallery="portfolioGallery"
                     className="portfolio-lightbox"
                     title="Web 3"
@@ -87,13 +87,13 @@ export default function Portfolio() {
             <div className="col-lg-4 col-md-6 portfolio-item filter-app">
               <div className="portfolio-wrap">
                 <img
-                  src="../src/assets/images/dotted-map-bg.webp"
+                  src={map}
                   className="img-fluid"
                   alt=""
                 />
                 <div className="portfolio-links">
                   <a
-                    href="../src/assets/images/dotted-map-bg.webp"
+                    href={map}
                     data-gallery="portfolioGallery"
                     className="portfolio-lightbox"
                     title="App 2"
@@ -114,13 +114,13 @@ export default function Portfolio() {
             <div className="col-lg-4 col-md-6 portfolio-item filter-card">
               <div className="portfolio-wrap">
                 <img
-                  src="../src/assets/images/dotted-map-bg.webp"
+                  src={map}
                   className="img-fluid"
                   alt=""
                 />
                 <div className="portfolio-links">
                   <a
-                    href="../src/assets/images/dotted-map-bg.webp"
+                    href={map}
                     data-gallery="portfolioGallery"
                     className="portfolio-lightbox"
                     title="Card 2"
@@ -141,13 +141,13 @@ export default function Portfolio() {
             <div className="col-lg-4 col-md-6 portfolio-item filter-web">
               <div className="portfolio-wrap">
                 <img
-                  src="../src/assets/images/dotted-map-bg.webp"
+                  src={map}
                   className="img-fluid"
                   alt=""
                 />
                 <div className="portfolio-links">
                   <a
-                    href="../src/assets/images/dotted-map-bg.webp"
+                    href={map}
                     data-gallery="portfolioGallery"
                     className="portfolio-lightbox"
                     title="Web 2"
@@ -168,13 +168,13 @@ export default function Portfolio() {
             <div className="col-lg-4 col-md-6 portfolio-item filter-app">
               <div className="portfolio-wrap">
                 <img
-                  src="../src/assets/images/dotted-map-bg.webp"
+                  src={map}
                   className="img-fluid"
                   alt=""
                 />
                 <div className="portfolio-links">
                   <a
-                    href="../src/assets/images/dotted-map-bg.webp"
+                    href={map}
                     data-gallery="portfolioGallery"
                     className="portfolio-lightbox"
                     title="App 3"
