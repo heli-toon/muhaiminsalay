@@ -1,6 +1,6 @@
 import jayshoecare from "../assets/images/jayshoecare.png";
 import verba from "../assets/images/verba.png"
-import Footer from "./Footer";
+import Footer from "../components/Footer";
 export default function Showcase() {
   return (
     <>

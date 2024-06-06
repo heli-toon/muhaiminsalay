@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
-import Home from "./Home.jsx";
-import Showcase from "./Showcase.jsx";
+import Home from "../pages/Home.jsx";
+import Showcase from "../pages/Showcase.jsx";
 import logo from "../assets/images/logo.webp";
 
 const Navbar = () => {
@@ -82,6 +82,7 @@ const Navbar = () => {
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/showcase" element={<Showcase />} />
           <Route path="/showcase" element={<Showcase />} />
         </Routes>
       </BrowserRouter>
