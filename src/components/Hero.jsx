@@ -8,7 +8,7 @@ export default function Hero() {
             <div className="hero-description col-lg-6 d-flex flex-column justify-content-center">
               <h1>Salay Abdul Muhaimin Kanton</h1>
               <p>
-                I meticulously craft websites with expertise and passion. I
+                I punctiliously craft websites with expertise and passion. I
                 don&apos;t just build websites, I create digital masterpieces
                 with innovative web experiences.
               </p>
@@ -37,7 +37,7 @@ export default function Hero() {
                   <i className="bi bi-linkedin"></i>
                 </a>
                 <a
-                  href="mailto:helitoon@outlook.com"
+                  href="mailto:abdulkanton2005@gmail.com"
                   className="envelope"
                   title="Email Address"
                   target="_blank"

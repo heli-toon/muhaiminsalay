@@ -76,7 +76,7 @@ export default function Footer() {
                     <i className="bi bi-whatsapp"></i>
                   </a>
                   <a
-                    href="mailto:helitoon@outlook.com"
+                    href="mailto:abdulkanton2005@gmail.com"
                     className="envelope"
                     title="Email Address"
                     target="_blank"
@@ -126,7 +126,7 @@ export default function Footer() {
               <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                 <h4>Contact Me</h4>
                 <p>
-                  Accra, Ghana
+                  Accra,
                   <br />
                   Ghana <br />
                   <strong>Phone: </strong>
@@ -135,7 +135,7 @@ export default function Footer() {
                   </a>{" "}
                   <br />
                   <strong>Email: </strong>
-                  <a href="mailto:helitoon@outlook.com" className="contlink">
+                  <a href="mailto:abdulkanton2005@gmail.com" className="contlink">
                     helitoon@outlook.com
                   </a>
                   <br />

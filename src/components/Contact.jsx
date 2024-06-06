@@ -13,8 +13,8 @@ export default function Contact() {
               that exceed expectations. I&apos;m always up for a new challenge
               Have any questions or feedback? I&apos;d love to hear from you!
               Get in touch with via email at{" "}
-              <a href="mailto:helitoon@outlook.com" className="paralink">
-                helitoon@outlook.com
+              <a href="mailto:abdulkanton2005@gmail.com" className="paralink">
+                
               </a>{" "}
               or call me at{" "}
               <a href="tel:+233535760503" className="paralink">
@@ -50,7 +50,7 @@ export default function Contact() {
                     <h3>Email</h3>
                     <p>
                       <a
-                        href="mailto:helitoon@outlook.com"
+                        href="mailto:abdulkanton2005@gmail.com"
                         className="paralink2"
                       >
                         helitoon@outlook.com

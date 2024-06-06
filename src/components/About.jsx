@@ -17,6 +17,7 @@ export default function About() {
               fascinated by the ever-evolving landscape of web development,
               constantly seeking new technologies and techniques to enhance my
               skills and expand my knowledge. Please explore my portfolio.
+              I am a freelancer.
             </p>
           </header>
           <div className="row">
@@ -35,10 +36,10 @@ export default function About() {
                   <p>Python</p>
                 </div>
                 <div className="grid-cell">
-                  <p>Flask</p>
+                  <p>Flask, Django</p>
                 </div>
                 <div className="grid-cell">
-                  <p>React</p>
+                  <p>PHP</p>
                 </div>
                 <div className="grid-cell">
                   <p>HTML, CSS & JavaScript</p>
@@ -47,16 +48,16 @@ export default function About() {
                   <p>Git, SQL</p>
                 </div>
                 <div className="grid-cell">
-                  <p>PHP</p>
+                  <p>Tailwindcss, Bulma</p>
                 </div>
                 <div className="grid-cell">
                   <p>Bootstrap</p>
                 </div>
                 <div className="grid-cell">
-                  <p></p>
+                  <p>React</p>
                 </div>
                 <div className="grid-cell">
-                  <p>Django</p>
+                  <p></p>
                 </div>
               </div>
             </div>

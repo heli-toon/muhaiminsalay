@@ -7,6 +7,10 @@
   --primarydark: #4169e199;
   --white: #eeedff;
   --gray: #414141;
+  --border-radius-card: 8px;
+  --anim-short: 250ms;
+  --anim-mid: 600ms;
+  --anim-long: 1s;
 }
 html{
   color: var(--black);
@@ -18,7 +22,7 @@ html{
 html::-webkit-scrollbar{width: 0.9vw;}
 html::-webkit-scrollbar-thumb {
   background-color: var(--primarydark);
-  border-radius: 7px;
+  border-radius: var(--border-radius-card);
 }
 html::-webkit-scrollbar-thumb:hover{
   background-color: var(--primary);
@@ -37,7 +41,6 @@ html::-webkit-scrollbar-track{
 }
 body {
   background: var(--black)!important;
-  /* font-display: swap; */
   color: var(--white)!important;
   overflow-x: hidden;
   font-family: "Poppins", Inter, sans-serif, system-ui!important;
@@ -63,13 +66,12 @@ h6 {
   font-family: "Monaspace","Ubuntu", monospace;
   font-weight: 800;
   line-height: inherit;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   color: var(--primary)!important;
 }
 a{
   color: var(--white);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  transition: var(--anim-short);
   text-decoration: none!important;
 }
 section{
@@ -114,7 +116,7 @@ a.paralink:hover{color: var(--primarydark)}
 }
 .glassm-card{border-radius: 6px!important;/* z-index: 10; */}
 .navbar{
-  transition: background 500ms ease-in-out;
+  transition: background var(--anim-mid) ease-in-out;
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.2)!important; */
   padding-top: 1.2rem!important;
   padding-bottom: 1.2rem!important;
@@ -126,14 +128,14 @@ a.paralink:hover{color: var(--primarydark)}
   margin-left: 2em;
   color: var(--primary)!important;
 }
-.nav-link:hover{color: var(--white)!important}
 .nav-item{padding-left: 1rem}
 .nav-link{
   transition: 0.5s all ease;
   color: var(--primary)!important;
   font-weight: 900!important;
-  padding-right: 1rem;
+  padding-left: 1rem !important;
 }
+.nav-link:hover{color: var(--white)!important}
 .navbar-toggler,
 .navbar-toggler:focus{
   margin-right: 2.5rem;
@@ -280,13 +282,13 @@ nav .logo h2:hover{color: var(--white)!important;}
   align-items: center;
   margin-bottom: 1rem;
   padding: 0.1em;
+  width: 50%;
 }
 .project-img img{
   border: none;
   aspect-ratio: 1;
-  width: 50vw;
+  width: 50%;
 }
-.project-img img.verba{aspect-ratio: 1.1/2;}
 @media only screen and (max-width: 767.98px){.project-img img{width: 80vw}}
 .project-tags .tag{
   background: var(--gray);

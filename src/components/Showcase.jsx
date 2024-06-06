@@ -49,9 +49,6 @@ export default function Showcase() {
                   <a href="https://jayshoecare.netlify.app" target="_blank" rel="noreferrer">
                     <i className="bi-eye-fill"></i> View
                   </a>
-                  {/* <a href="https://github.com/helitoon/" target="_blank" rel="noreferrer">
-                    <i className="bi-link-45deg"></i> Code
-                  </a> */}
                 </div>
               </div>
             </div>

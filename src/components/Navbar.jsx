@@ -1,9 +1,8 @@
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import Home from "./Home.jsx";
 import Showcase from "./Showcase.jsx";
 import logo from "../assets/images/logo.webp";
-import About from "./About.jsx";
 
 const Navbar = () => {
   const [showNavbarCollapse, setShowNavbarCollapse] = useState(false);
@@ -36,14 +35,13 @@ const Navbar = () => {
           className="navbar navbar-expand-lg navbar-dark fixed-top"
           ref={navbarRef}
         >
-          <Link
-            element="true"
+          <a
             className="navbar-brand justify-content-center logo d-flex flex-row"
-            to="/"
+            href="/"
             title="Portfolio Home"
           >
             <img src={logo} width={70} height={35} alt="Muhaimin Salay Logo" />
-          </Link>
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -64,9 +62,7 @@ const Navbar = () => {
           >
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <Link className="nav-link" to="/" element="true">
-                  Home
-                </Link>
+                <a className="nav-link" href="/">Home</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/#about">
@@ -74,9 +70,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/showcase" element="true">
-                  Portfolio
-                </Link>
+                <a className="nav-link" href="/showcase">Portfolio</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/#contact">
@@ -88,7 +82,6 @@ const Navbar = () => {
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/showcase" element={<Showcase />} />
         </Routes>
       </BrowserRouter>
