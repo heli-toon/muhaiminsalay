@@ -19,7 +19,7 @@ html{
   scrollbar-color: var(--primary) var(--black);
 }
 *:before,*:after{box-sizing: border-box;}
-html::-webkit-scrollbar{width: 0.9vw;}
+html::-webkit-scrollbar{width: 0.85vw;}
 html::-webkit-scrollbar-thumb {
   background-color: var(--primarydark);
   border-radius: var(--border-radius-card);
@@ -50,8 +50,8 @@ body {
   src: url("./assets/fonts/Poppins-Regular.ttf");
 }
 @font-face{
-  font-family: "Monaspace";
-  src: url("./assets/fonts/MonaspaceArgon-Regular.otf");
+  font-family: "Cabin";
+  src: url("./assets/fonts/Cabin-Regular.ttf");
 }
 @supports (scrollbar-color: var(--primary) var(--black)){
   * {scrollbar-color: var(--primary) var(--black)}
@@ -63,10 +63,10 @@ h4,
 h5,
 h6 {
   font-display: swap;
-  font-family: "Monaspace","Ubuntu", monospace;
+  font-family: "Cabin","Ubuntu", monospace;
   font-weight: 800;
   line-height: inherit;
-  letter-spacing: -1px;
+  letter-spacing: .5px;
   color: var(--primary)!important;
 }
 a{

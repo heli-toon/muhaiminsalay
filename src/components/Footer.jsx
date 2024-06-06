@@ -100,7 +100,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <a href="/#">Blog</a>
+                    <a href="/blog">Blog</a>
                   </li>
                 </ul>
               </div>

@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import Home from "../pages/Home.jsx";
 import Showcase from "../pages/Showcase.jsx";
 import logo from "../assets/images/logo.webp";
+import BlogCollection from "../pages/BlogCollection.jsx";
 
 const Navbar = () => {
   const [showNavbarCollapse, setShowNavbarCollapse] = useState(false);
@@ -83,7 +84,7 @@ const Navbar = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/showcase" element={<Showcase />} />
-          <Route path="/showcase" element={<Showcase />} />
+          <Route path="/blog" element={<BlogCollection />} />
         </Routes>
       </BrowserRouter>
     </>
