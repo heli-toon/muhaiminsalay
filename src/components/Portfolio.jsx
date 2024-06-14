@@ -11,9 +11,8 @@ export default function Portfolio() {
               <span className="line-bar">...</span>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Accusantium quae neque tempore aperiam, quidem recusandae
-              repellendus nam explicabo eos ex cumque, nihil ipsa, fuga.
+              As a versatile web developer, I offer a range of services to help 
+              individuals and businesses establish a strong online presence.
             </p>
           </header>
           <div className="row">

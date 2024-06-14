@@ -225,7 +225,7 @@ nav .logo h2:hover{color: var(--white)!important;}
   color: var(--white);
   line-height:0;
   margin-right: 10px;
-  transition: 0.3s;
+  transition: var(--anim-mid);
 }
 #hero .social-links a:hover{color: var(--primary)}
 @media (max-width: 991px){
@@ -270,7 +270,7 @@ nav .logo h2:hover{color: var(--white)!important;}
 .project-item{max-width: 100%;}
 .project-tagsnbtns{
   justify-content: space-between;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 .project-info{
   max-width: 100%;
@@ -282,12 +282,11 @@ nav .logo h2:hover{color: var(--white)!important;}
   align-items: center;
   margin-bottom: 1rem;
   padding: 0.1em;
-  width: 50%;
+  width: 50vw;
 }
 .project-img img{
   border: none;
-  aspect-ratio: 1;
-  width: 50%;
+  width: 50vw;
 }
 @media only screen and (max-width: 767.98px){.project-img img{width: 80vw}}
 .project-tags .tag{
@@ -323,13 +322,13 @@ nav .logo h2:hover{color: var(--white)!important;}
   line-height: 20px;
   color: var(--primary);
   margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--anim-mid) ease-in-out;
 }
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active{color: var(--primarydark)}
 .portfolio #portfolio-flters li:last-child{margin-right: 0}
 .portfolio .portfolio-wrap{
-  transition: 0.3s;
+  transition: var(--anim-mid);
   position: relative;
   overflow: hidden;
   border-radius: 8px;
@@ -343,10 +342,10 @@ nav .logo h2:hover{color: var(--white)!important;}
   right:0;
   top:0;
   bottom:0;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out var(--anim-mid);
   z-index: 2;
 }
-.portfolio .portfolio-wrap img{transition: 0.3s;}
+.portfolio .portfolio-wrap img{transition: var(--anim-mid);}
 .portfolio .portfolio-wrap .portfolio-links{
   opacity:0;
   left:0;
@@ -355,7 +354,7 @@ nav .logo h2:hover{color: var(--white)!important;}
   text-align: center;
   z-index: 3;
   position: absolute;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out var(--anim-mid);
 }
 .portfolio .portfolio-wrap .portfolio-links a{
   color: var(--primary);
@@ -364,7 +363,7 @@ nav .logo h2:hover{color: var(--white)!important;}
   width: 36px;
   height: 36px;
   display: inline-block;
-  transition: 0.3s;
+  transition: var(--anim-mid);
 }
 .portfolio .portfolio-wrap .portfolio-links a i{
   font-size: 32px;
@@ -379,7 +378,7 @@ nav .logo h2:hover{color: var(--white)!important;}
   right:0;
   text-align: center;
   z-index: 3;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out var(--anim-mid);
 }
 .portfolio .portfolio-wrap .portfolio-info h4{
   font-size: 20px;
@@ -400,6 +399,71 @@ nav .logo h2:hover{color: var(--white)!important;}
   opacity: 1;
   bottom:0;
 }
+/*--------------------------------------------------------------
+# Recent Blog Posts
+--------------------------------------------------------------*/
+.recent-blog-posts .post-box {
+  padding: 1.5rem;
+  transition: var(--anim-short);
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-radius: var(--border-radius-card);
+}
+.recent-blog-posts .post-box .post-img {
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+.recent-blog-posts .post-box .post-img img {
+  transition: var(--anim-mid);
+}
+.recent-blog-posts .post-box .meta {
+  margin-top: 15px;
+}
+.recent-blog-posts .post-box .meta .post-date {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--primary);
+}
+.recent-blog-posts .post-box .meta .post-author {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--primary);
+}
+.recent-blog-posts .post-box .post-title {
+  font-size: 24px;
+  color: var(--primary);
+  font-weight: 700;
+  margin: 15px 0 0 0;
+  position: relative;
+  transition: var(--anim-short);
+}
+.recent-blog-posts .post-box .readmore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  transition: var(--anim-short);
+  margin-top: 15px;
+  padding: 0.8rem !important;
+  width: 60%;
+}
+.recent-blog-posts .post-box .readmore i {
+  line-height: 0;
+  margin-left: 4px;
+  font-size: 18px;
+}
+.recent-blog-posts .post-box:hover .post-title {
+  color: var(--primary);
+}
+.recent-blog-posts .post-box:hover .post-img img {
+  transform: scale(1.1);
+}
+/* CONTACT */
 .contact .info-box{
   color: var(--white);
   padding: 30px;
@@ -535,7 +599,7 @@ nav .logo h2:hover{color: var(--white)!important;}
   color: var(--white);
   line-height:0;
   margin-right: 10px;
-  transition: 0.3s;
+  transition: var(--anim-mid);
 }
 .footer .footer-top .social-links a:hover{color: var(--primary);}
 .footer .footer-top h4{
@@ -568,7 +632,7 @@ nav .logo h2:hover{color: var(--white)!important;}
 .footer .footer-top .footer-links ul li:first-child{padding-top:0;}
 .footer .footer-top .footer-links ul a{
   color: var(--white);
-  transition: 0.3s;
+  transition: var(--anim-mid);
   display: inline-block;
   line-height: 1;
 }

@@ -9,15 +9,19 @@ export default function About() {
               <span className="line-bar">...</span>
             </div>
             <p>
-              I thrive on turning ideas to reality and crafting digital dreams.
-              I aspire to become a leading web developer, constantly pushing the
-              boundaries of what&apos;s possible in the digital realm. I&apos;m
-              deeply passionate about the power of web development to transform
-              businesses, connect communities, and empower individuals. I&apos;m
-              fascinated by the ever-evolving landscape of web development,
-              constantly seeking new technologies and techniques to enhance my
-              skills and expand my knowledge. Please explore my portfolio.
-              I am a freelancer.
+              Hello, I'm Salay Abdul Muhaimin Kanton, a passionate web developer
+              and desktop application creator with a strong foundation in both
+              frontend and backend development. With 3 years of learning and
+              building experience, I specialize in creating dynamic websites
+              using React, HTML, and CSS for the frontend, and Django and Flask
+              for the backend. I also have a keen interest in exploring the
+              world of Internet of Things (IoT) with Arduino and Rasperry Pi. Additionally, I
+              develop Python desktop applications using Tkinter, bringing my
+              ideas to life on the desktop. I believe that determination,
+              curiosity, and self-discipline are essential qualities for success
+              in any field. I embody these values in my approach to web
+              development and software creation, constantly seeking new
+              challenges and opportunities to grow.
             </p>
           </header>
           <div className="row">
