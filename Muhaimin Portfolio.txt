@@ -68,4 +68,25 @@ Next, let's move on to the _Testimonials_ section. Do you have any feedback or t
 
 
 
+https://www.facebook.com/profile.php?id=61552612385341&mibextid=ZbWKwL
+
+https://x.com/SalayAbdul?s=09
+
+
+
+
+
+
+
+That's understandable! Fireship's code might be outdated, and Electron has undergone significant changes since then. The screen recording functionality might have been affected by these changes.
+
+In the latest versions of Electron, the `desktopCapture` API has been deprecated, and you need to use the `desktopCapturer` module instead. This module provides a more robust way of capturing screen content.
+
+To fix the errors, you can try the following:
+
+1. Update the code to use the `desktopCapturer` module instead of `desktopCapture`.
+2. Check the Electron documentation for the latest examples and guidelines on screen recording.
+3. Ensure that you have the necessary permissions and configurations enabled for screen recording.
+
+If you're still facing issues, feel free to share your code and error messages, and I'll be happy to help you troubleshoot!
 

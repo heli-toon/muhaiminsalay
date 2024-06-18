@@ -3,6 +3,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Portfolio from "../components/Portfolio";
+import Backtotop from "../components/Backtotop";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Portfolio />
       <Contact />
       <Footer />
+      <Backtotop />
     </>
   );
 }

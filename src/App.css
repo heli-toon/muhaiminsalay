@@ -128,7 +128,7 @@ a.paralink:hover{color: var(--primarydark)}
   margin-left: 2em;
   color: var(--primary)!important;
 }
-.nav-item{padding-left: 1rem}
+.nav-item{padding-left: 1.5rem}
 .nav-link{
   transition: 0.5s all ease;
   color: var(--primary)!important;
@@ -192,7 +192,7 @@ nav .logo h2:hover{color: var(--white)!important;}
   display: inline-block;
   padding: 10px 28px 11px 28px;
   border-radius: 6px;
-  transition: 0.5s;
+  transition: var(--anim-short);
   margin: 10px 0 0 0;
   color: var(--white);
   text-decoration: none;
