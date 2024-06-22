@@ -4,6 +4,7 @@ import Home from "../pages/Home.jsx";
 import Showcase from "../pages/Showcase.jsx";
 import logo from "../assets/images/logo.webp";
 import BlogCollection from "../pages/BlogCollection.jsx";
+import Apps from "../pages/Apps.jsx";
 
 const Navbar = () => {
   const [showNavbarCollapse, setShowNavbarCollapse] = useState(false);
@@ -90,6 +91,7 @@ const Navbar = () => {
           <Route path="/" element={<Home />} />
           <Route path="/showcase" element={<Showcase />} />
           <Route path="/blog" element={<BlogCollection />} />
+          <Route path="/apps" element={<Apps />} />
         </Routes>
       </BrowserRouter>
     </>

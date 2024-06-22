@@ -399,6 +399,57 @@ nav .logo h2:hover{color: var(--white)!important;}
   opacity: 1;
   bottom:0;
 }
+/* APPS */
+.app-projects{
+  text-align: left;
+  padding-top: 0;
+}
+.app-projects .app-card{
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius-card);
+}
+.app-projects img{
+  width: 20%;
+  padding-right: 1em;
+  height: min-content;
+}
+.app-projects .app-desc{
+  width: 80%;
+}
+.app-projects .app-desc ul{
+  list-style: none;
+  padding: 0;
+}
+.app-projects .app-card .status{
+  text-align: center;
+  width: 100px;
+  position: absolute;
+  top: 20px;
+  right: -21px;
+  transform: rotate(45deg);
+  z-index: 1;
+  padding: 1px 0 3px 0;
+  font-size: 10px;
+}
+.app-projects .app-desc .status.completed{
+  background: var(--primarydark)!important;
+}
+.app-projects .app-desc .status.incomplete{
+  background: var(--gray);
+}
+.app-projects .app-desc .download-icons a{
+  font-size: 1.2rem;
+  color: var(--white)!important;
+  padding: .5em;
+}
+.app-projects .app-desc .download-icons a:hover{
+  color: var(--primary)!important;
+}
+.card-bottom{
+  width: 100%;
+  justify-content: space-between;
+}
 /*--------------------------------------------------------------
 # Recent Blog Posts
 --------------------------------------------------------------*/

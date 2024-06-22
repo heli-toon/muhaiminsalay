@@ -24,7 +24,7 @@ export default function Footer() {
                 </p>
                 <div className="social-links mt-3">
                   <a
-                    href="#"
+                    href="https://x.com/SalayAbdul"
                     className="twitter"
                     title="Twitter Account"
                     target="_blank"
@@ -32,7 +32,7 @@ export default function Footer() {
                     <i className="bi bi-twitter-x"></i>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.facebook.com/profile.php?id=61552612385341&mibextid=ZbWKwL"
                     className="facebook"
                     title="Facebook Page"
                     target="_blank"
@@ -49,7 +49,7 @@ export default function Footer() {
                     <i className="bi bi-linkedin"></i>
                   </a>
                   <a
-                    href="https://www.instagram.com/heli.toon"
+                    href="https://www.instagram.com/heli.toon/"
                     className="instagram"
                     title="Instagram Page"
                     target="_blank"
@@ -58,7 +58,7 @@ export default function Footer() {
                     <i className="bi bi-instagram"></i>
                   </a>
                   <a
-                    href="https://www.github.com/heli-toon"
+                    href="https://www.github.com/heli-toon/"
                     className="github"
                     title="GitHub Profile"
                     target="_blank"
@@ -67,7 +67,7 @@ export default function Footer() {
                     <i className="bi bi-github"></i>
                   </a>
                   <a
-                    href="https://www.wa.me/233535760503"
+                    href="https://www.wa.me/233535760503/"
                     className="whatsapp"
                     title="WhatsApp Number"
                     target="_blank"

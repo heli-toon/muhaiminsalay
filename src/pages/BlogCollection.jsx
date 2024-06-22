@@ -11,7 +11,7 @@ export default function BlogCollection() {
             <p>Recent posts form my Blog</p>
           </div>
           <div className="row">
-            <div className="col-lg-4">
+            <div className="col-lg-4 col-md-6">
               <div className="post-box glassm">
                 <div className="post-img">
                   <img src={verba} className="img-fluid" alt="" />
@@ -34,7 +34,7 @@ export default function BlogCollection() {
                 </a>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 col-md-6">
               <div className="post-box glassm">
                 <div className="post-img">
                   <img
@@ -60,7 +60,7 @@ export default function BlogCollection() {
                 </a>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 col-md-6">
               <div className="post-box glassm">
                 <div className="post-img">
                   <img

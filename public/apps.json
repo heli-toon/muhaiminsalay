@@ -1,0 +1,80 @@
+[
+    {
+      "title": "Verba",
+      "status": "completed",
+      "icon": "icons/verbaicon.png",
+      "size": "0MB",
+      "description" : "Verba is an authentic pocket dictionary which provides accurate and up-to-date word definitions. Compact, precise & reliable. ",
+      "downloads": {
+        "globe2": ["https://verba.netlify.app/"],
+        "github": ["https://github.com/heli-toon/verba"]
+      }
+    },
+    {
+      "title": "Periodic Table",
+      "status": "completed",
+      "icon": "icons/periodictable.png",
+      "size": "1.1 MB",
+      "description" : "Interactive Periodic Table of Elements app for Windows. Explore elements details, history and atomic structures in a user-friendly interface.",
+      "downloads": {
+        "windows": ["exe", "msi"]
+      }
+    },
+    {
+      "title": "SendMe",
+      "status": "incomplete",
+      "icon": "icons/sendmeicon.png",
+      "size": "0MB",
+      "description" : "SendMe, a platform that connects people who need tasks done with people who can do them. It's a simple, easy-to-use solution that makes it easy to find the person for the job. ",
+      "downloads": {
+        "android": ["googleplay", "apk"],
+        "apple": ["dmg", "pkg"],
+        "link-45deg": ["url"]
+      }
+    },
+    {
+      "title": "LBSHS LMS",
+      "status": "completed",
+      "icon": "icons/LBSHSLMS.ico",
+      "size": "22.0MB",
+      "description" : "BLAH",
+      "downloads": {
+        "windows": ["exe", "msi"],
+        "ubuntu": ["deb", "rpm"],
+        "github": ["url"]
+      }
+    },    
+    {
+      "title": "App 1",
+      "status": "incomplete",
+      "icon": "icons/icon1.png",
+      "size": "0MB",
+      "description" : "BLAH",
+      "downloads": {
+        "android": ["googleplay", "apk"],
+        "windows": ["exe", "msi"],
+        "ubuntu": ["deb", "rpm"],
+        "apple": ["dmg", "pkg"],
+        "link-45deg": ["url"],
+        "browser-chrome": ["chrome", "firefox"],
+        "github": ["url"]
+      }
+    },
+    {
+      "title": "App 2",
+      "status": "completed",
+      "icon": "icons/icon2.png",
+      "size": "0MB",
+      "description" : "A LOT",
+      "downloads": {
+        "android": ["googleplay"],
+        "win": ["exe"],
+        "linux": ["deb"],
+        "mac": ["dmg"],
+        "webapp": ["url"],
+        "browserextension": ["chrome"],
+        "website": ["url"]
+      }
+    }
+  ]
+  

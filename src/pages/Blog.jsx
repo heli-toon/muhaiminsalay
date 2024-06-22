@@ -4,11 +4,11 @@ export default function Blog() {
             <div className="breadcrumbs">
                 <div className="container">
                 <div className="d-flex justify-content-between align-items-center">
-                    <h2>SendMe Intro</h2>
+                    <h2>BlogPage</h2>
                     <ol>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li>SendMe Intro</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li>BlogPage</li>
                     </ol>
                 </div>
                 </div>
@@ -110,17 +110,15 @@ export default function Blog() {
                         </ul>
                         </div>  
                         <div className="sidebar-item tags">
-                        <h3 className="sidebar-title">Tags</h3>
-                        <ul className="mt-3">
-                            <li><a href="#">App</a></li>
-                            <li><a href="#">IT</a></li>
-                            <li><a href="#">Business</a></li>
-                            <li><a href="#">Mac</a></li>
-                            <li><a href="#">Design</a></li>
-                            <li><a href="#">Office</a></li>
-                            <li><a href="#">Creative</a></li>
-                            <li><a href="#">Marketing</a></li>
-                        </ul>
+                            <h3 className="sidebar-title">Tags</h3>
+                            <ul className="mt-3">
+                                <li><a href="#">App</a></li>
+                                <li><a href="#">IT</a></li>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Mac</a></li>
+                                <li><a href="#">Design</a></li>
+                                <li><a href="#">Office</a></li>
+                            </ul>
                         </div>
                     </div>  
                     </div>
