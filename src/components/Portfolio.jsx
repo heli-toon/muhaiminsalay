@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import map from "../assets/images/dotted-map-bg.webp";
+
 export default function Portfolio() {
   return (
     <>
@@ -11,8 +11,9 @@ export default function Portfolio() {
               <span className="line-bar">...</span>
             </div>
             <p>
-              As a versatile web developer, I offer a range of services to help 
-              individuals and businesses establish a strong online presence.
+              A glimpse into my recent work, showcasing innovative solutions and creative problem-solving. 
+              Explore a few of my notable randomly selected projects that demonstrate my expertise in web 
+              development, API development &amp; desktop application development.
             </p>
           </header>
           <div className="row">
@@ -21,9 +22,9 @@ export default function Portfolio() {
                 <li data-filter="*" className="filter-active">
                   All
                 </li>
-                <li data-filter=".filter-app">Websites</li>
+                <li data-filter=".filter-app">Desktop Apps</li>
                 <li data-filter=".filter-card">Web Apps</li>
-                <li data-filter=".filter-web">Browser Extension</li>
+                <li data-filter=".filter-web">APIs</li>
               </ul>
             </div>
           </div>
@@ -191,9 +192,9 @@ export default function Portfolio() {
               </div>
             </div>
             <div className="d-flex justify-content-center align-items-center">
-                <Link to="/showcase" className="btn-get-started">
-                  See All
-                </Link>
+                <a href="/apps" className="btn-get-started" title="See All Apps">
+                  See All Apps
+                </a>
             </div>
           </div>
         </div>

@@ -97,8 +97,11 @@ a.paralink{
 a.paralink:hover{color: var(--primarydark)}
 .section-title{
   margin-top:0;
-  margin-bottom: 2.5em;
+  margin-bottom: 3.25em;
   line-height:0;
+}
+.section-title h2{
+  margin-bottom: 0;
 }
 .line-bar{
   color: var(--white);
@@ -172,8 +175,10 @@ nav .logo h2:hover{color: var(--white)!important;}
     box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.25)!important;
   }
   body {animation: none;}
+  .nav-item{padding-left: 0}
 }
 #hero{
+  margin-top: 1.5rem;
   width: 100%;
   height: 100vh;
 }
@@ -400,6 +405,9 @@ nav .logo h2:hover{color: var(--white)!important;}
   bottom:0;
 }
 /* APPS */
+.apps{
+  margin-top: 1.5rem;
+}
 .app-projects{
   text-align: left;
   padding-top: 0;
@@ -438,22 +446,33 @@ nav .logo h2:hover{color: var(--white)!important;}
 .app-projects .app-desc .status.incomplete{
   background: var(--gray);
 }
+.app-projects .app-desc .download-icons{
+  gap: .7em;
+}
 .app-projects .app-desc .download-icons a{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--white)!important;
-  padding: .5em;
+  padding: .4em .55em;
+  border-radius: 50%;
+  background: var(--gray);
 }
 .app-projects .app-desc .download-icons a:hover{
+  filter: brightness(1.2);
   color: var(--primary)!important;
 }
 .card-bottom{
   width: 100%;
   justify-content: space-between;
 }
+.app-projects .app-desc .size{
+  text-transform: uppercase;
+  color: #aaa;
+}
 /*--------------------------------------------------------------
 # Recent Blog Posts
 --------------------------------------------------------------*/
 .recent-blog-posts .post-box {
+  margin-top: 1.5rem;
   padding: 1.5rem;
   transition: var(--anim-short);
   height: 100%;
@@ -474,9 +493,12 @@ nav .logo h2:hover{color: var(--white)!important;}
 }
 .recent-blog-posts .post-box .meta {
   margin-top: 15px;
+  font-size: 15px;
+}
+.recent-blog-posts .post-box .meta i{
+  color: var(--primary);
 }
 .recent-blog-posts .post-box .meta .post-date {
-  font-size: 15px;
   font-weight: 400;
   color: var(--primary);
 }
@@ -651,6 +673,7 @@ nav .logo h2:hover{color: var(--white)!important;}
   line-height:0;
   margin-right: 10px;
   transition: var(--anim-mid);
+  padding-right: .5rem;
 }
 .footer .footer-top .social-links a:hover{color: var(--primary);}
 .footer .footer-top h4{

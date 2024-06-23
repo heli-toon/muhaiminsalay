@@ -24,9 +24,9 @@ export default function Blog() {
                         <h2 className="title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h2>
                         <div className="meta-top">
                         <ul>
-                            <li className="d-flex align-items-center"><i className="bi bi-person"></i> <a href="blog-details.html">John Doe</a></li>
-                            <li className="d-flex align-items-center"><i className="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2020-01-01">Jan 1, 2022</time></a></li>
-                            <li className="d-flex align-items-center"><i className="bi bi-chat-dots"></i> <a href="blog-details.html">12 Comments</a></li>
+                            <li className="d-flex align-items-center"><i className="bi bi-person"></i> <a href="/blog/">John Doe</a></li>
+                            <li className="d-flex align-items-center"><i className="bi bi-clock"></i> <a href="/blog/"><time datetime="2020-01-01">Jan 1, 2022</time></a></li>
+                            <li className="d-flex align-items-center"><i className="bi bi-chat-dots"></i> <a href="/blog/">12 Comments</a></li>
                         </ul>
                         </div>  
                         <div className="content">

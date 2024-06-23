@@ -62,7 +62,7 @@ export default function Contact() {
                   <div className="info-box glassm glassm-card">
                     <i className="bi bi-clock"></i>
                     <h3>Open At</h3>
-                    <p>Monday - Friday</p>
+                    <p>Everyday</p>
                   </div>
                 </div>
               </div>

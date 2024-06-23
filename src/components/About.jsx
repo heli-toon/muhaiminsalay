@@ -41,7 +41,7 @@ export default function About() {
                   <p>Python</p>
                 </div>
                 <div className="grid-cell">
-                  <p>Flask, Django</p>
+                  <p>Flask, Django, Tkinter</p>
                 </div>
                 <div className="grid-cell">
                   <p>PHP</p>
@@ -59,7 +59,7 @@ export default function About() {
                   <p>Bootstrap</p>
                 </div>
                 <div className="grid-cell">
-                  <p>React</p>
+                  <p>React, Electron</p>
                 </div>
                 <div className="grid-cell">
                   <p>Arduino & Rasperry Pi</p>

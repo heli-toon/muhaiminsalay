@@ -8,13 +8,15 @@ export default function Hero() {
             <div className="hero-description col-lg-6 d-flex flex-column justify-content-center">
               <h1>Salay Abdul Muhaimin Kanton</h1>
               <p>
-                I punctiliously craft websites with expertise and passion. I
-                don&apos;t just build websites, I create digital masterpieces
-                with innovative web experiences.
+                Welcome to my digital studio! I'm a passionate web developer 
+                dedicated to crafting exceptional online experiences. With 
+                expertise in cutting-edge technologies, I create visually stunning
+                and user-friendly websites and apps that drive results. Let's bring
+                your vision to life.
               </p>
               <div className="d-flex justify-content-center justify-content-lg-start">
                 <a href="#about" className="btn-get-started scrollto">
-                  Learn More <i className="bi bi-chevron-right"></i>
+                  Explore My Work <i className="bi bi-chevron-right"></i>
                 </a>
               </div>
             </div>

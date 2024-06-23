@@ -9,6 +9,7 @@ const AppCard = ({ app }) => {
     <>
       <div className="col-lg-6 col-md-6">
         <div className="glassm app-card my-4 p-4 d-flex">
+          
           <img src={icon} alt={title} />
           <div className="app-desc">
             <h3>{title}</h3>
@@ -24,7 +25,7 @@ const AppCard = ({ app }) => {
                   </li>
                 ))}
               </ul>
-              <p>Size: {size}</p>
+              <p className="size"><small>Size: {size}</small></p>
             </div>
           </div>
         </div>

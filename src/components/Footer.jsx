@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="container">
             <div className="row gy-4">
               <div className="col-lg-5 col-md-12 footer-info">
-                <Link element="true" to="/" className="logo d-flex align-items-center">
+                <a href="/" className="logo d-flex align-items-center">
                   <img
                     src={logo}
                     width={70}
@@ -17,10 +17,10 @@ export default function Footer() {
                     alt="Muhaimin Salay Logo"
                   />
                   {/* <span>Salay Kanton</span> */}
-                </Link>
+                </a>
                 <p>
-                  Transforming ideas into innovative web experiences. Turning
-                  ideas to reality.
+                  Ideas brought to life, with every line of code, every collabration, 
+                  every desicion to create something truly remarkable.
                 </p>
                 <div className="social-links mt-3">
                   <a
@@ -102,6 +102,10 @@ export default function Footer() {
                     <i className="bi bi-chevron-right"></i>
                     <a href="/blog">Blog</a>
                   </li>
+                  <li>
+                    <i className="bi bi-chevron-right"></i>
+                    <a href="/apps">Apps</a>
+                  </li>
                 </ul>
               </div>
 
@@ -110,15 +114,19 @@ export default function Footer() {
                 <ul>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <Link element="true" to="/showcase#webapps">Web Apps</Link>
+                    <a href="/apps">Web Apps</a>
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <Link element="true" to="/showcase#websites">Websites</Link>
+                    <a href="/">Websites</a>
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <Link element="true" to="/showcase#other">Other</Link>
+                    <a href="/">Desktop Apps</a>
+                  </li>
+                  <li>
+                    <i className="bi bi-chevron-right"></i>
+                    <a href="/">APIs</a>
                   </li>
                 </ul>
               </div>

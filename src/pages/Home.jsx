@@ -6,6 +6,7 @@ import Portfolio from "../components/Portfolio";
 import Backtotop from "../components/Backtotop";
 
 export default function Home() {
+  window.document.title = "Muhaimin Abdul Salay Kanton | Home";
   return (
     <>
       <Hero />

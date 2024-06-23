@@ -39,7 +39,7 @@ const Navbar = () => {
         >
           <a
             className="navbar-brand justify-content-center logo d-flex flex-row"
-            href="/"
+            href="/#"
             title="Portfolio Home"
           >
             <img src={logo} width={70} height={35} alt="Muhaimin Salay Logo" />
@@ -51,7 +51,7 @@ const Navbar = () => {
             data-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
-            aria-label="Toggle navigation"
+            aria-label="Toggle Navigation"
             onClick={handleToggleNavbarCollapse}
           >
             <span className="navbar-toggler-icon"></span>
@@ -64,7 +64,7 @@ const Navbar = () => {
           >
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <a className="nav-link" href="/">Home</a>
+                <a className="nav-link" href="/#">Home</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/#about">
@@ -72,7 +72,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/showcase">Portfolio</a>
+                <a className="nav-link" href="/apps">Apps</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/blog">

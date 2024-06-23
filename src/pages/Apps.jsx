@@ -3,6 +3,7 @@ import AppCard from "../components/AppCard";
 import Footer from "../components/Footer";
 
 const Apps = () => {
+  window.document.title = "Applications | Muhaimin Abdul Salay Kanton";
   const [data, setData] = React.useState([]);
 
   React.useEffect(() => {
@@ -18,13 +19,13 @@ const Apps = () => {
           <header className="section-header">
             <div className="section-title">
               <h1>Apps</h1>
-              <span class="line-bar">...</span>
+              <span className="line-bar">...</span>
             </div>
             <p>
               Explore my app portfolio, featuring a range of desktop, mobile and
-              browser extension projects. From completed endeavours, I showcase
-              my passion for innovative software development. Browse through my
-              projects to see my skills in action!
+              browser extension projects. From completed solutions to ongoing 
+              endeavours, I showcase my passion for innovative software development. 
+              Browse through my projects to see my skills in action!
             </p>
           </header>
         </div>
