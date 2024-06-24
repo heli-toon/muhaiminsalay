@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 
 const Apps = () => {
   window.document.title = "Applications | Muhaimin Abdul Salay Kanton";
+  window.document.querySelector('meta[name="description"]').setAttribute('content', "Discover all of Muhaimin's projects & creations. Download and experience innovation.")
   const [data, setData] = React.useState([]);
 
   React.useEffect(() => {

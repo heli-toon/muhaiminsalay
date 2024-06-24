@@ -100,11 +100,11 @@ export default function Footer() {
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <a href="/blog">Blog</a>
+                    <a href="/apps">Apps</a>
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <a href="/apps">Apps</a>
+                    <a href="/blog">Blog</a>
                   </li>
                 </ul>
               </div>
@@ -114,19 +114,19 @@ export default function Footer() {
                 <ul>
                   <li>
                     <i className="bi bi-chevron-right"></i>
+                    <a href="/apps">Desktop Apps</a>
+                  </li>
+                  <li>
+                    <i className="bi bi-chevron-right"></i>
                     <a href="/apps">Web Apps</a>
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <a href="/">Websites</a>
+                    <a href="/apps">Websites</a>
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <a href="/">Desktop Apps</a>
-                  </li>
-                  <li>
-                    <i className="bi bi-chevron-right"></i>
-                    <a href="/">APIs</a>
+                    <a href="/apps">APIs</a>
                   </li>
                 </ul>
               </div>
@@ -136,12 +136,11 @@ export default function Footer() {
                 <p>
                   Accra,
                   <br />
-                  Ghana <br />
+                  Ghana <br /><br />
                   <strong>Phone: </strong>
                   <a href="tel:+233535760503" className="contlink">
                     +233 53 576 0503
-                  </a>{" "}
-                  <br />
+                  </a><br />
                   <strong>Email: </strong>
                   <a href="mailto:abdulkanton2005@gmail.com" className="contlink">
                     helitoon@outlook.com
@@ -157,12 +156,12 @@ export default function Footer() {
             &copy; Copyright{" "}
             <strong>
               <span>Salay Kanton</span>
-            </strong>{" "}
+            </strong> {" "}
             2024. All Rights Reserved
           </div>
           <div className="credits">
-            Designed by{" "}
-            <a href="#" target="_blank">
+            Designed by {" "}
+            <a href="/" target="_blank">
               SALAY
             </a>
           </div>

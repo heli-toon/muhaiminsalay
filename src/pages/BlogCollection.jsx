@@ -3,6 +3,7 @@ import verba from "../assets/images/verba.png"
 
 export default function BlogCollection() {
   window.document.title = "Blog | Muhaimin Abdul Salay Kanton";
+  window.document.querySelector('meta[name="description"]').setAttribute('content', "Dive into my thoughts on software development and more. Read my latest articles, insights, and musings on my blog")
   return (
     <>
       <section id="recent-blog-posts" className="recent-blog-posts">
@@ -12,7 +13,7 @@ export default function BlogCollection() {
               <h2>Blog</h2>
               <span className="line-bar">...</span>
             </div>
-            <p>Recent posts form my Blog</p>
+            <p>Explore my vast library of blog posts, covering a wide range of topics and themes in IT. My articles are to educate, inform, spark new ideas &amp; demystifying trends. Welcome to my world</p>
           </div>
           <div className="row">
             <div className="col-lg-4 col-md-6 my-4">
