@@ -26,15 +26,13 @@ export default function BlogCollection() {
                   <span className="post-date">Tue, December 12</span>
                 </div>
                 <h3 className="post-title">
-                  Eum ad dolor et. Autem aut fugiat debitis voluptatem
-                  consequuntur sit
+                  Coding vs Programming: Unraveling the Mysteries of Software Development
                 </h3>
                 <p>
-                  Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel
-                  omnis laudantium. Asperiores eum ipsa est officiis. Modi
-                  cupiditate exercitationem qui magni est...
+                  In the world of software development, two terms are often used interchangeably: coding and programming. 
+                  While they are related, they have distinct differences...
                 </p>
-                <a href="/blog/" className="readmore btn-get-started">
+                <a href="/blog/0/" className="readmore btn-get-started">
                   <span>Read More</span>
                   <i className="bi bi-arrow-right"></i>
                 </a>

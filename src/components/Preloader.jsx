@@ -1,4 +1,4 @@
-import logo from "../assets/images/logo.webp";
+import logo from "/loading.gif";
 
 export default function About() {
   return (
