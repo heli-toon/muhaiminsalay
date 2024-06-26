@@ -7,11 +7,11 @@ export default function Blog() {
             <div className="breadcrumbs glassm">
                 <div className="container">
                     <div className="d-flex justify-content-between align-items-center">
-                        <h2>BlogPage</h2>
+                        <h2>Coding vs Programming</h2>
                         <ol>
                             <li><a href="/">Home</a></li>
                             <li><a href="/blog/">Blog</a></li>
-                            <li>BlogPage</li>
+                            <li>Coding vs Programming</li>
                         </ol>
                     </div>
                 </div>
@@ -24,60 +24,84 @@ export default function Blog() {
                                 <div className="post-img">
                                     <img src={map} alt="" className="img-fluid" />
                                 </div>  
-                                <h2 className="title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h2>
+                                <h2 className="title">Coding vs Programming: Unraveling the Mysteries of Software Development</h2>
                                 <div className="meta-top">
-                                <ul>
-                                    <li className="d-flex align-items-center"><i className="bi bi-person"></i> <a href="blog-details.html">John Doe</a></li>
-                                    <li className="d-flex align-items-center"><i className="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2020-01-01">Jan 1, 2022</time></a></li>
-                                    <li className="d-flex align-items-center"><i className="bi bi-chat-dots"></i> <a href="blog-details.html">12 Comments</a></li>
-                                </ul>
+                                    <ul>
+                                        <li className="d-flex align-items-center"><i className="bi bi-calendar"></i> <a href="blog-details.html"><time datetime="2024-06-25">Jun 25, 2024</time></a></li>
+                                        <li className="d-flex align-items-center"><i className="bi bi-clock"></i> <a href=""><time>2.10 minutes read</time></a></li>
+                                    </ul>
                                 </div>  
                                 <div className="content">
-                                <p>
-                                    Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                                    Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
-                                </p>
-                                <p>
-                                    Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
-                                </p>
-                                <blockquote>
                                     <p>
-                                    Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut eos aliquam doloribus minus autem quos.
+                                        In the world of software development, two terms are often used interchangeably: coding and programming. While they are related, they have distinct differences. 
+                                        In this blog post, we'll delve into the similarities and differences between coding and programming, providing a comprehensive understanding of these fundamental concepts.
                                     </p>
-                                </blockquote>
-                                <p>
-                                    Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat.
-                                    Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque.
-                                    Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.
-                                </p>
-                                <h3>Et quae iure vel ut odit alias.</h3>
-                                <p>
-                                    Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui.
-                                    Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea.
-                                    Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
-                                </p>
-                                <img src={map} className="img-fluid" alt="" />
-                                <h3>Ut repellat blanditiis est dolore sunt dolorum quae.</h3>
-                                <p>
-                                    Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem facilis hic dolorum dolores vel.
-                                    Consectetur quasi id et optio praesentium aut asperiores eaque aut. Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. Veritatis numquam ut illum ut a quam vitae.
-                                </p>
-                                <p>
-                                    Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
-                                </p>
+                                    <h3>The Coding Process</h3>
+                                    <p>
+                                        Coding refers to the act of writing code in a programming language to create a software, app, or website. It's the process of translating human instructions into a language that computers can understand. Think of coding as writing a recipe for your computer to follow. 
+                                        A coder's primary focus is on implementing a plan, using programming languages like Python, Java, HTML or C++ to bring a design to life.
+                                    </p>
+                                    <blockquote>
+                                        <p>
+                                            Coding is like writing a recipe for your computer to follow
+                                        </p>
+                                    </blockquote>
+                                    <h3>The Programming Process</h3>
+                                    <p>
+                                        Programming is the broader process of designing, writing, testing, and maintaining software, apps, or websites. It encompasses not only coding but also problem-solving, algorithm development, and software engineering. 
+                                        Programming is like creating a blueprint for a house, including the design, materials, and construction process. A programmer's role is to create the plan itself, considering the overall architecture, functionality, and performance of the software.
+                                    </p>
+                                    <h3>Similarities</h3>
+                                    <p>
+                                        <ul>
+                                            <li>Both coding and programming involve writing code in a programming language.</li>
+                                            <li>Both require a good understanding of computer science concepts and logic.</li>
+                                            <li>Both involve problem-solving and critical thinking.</li>
+                                        </ul>                                    
+                                    </p>
+                                    <h3>Differences</h3>
+                                    <p>
+                                        <ul>
+                                            <li>Coding is a specific part of programming that focuses on writing code.</li>
+                                            <li>Programming is a more comprehensive process that includes design, development, testing, and maintenance.</li>
+                                            <li>Coding is like implementing a plan, while programming is like creating the plan itself.</li>
+                                        </ul>                                 
+                                    </p>
+                                    <h3>Analogy</h3>
+                                    <p>
+                                        Think of coding as writing a poem (focusing on the words and syntax), 
+                                        while programming is like writing a novel (including plot development, character creation, and editing).
+                                    </p>
+                                    <h3>Real-World Applications</h3>
+                                    <p>
+                                        <ul>
+                                            <li>Coding is essential for building software applications, mobile apps, and websites.</li>
+                                            <li>Programming is crucial for developing operating systems, games, and artificial intelligence systems.</li>
+                                        </ul>
+                                    </p>
+                                    <h3>Conclusion</h3>
+                                    <p>
+                                        In conclusion, coding and programming are two interconnected yet distinct concepts in software development. While coding focuses on implementing a plan, programming encompasses the entire process of designing, developing, and maintaining software. 
+                                        Understanding both terms will help you appreciate the complexity and beauty of software development. 
+                                        Whether you're a beginner or an experienced developer, recognizing the differences between coding and programming will enhance your skills and perspective in the world of software development.
+                                    </p>
+                                    <h3>Final Thoughts</h3>
+                                    <p>
+                                        In the world of software development, coding and programming are fundamental concepts that work together to create innovative solutions. 
+                                        By understanding the similarities and differences between these two terms, you'll be better equipped to navigate the exciting world of software development. <br />
+                                        Happy coding and programming 😁!
+                                    </p>
                                 </div>
-                
                                 <div className="meta-bottom">
-                                <i className="bi bi-folder"></i>
-                                <ul className="cats">
-                                    <li><a href="#">Business</a></li>
-                                </ul>
-                                <i className="bi bi-tags"></i>
-                                <ul className="tags">
-                                    <li><a href="#">Creative</a></li>
-                                    <li><a href="#">Tips</a></li>
-                                    <li><a href="#">Marketing</a></li>
-                                </ul>
+                                    <i className="bi bi-code-slash"></i>
+                                    <ul className="cats">
+                                        <li><a href="#">Software</a></li>
+                                    </ul>
+                                    <i className="bi bi-tags"></i>
+                                    <ul className="tags">
+                                        <li><a href="#">Programming</a></li>
+                                        <li><a href="#">Coding</a></li>
+                                    </ul>
                                 </div>
                             </article>  
                             <div className="post-author glassm d-flex align-items-center">
@@ -85,43 +109,43 @@ export default function Blog() {
                                 <div>
                                     <h4>Salay Abdul Muhaimin Kanton</h4>
                                     <div className="social-links">
-                                        <a href="https://twitters.com/#"><i className="bi bi-twitter-x"></i></a>
+                                        <a href="https://x.com/SalayAbdul"><i className="bi bi-twitter-x"></i></a>
                                         <a href="https://facebook.com/#"><i className="bi bi-facebook"></i></a>
-                                        <a href="https://instagram.com/#"><i className="bi bi-instagram"></i></a>
+                                        <a href="https://www.instagram.com/heli.toon/"><i className="bi bi-instagram"></i></a>
                                     </div>
                                     <p>
-                                        Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium. Quas repellat voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.
+                                        I'm a passionate web developer dedicated to crafting exceptional online experiences. With expertise in cutting-edge technologies, I create visually stunning and user-friendly websites and apps that drive results.
                                     </p>
                                 </div>
                             </div>  
                         </div>
                         <div className="col-lg-4">
-                        <div className="sidebar">
-                            <div className="sidebar-item search-form">
-                            <h3 className="sidebar-title">Search</h3>
-                            <form action="" className="mt-3">
-                                <input type="search" title="Search" placeholder="Search" />
-                                <button type="submit" title="search" className="btn"><i className="bi bi-search"></i></button>
-                            </form>
-                            </div>
-                            <div className="sidebar-item categories">
-                            <h3 className="sidebar-title">Categories</h3>
-                            <ul className="mt-3">
-                                <li><a href="#">General <span>(25)</span></a></li>
-                                <li><a href="#">Lifestyle <span>(12)</span></a></li>
-                                <li><a href="#">Educaion <span>(14)</span></a></li>
-                            </ul>
-                            </div>  
-                            <div className="sidebar-item tags">
-                                <h3 className="sidebar-title">Tags</h3>
+                            <div className="sidebar">
+                                <div className="sidebar-item search-form">
+                                <h3 className="sidebar-title">Search</h3>
+                                <form action="" className="mt-3">
+                                    <input type="search" title="Search" placeholder="Search" />
+                                    <button type="submit" title="search" className="btn"><i className="bi bi-search"></i></button>
+                                </form>
+                                </div>
+                                <div className="sidebar-item categories">
+                                <h3 className="sidebar-title">Categories</h3>
                                 <ul className="mt-3">
-                                    <li><a href="#">App</a></li>
-                                    <li><a href="#">IT</a></li>
-                                    <li><a href="#">Business</a></li>
-                                    <li><a href="#">Mac</a></li>
+                                    <li><a href="#">General <span>(25)</span></a></li>
+                                    <li><a href="#">Lifestyle <span>(12)</span></a></li>
+                                    <li><a href="#">Educaion <span>(14)</span></a></li>
                                 </ul>
-                            </div>
-                        </div>  
+                                </div>  
+                                <div className="sidebar-item tags">
+                                    <h3 className="sidebar-title">Tags</h3>
+                                    <ul className="mt-3">
+                                        <li><a href="#">App</a></li>
+                                        <li><a href="#">IT</a></li>
+                                        <li><a href="#">Business</a></li>
+                                        <li><a href="#">Mac</a></li>
+                                    </ul>
+                                </div>
+                            </div>  
                         </div>
                     </div>
                 </div>

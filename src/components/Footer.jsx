@@ -16,7 +16,6 @@ export default function Footer() {
                     height={35}
                     alt="Muhaimin Salay Logo"
                   />
-                  {/* <span>Salay Kanton</span> */}
                 </a>
                 <p>
                   Ideas brought to life, with every line of code, every collabration, 
