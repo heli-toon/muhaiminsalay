@@ -466,6 +466,10 @@ nav .logo h2:hover{color: var(--white)!important;}
   text-transform: uppercase;
   color: #aaa;
 }
+/* SKILLS */
+.skills{
+  margin-top: 1.5rem;
+}
 /*--------------------------------------------------------------
 # Recent Blog Posts
 --------------------------------------------------------------*/
