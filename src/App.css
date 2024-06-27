@@ -100,6 +100,11 @@ a.paralink:hover{color: var(--primarydark)}
   margin-bottom: 3.25em;
   line-height:0;
 }
+mark{
+  background: var(--primarydark)!important;
+  color: var(--white)!important;
+  border-radius: 5px !important;
+}
 .section-title h2{
   margin-bottom: 0;
 }
