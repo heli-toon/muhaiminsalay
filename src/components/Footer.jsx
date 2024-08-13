@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.webp";
 
 export default function Footer() {
@@ -142,7 +141,7 @@ export default function Footer() {
                   </a><br />
                   <strong>Email: </strong>
                   <a href="mailto:abdulkanton2005@gmail.com" className="contlink">
-                    helitoon@outlook.com
+                    abdulkanton2005@gmail.com
                   </a>
                   <br />
                 </p>
