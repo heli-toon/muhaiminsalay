@@ -29,14 +29,14 @@ export default function Contact() {
             <div className="col-lg-6">
               <div className="row gy-4">
                 <div className="col-md-6">
-                  <div className="info-box glassm glassm-card">
+                  <div className="info-box bg-dg bg-dg-card">
                     <i className="bi bi-geo-alt"></i>
                     <h3>Address</h3>
                     <p>Accra, Ghana</p>
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="info-box glassm glassm-card">
+                  <div className="info-box bg-dg bg-dg-card">
                     <i className="bi bi-telephone"></i>
                     <h3>Call</h3>
                     <p>
@@ -47,7 +47,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="info-box glassm glassm-card">
+                  <div className="info-box bg-dg bg-dg-card">
                     <i className="bi bi-envelope"></i>
                     <h3>Email</h3>
                     <p>
@@ -58,7 +58,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="info-box glassm glassm-card">
+                  <div className="info-box bg-dg bg-dg-card">
                     <i className="bi bi-clock"></i>
                     <h3>Freelance</h3>
                     <p>Available</p>

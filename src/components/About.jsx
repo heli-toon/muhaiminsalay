@@ -27,7 +27,7 @@ export default function About() {
           </header>
           <div className="row">
             <div className="skills">
-              <div className="skills-grid glassm glassm-card">
+              <div className="skills-grid bg-dg bg-dg-card">
                 <div className="grid-cell">
                   <h6>Proficient In</h6>
                 </div>

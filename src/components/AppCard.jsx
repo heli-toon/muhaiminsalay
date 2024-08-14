@@ -8,7 +8,7 @@ const AppCard = ({ app }) => {
   return (
     <>
       <div className="col-lg-6 col-md-6">
-        <div className="glassm app-card my-4 p-4 d-flex">
+        <div className="bg-dg app-card my-4 p-4 d-flex">
           
           <img src={icon} alt={title} />
           <div className="app-desc">

@@ -18,7 +18,7 @@ export default function BlogCollection() {
           </div>
           <div className="row">
             <div className="col-lg-4 col-md-6 my-4">
-              <div className="post-box glassm">
+              <div className="post-box bg-dg">
                 <div className="post-img">
                   <img src={verba} className="img-fluid" alt="" />
                 </div>
@@ -46,7 +46,7 @@ export default function BlogCollection() {
               </div>
             </div>
             <div className="col-lg-4 col-md-6 my-4">
-              <div className="post-box glassm">
+              <div className="post-box bg-dg">
                 <div className="post-img">
                   <img
                     src={verba}
@@ -79,7 +79,7 @@ export default function BlogCollection() {
               </div>
             </div>
             <div className="col-lg-4 col-md-6 my-4">
-              <div className="post-box glassm">
+              <div className="post-box bg-dg">
                 <div className="post-img">
                   <img
                     src={verba}

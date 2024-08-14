@@ -27,7 +27,7 @@ export default function Showcase() {
             <span className="line-bar">...</span>
           </div>
           <div className="project-item d-flex justify-content-center align-items-center flex-column">
-            <div className="project-img glassm card">
+            <div className="project-img bg-dg card">
               <a href="https://jayshoecare.netlify.app" target="_blank" rel="noreferrer">
                 <img
                   src={jayshoecare}
@@ -36,7 +36,7 @@ export default function Showcase() {
                 />
               </a>
             </div>
-            <div className="project-detail glassm card">
+            <div className="project-detail bg-dg card">
               <div className="project-info">
                 <h3>Jay&apos;s Shoecare</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -62,7 +62,7 @@ export default function Showcase() {
             <span className="line-bar">...</span>
           </div>
           <div className="project-item d-flex justify-content-center align-items-center flex-column">
-            <div className="project-img glassm card">
+            <div className="project-img bg-dg card">
               <a href="https://verba.netlify.app" target="_blank" rel="noreferrer">
                 <img
                   src={verba}
@@ -71,7 +71,7 @@ export default function Showcase() {
                 />
               </a>
             </div>
-            <div className="project-detail glassm card">
+            <div className="project-detail bg-dg card">
               <div className="project-info">
                 <h3>Verba</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -100,7 +100,7 @@ export default function Showcase() {
             <span className="line-bar">...</span>
           </div>
           <div className="project-item d-flex justify-content-center align-items-center flex-column">
-            <div className="project-detail glassm card">
+            <div className="project-detail bg-dg card">
               <div className="project-info">
                 <h3>QR Code API</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>

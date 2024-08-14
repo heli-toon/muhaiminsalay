@@ -27,7 +27,7 @@ export default function Blog() {
 
     return(
         <>
-            <div className="breadcrumbs glassm">
+            <div className="breadcrumbs bg-dg">
                 <div className="container">
                     <div className="d-flex justify-content-between align-items-center">
                         <h2>Coding vs Programming</h2>
@@ -43,14 +43,14 @@ export default function Blog() {
                 <div className="container">
                     <div className="row g-5">
                         <div className="col-lg-8">  
-                            <article className="blog-details glassm">
+                            <article className="blog-details bg-dg">
                                 <div className="post-img">
                                     <img src={map} alt="" className="img-fluid" />
                                 </div>  
                                 <h2 className="title">Coding vs Programming: Unraveling the Mysteries of Software Development</h2>
                                 <div className="meta-top">
                                     <ul>
-                                        <li className="d-flex align-items-center"><i className="bi bi-calendar"></i> <a href="blog-details.html"><time datetime="2024-06-25">Jun 25, 2024</time></a></li>
+                                        <li className="d-flex align-items-center"><i className="bi bi-calendar"></i> <a href="blog-details.html"><time dateTime="2024-06-25">Jun 25, 2024</time></a></li>
                                         <li className="d-flex align-items-center"><i className="bi bi-clock"></i> <a href=""><time>2.10 minutes read</time></a></li>
                                     </ul>
                                 </div>  
@@ -127,7 +127,7 @@ export default function Blog() {
                                     </ul>
                                 </div>
                             </article>  
-                            <div className="post-author glassm d-flex align-items-center">
+                            <div className="post-author bg-dg d-flex align-items-center">
                                 <img src={map} className="rounded-circle flex-shrink-0" alt="" />
                                 <div>
                                     <h4>Salay Abdul Muhaimin Kanton</h4>

@@ -18,9 +18,9 @@ const Navbar = () => {
 
   const handleWindowScroll = () => {
     if (window.scrollY > 25) {
-      navbarRef.current.classList.add("glassm");
+      navbarRef.current.classList.add("bg-dg");
     } else {
-      navbarRef.current.classList.remove("glassm");
+      navbarRef.current.classList.remove("bg-dg");
     }
   };
 

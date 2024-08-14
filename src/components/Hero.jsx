@@ -21,14 +21,14 @@ export default function Hero() {
               </div>
             </div>
             <div className="col-lg-6 hero-graph d-flex flex-column align-items-center justify-content-center">
-              <div className="hero-img-conatiner glassm glassm-card">
+              <div className="hero-img-conatiner bg-dg bg-dg-card">
                 <img
                   src={map}
                   className="img-fluid"
                   alt="Salay Abdul Muhaimin Kanton"
                 />
               </div>
-              <div className="glassm glassm-card social-links">
+              <div className="bg-dg bg-dg-card social-links">
                 <a
                   href="https://www.linkedin.com/in/muhaimin-salay-a653b6299/"
                   className="linkedin"

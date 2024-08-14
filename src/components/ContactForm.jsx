@@ -5,7 +5,7 @@ function ContactForm() {
     return <p>Thanks for sending us a message! We'll get back to you as fast as we can.</p>;
   }
   return (
-    <form onSubmit={handleSubmit} className="email-form glassm glassm-card">
+    <form onSubmit={handleSubmit} className="email-form bg-dg bg-dg-card">
       <div className="row gy-4">
         <div className="col-md-6">
             <input id="name" type="text" name="name" className="form-control" placeholder="Your Name" required />
