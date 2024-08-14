@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+import Backtotop from "../components/Backtotop";
 import verba from "../assets/images/verba.png"
 
 export default function BlogCollection() {
@@ -114,6 +115,7 @@ export default function BlogCollection() {
         </div>
       </section>
       <Footer />
+      <Backtotop />
     </>
   );
 }

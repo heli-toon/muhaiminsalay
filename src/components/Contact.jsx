@@ -51,10 +51,7 @@ export default function Contact() {
                     <i className="bi bi-envelope"></i>
                     <h3>Email</h3>
                     <p>
-                      <a
-                        href="mailto:abdulkanton2005@gmail.com"
-                        className="paralink2"
-                      >
+                      <a href="mailto:abdulkanton2005@gmail.com" className="paralink2">
                         helitoon@outlook.com
                       </a>
                     </p>
@@ -63,8 +60,8 @@ export default function Contact() {
                 <div className="col-md-6">
                   <div className="info-box glassm glassm-card">
                     <i className="bi bi-clock"></i>
-                    <h3>Open At</h3>
-                    <p>Everyday</p>
+                    <h3>Freelance</h3>
+                    <p>Available</p>
                   </div>
                 </div>
               </div>

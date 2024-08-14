@@ -160,7 +160,7 @@ export default function Footer() {
           <div className="credits">
             Designed by {" "}
             <a href="/" target="_blank">
-              SALAY
+              ME
             </a>
           </div>
         </div>

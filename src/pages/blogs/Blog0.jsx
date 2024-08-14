@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Footer from "../../components/Footer";
 import map from "../../assets/images/dotted-map-bg.webp";
+import Backtotop from "../../components/Backtotop";
+
 
 export default function Blog() {
     const [searchText, setSearchText] = useState('');
@@ -172,6 +174,7 @@ export default function Blog() {
                 </div>
             </section>
             <Footer />
+            <Backtotop />
         </>
     )
 }
