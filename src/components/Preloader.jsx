@@ -1,11 +1,9 @@
-import logo from "/loading.gif";
-
-export default function About() {
+export default function Preloader() {
   return (
     <>
-      <div className="loader">
-        <div className="loader-img">
-            <img src={logo} alt="Salay Logo Image" />
+      <div id="preloader">
+        <div className="loader">
+          <i className="bi bi-gear-fill"></i>
         </div>
       </div>
     </>
