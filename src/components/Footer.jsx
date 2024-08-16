@@ -108,7 +108,7 @@ export default function Footer() {
               </div>
 
               <div className="col-lg-2 col-6 footer-links">
-                <h4>Services</h4>
+                <h4>Expertise</h4>
                 <ul>
                   <li>
                     <i className="bi bi-chevron-right"></i>
