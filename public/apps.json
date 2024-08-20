@@ -7,7 +7,7 @@
     "description": "Verba is an authentic pocket dictionary which provides accurate and up-to-date word definitions. Compact, precise & reliable. ",
     "downloads": {
       "globe2": ["https://verba.netlify.app/"],
-      "github": ["https://github.com/heli-toon/verba"]
+      "github": ["https://github.com/heli-toon/verba/"]
     }
   },
   {
@@ -39,9 +39,9 @@
     "size": "22.0 MB",
     "description": "A comprehensive Library Management System which allows library administrators to manage the library resources with impecable ease.",
     "downloads": {
-      "windows": ["exe", "msi"],
-      "ubuntu": ["deb", "rpm"],
-      "github": ["url"]
+      "windows": ["exe"],
+      "ubuntu": ["deb"],
+      "github": ["https://github.com/heli-toon/LBSHS-LMS/"]
     }
   },
   {
@@ -51,8 +51,8 @@
     "size": "0 MB",
     "description": "QRGenie is a robust API for generating dynamic QR codes with ease. It is ideal for industries like marketing, payments and secure authentication.",
     "downloads": {
-      "link-45deg": ["url"],
-      "github": ["qrcode-api"]
+      "link-45deg": ["https://qrcode-api-six.vercel.app/"],
+      "github": ["https://github.com/heli-toon/qrcode-api/"]
     }
   },
   {
@@ -60,7 +60,7 @@
     "status": "incomplete",
     "icon": "icons/icon1.png",
     "size": "0 MB",
-    "description": "BLAH",
+    "description": "BLAH blah Lorem Ipsum dolor. amet sut compersandir okay d'accord danke thanks merci ",
     "downloads": {
       "android2": ["googleplay", "apk"],
       "windows": ["exe", "msi"],

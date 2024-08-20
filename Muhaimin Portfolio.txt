@@ -89,4 +89,3 @@ To fix the errors, you can try the following:
 3. Ensure that you have the necessary permissions and configurations enabled for screen recording.
 
 If you're still facing issues, feel free to share your code and error messages, and I'll be happy to help you troubleshoot!
-

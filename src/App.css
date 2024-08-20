@@ -832,9 +832,11 @@ nav .logo h2:hover{color: var(--white)!important;}
   line-height: 28px;
   margin-bottom: 0;
 }
-.services .icon-box:hover a,
+.services .icon-box:hover a{
+  color: var(--black);
+}
 .services .icon-box:hover p {
-  color: var(--black) !important;
+  color: var(--darkgray);
 }
 .services .icon-box:hover .icon i {
   color: var(--white);
