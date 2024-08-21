@@ -39,7 +39,7 @@
     "size": "22.0 MB",
     "description": "A comprehensive Library Management System which allows library administrators to manage the library resources with impecable ease.",
     "downloads": {
-      "windows": ["exe"],
+      "windows": ["https://github.com/heli-toon/LBSHS-LMS/releases/download/LBSHSLMS_Setup_v.1.3.0-x64.exe/LBSHSLMS_Setup_v.1.3.0-x64.exe"],
       "ubuntu": ["deb"],
       "github": ["https://github.com/heli-toon/LBSHS-LMS/"]
     }

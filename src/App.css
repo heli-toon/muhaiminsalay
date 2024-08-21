@@ -887,25 +887,14 @@ nav .logo h2:hover{color: var(--white)!important;}
   margin-bottom: 24px;
   font-weight: 600;
 }
-.contact .email-form .loading{
-  display: none;
-  background: var(--white);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
+.contact .email-form .form-control{
+  color: var(--white);
+  background: var(--black);
+  border-color: var(--darkgray);
 }
-.contact .email-form .loading:before{
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--primary);
-  border-top-color: var(--white);
-  animation: animate-loading 1s linear infinite;
+.contact .email-form .form-control::placeholder{
+  color: var(--lightgray);
 }
-.contact .email-form .form-control{color: var(--black)}
 .contact .email-form input,
 .contact .email-form textarea{
   border-radius:0;
@@ -936,10 +925,6 @@ nav .logo h2:hover{color: var(--white)!important;}
 .contact .email-form button[type="submit"]:hover{
   background: var(--primarydark);
   color: var(--black);
-}
-@keyframes animate-loading{
-  0%{transform: rotate(0deg)}
-  100%{transform: rotate(360deg)}
 }
 .footer{
   padding: 0 0 30px 0;
@@ -1103,4 +1088,17 @@ nav .logo h2:hover{color: var(--white)!important;}
 }
 .loader i{
   font-size: 20px;
+}
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    filter: blur(4px) grayscale(1);
+    /* filter: grayscale(1); */
+  }
+  100% {
+    filter: blur(0) grayscale(0);
+  }
 }

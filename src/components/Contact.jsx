@@ -12,11 +12,11 @@ export default function Contact() {
             </div>
             <p>
               I have a proven track record of delivering high-quality results
-              that exceed expectations. I&apos;m always up for a new challenge
+              that always exceed expectations. I&apos;m always up for a new challenge
               Have any questions or feedback? I&apos;d love to hear from you!
               Get in touch with via email at{" "}
               <a href="mailto:abdulkanton2005@gmail.com" className="paralink">
-                
+                abdulkanton2005@gmail.com
               </a>{" "}
               or call me at{" "}
               <a href="tel:+233535760503" className="paralink">
