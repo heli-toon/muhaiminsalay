@@ -130,12 +130,16 @@ mark{
 }
 .nav-item{padding-left: 1.5rem}
 .nav-link{
-  transition: 0.5s all ease;
+  transition: var(--anim-mid) all ease;
   color: var(--primary)!important;
   font-weight: 900!important;
   padding-left: 1rem !important;
+  border-radius: var(--border-radius-card);
 }
-.nav-link:hover{color: var(--white)!important}
+.nav-link:hover{
+  color: var(--white)!important;
+  background: var(--black);
+}
 .navbar-toggler,
 .navbar-toggler:focus{
   margin-right: 2.5rem;
@@ -160,18 +164,23 @@ nav .logo h2{
   margin-bottom:0;
 }
 nav .logo h2:hover{color: var(--white)!important;}
-@media (max-width: 768px){
+@media (max-width: 992px){
   nav{
-    background: rgba(255, 255, 255, 0.05)!important;
-    -webkit-backdrop-filter: blur(25px)!important;
-    backdrop-filter: blur(25px)!important;
+    background: var(--darkgray)!important;
     border-top: 1px solid rgba(255, 255, 255, 0.2)!important;
     border-left: 1px solid rgba(255, 255, 255, 0.2)!important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2)!important;
     box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.25)!important;
   }
   body {animation: none;}
-  .nav-item{padding-left: 0}
+  .nav-item{padding-left: 0!important}
+  .navbar-collapse {
+    border-top: 1px solid var(--lightgray);
+    margin-top: 1rem;
+  }
+}
+.nav-item{
+  padding-bottom: .75rem;
 }
 #hero{
   margin-top: 1.5rem;

@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import Home from "../pages/Home.jsx";
-import Showcase from "../pages/Showcase.jsx";
 import logo from "../assets/images/logo.webp";
 import BlogCollection from "../pages/BlogCollection.jsx";
 import Apps from "../pages/Apps.jsx";
@@ -17,7 +16,7 @@ const Navbar = () => {
   };
 
   const handleWindowScroll = () => {
-    if (window.scrollY > 25) {
+    if (window.scrollY > 20) {
       navbarRef.current.classList.add("bg-dg");
     } else {
       navbarRef.current.classList.remove("bg-dg");
@@ -91,7 +90,6 @@ const Navbar = () => {
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/showcase" element={<Showcase />} />
           <Route path="/blog" element={<BlogCollection />} />
           <Route path="/apps" element={<Apps />} />
           <Route path="/skills" element={<Skills />} />
