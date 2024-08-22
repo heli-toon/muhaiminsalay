@@ -133,7 +133,7 @@ mark{
   transition: var(--anim-mid) all ease;
   color: var(--primary)!important;
   font-weight: 900!important;
-  padding-left: 1rem !important;
+  padding-left: 0.5rem !important;
   border-radius: var(--border-radius-card);
 }
 .nav-link:hover{
@@ -173,15 +173,13 @@ nav .logo h2:hover{color: var(--white)!important;}
     box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.25)!important;
   }
   body {animation: none;}
-  .nav-item{padding-left: 0!important}
+  .nav-item{padding-left: .5rem!important}
   .navbar-collapse {
     border-top: 1px solid var(--lightgray);
     margin-top: 1rem;
   }
 }
-.nav-item{
-  padding-bottom: .75rem;
-}
+.nav-item{padding-bottom: .75rem}
 #hero{
   margin-top: 1.5rem;
   width: 100%;
