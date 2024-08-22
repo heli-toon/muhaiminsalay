@@ -9,7 +9,6 @@ const AppCard = ({ app }) => {
     <>
       <div className="col-lg-6 col-md-6">
         <div className="bg-dg app-card my-4 p-4 d-flex">
-          
           <img src={icon} alt={title} />
           <div className="app-desc">
             <h3>{title}</h3>

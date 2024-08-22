@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Xclusive Studios",
+    "status": "completed",
+    "icon": "icons/icon1.png",
+    "description": "QRGenie is a robust API for generating dynamic QR codes with ease. It is ideal for industries like marketing, payments and secure authentication.",
+    "downloads": {
+      "link-45deg": ["https://qrcode-api-six.vercel.app/"]
+    }
+  },
+  {
+    "title": "Lorem ipusm",
+    "status": "completed",
+    "icon": "icons/icon1.png",
+    "description": "Lorem ipusm dolor sit amet consetiquir blah, blah danke, ",
+    "downloads": {
+      "link-45deg": ["https://qrcode-api-six.vercel.app/"]
+    }
+  }
+]
