@@ -12,12 +12,13 @@
   },
   {
     "title": "Periodic Table",
-    "status": "completed",
+    "status": "incomplete",
     "icon": "icons/periodictable.png",
-    "size": "1.1 MB",
-    "description": "Interactive Periodic Table of Elements app for Windows. Explore elements details, history and atomic structures in a user-friendly interface.",
+    "size": "0 MB",
+    "description": "Interactive Periodic Table of Elements app. Explore elements details, history and atomic structures in a user-friendly interface.",
     "downloads": {
-      "windows": ["exe", "msi"]
+      "globe2": ["https://qrcode-api-six.vercel.app/"],
+      "github": ["https://github.com/heli-toon/qrcode-api/"]
     }
   },
   {
@@ -29,7 +30,7 @@
     "downloads": {
       "android2": ["googleplay", "apk"],
       "apple": ["dmg", "pkg"],
-      "link-45deg": ["url"]
+      "globe2": ["url"]
     }
   },
   {

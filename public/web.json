@@ -1,11 +1,21 @@
 [
   {
-    "title": "Xclusive Studios",
+    "title": "Labone SHS Home Economics",
     "status": "completed",
-    "icon": "icons/icon1.png",
-    "description": "QRGenie is a robust API for generating dynamic QR codes with ease. It is ideal for industries like marketing, payments and secure authentication.",
+    "icon": "icons/labhome.png",
+    "description": "This was a project for the Labone SHS IT Week Celebration 2023. With the theme 'Digital Inclusiveness, the way forward', this project was meant to close the gap in teaching & learning Home Economics through IT.",
     "downloads": {
-      "link-45deg": ["https://qrcode-api-six.vercel.app/"]
+      "globe2": ["https://labhome.netlify.app/"],
+      "github": ["https://github.com/heli-toon/IT-Week-Project/"]
+    }
+  },
+  {
+    "title": "Jay's Shoecare",
+    "status": "completed",
+    "icon": "icons/jayshoecare.png",
+    "description": "A landing page for a sneaker cleaning, customization and restoration service.",
+    "downloads": {
+      "globe2": ["https://jayshoecare.netlify.app/"]
     }
   },
   {
