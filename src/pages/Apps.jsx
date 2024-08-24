@@ -32,7 +32,7 @@ const Apps = () => {
         <div className="container">
           <header className="section-header">
             <div className="section-title">
-              <h1>Apps</h1>
+              <h2>Apps</h2>
               <span className="line-bar">...</span>
             </div>
             <p>
@@ -58,7 +58,7 @@ const Apps = () => {
         <div className="container">
           <header className="section-header">
             <div className="section-title text-center">
-              <h1>Websites</h1>
+              <h2>Websites</h2>
               <span className="line-bar">...</span>
             </div>
             <p className="text-center">

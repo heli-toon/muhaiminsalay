@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import "./App.css";
-import "./assets/bootstrap.min.css";
 import "./assets/bootstrap-icons.min.css";
+import "./assets/bootstrap.min.css";
+import "./App.css";
 import Navbar from "./components/Navbar";
 import Preloader from "./components/Preloader";
 import FadeInAnimation from "./components/FadeInAnimation";

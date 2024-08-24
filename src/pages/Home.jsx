@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import Portfolio from "../components/Portfolio";
 import Backtotop from "../components/Backtotop";
 import Expertise from "../components/Expertise";
+import Resume from "../components/Resume";
 
 export default function Home() {
   window.document.title = "Muhaimin Abdul Salay Kanton | Home";
@@ -12,6 +13,7 @@ export default function Home() {
     <>
       <Hero />
       <About />
+      <Resume />
       <Expertise />
       <Portfolio />
       <Contact />

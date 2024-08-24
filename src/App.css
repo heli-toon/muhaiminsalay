@@ -44,7 +44,7 @@ body {
   background: var(--black)!important;
   color: var(--white)!important;
   overflow-x: hidden;
-  font-family: "Poppins", Inter, sans-serif, system-ui!important;
+  font-family: "Poppins", Inter, sans-serif, system-ui;
 }
 @font-face{
   font-family: "Poppins";
@@ -62,14 +62,14 @@ h3,h4,
 h5,h6 {
   font-display: swap;
   font-family: "Cabin","Ubuntu", serif;
-  font-weight: 800;
+  font-weight: 600;
   line-height: inherit;
   letter-spacing: .5px;
-  color: var(--primary)!important;
+  color: var(--primary);
 }
 a{
   transition: var(--anim-short);
-  text-decoration: none!important;
+  text-decoration: none;
 }
 section{
   padding-top: 80px;
@@ -98,11 +98,10 @@ a.paralink:hover{color: var(--primarydark)}
   line-height:0;
 }
 mark{
-  background: var(--primarydark)!important;
-  color: var(--white)!important;
-  border-radius: 5px !important;
+  background: var(--primarydark);
+  color: var(--white);
+  border-radius: 5px;
 }
-.section-title h2{margin-bottom: 0}
 .line-bar{
   color: var(--lightgray);
   display: block;
@@ -145,7 +144,6 @@ mark{
   margin-right: 2.5rem;
   outline: 0!important;
   border: none!important;
-  margin-right: 1em!important;
 }
 nav .logo{
   font-size: 32px;
@@ -158,12 +156,6 @@ nav .logo img{
   height: 35px;
   max-height: 35px;
 }
-nav .logo h2{
-  color: var(--primary)!important;
-  transition: 0.5s all;
-  margin-bottom:0;
-}
-nav .logo h2:hover{color: var(--white)!important;}
 @media (max-width: 992px){
   nav{
     background: var(--darkgray)!important;
@@ -272,6 +264,59 @@ nav .logo h2:hover{color: var(--white)!important;}
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding: 10px;
+}
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--lightgray);
+  text-align: left;
+}
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid var(--primary);
+  position: relative;
+  text-align: left;
+}
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: var(--darkgray);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--white);
+  border-radius: var(--border-radius-card);
+}
+.resume .resume-item ul {padding-left: 20px}
+.resume .resume-item ul li {padding-bottom: 10px}
+.resume .resume-item:last-child {padding-bottom: 0}
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: var(--primary);
+  border: 2px solid var(--primarydark);
+}
+.resume .resume-item a{
+  color: var(--primary);
 }
 .portfolio .portfolio-item{margin-bottom: 30px}
 .portfolio #portfolio-flters{
@@ -491,7 +536,7 @@ nav .logo h2:hover{color: var(--white)!important;}
   font-weight: 600;
   transition: var(--anim-short);
   margin-top: 15px;
-  padding: 0.8rem !important;
+  padding: 0.8rem;
   width: 60%;
 }
 .recent-blog-posts .post-box .readmore i {
@@ -537,7 +582,7 @@ nav .logo h2:hover{color: var(--white)!important;}
   content: "/";
 }
 @media (max-width: 992px) {
-  .breadcrumbs .d-flex {display: block !important;}
+  .breadcrumbs .d-flex {display: block;}
   .breadcrumbs h2 {
     margin-bottom: 10px;
     font-size: 24px;
