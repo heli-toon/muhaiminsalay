@@ -10,21 +10,21 @@
     }
   },
   {
-    "title": "Jay's Shoecare",
+    "title": "Jay's Shoe Care",
     "status": "completed",
     "icon": "icons/jayshoecare.png",
-    "description": "A landing page for a sneaker cleaning, customization and restoration service.",
+    "description": "Crafted a brand landing page to promote a high-end shoe care sneaker cleaning, customization and restoration service.",
     "downloads": {
       "globe2": ["https://jayshoecare.netlify.app/"]
     }
   },
   {
-    "title": "Lorem ipusm",
+    "title": "Gace Core",
     "status": "completed",
-    "icon": "icons/icon1.png",
-    "description": "Lorem ipusm dolor sit amet consetiquir blah, blah danke, ",
+    "icon": "icons/gacecore.webp",
+    "description": "Developed a landing page website for a game centre management system software, showcasing it's features and hosting it's downloads and documentation.",
     "downloads": {
-      "link-45deg": ["https://qrcode-api-six.vercel.app/"]
+      "globe2": ["https://gamecentremanagementsystem.web.app/"]
     }
   }
 ]

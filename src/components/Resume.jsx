@@ -7,13 +7,13 @@ function Resume(){
             <h2>Resume</h2>
             <span className="line-bar">...</span>
           </div>
-          <p>Highly creative and detail-oriented web developer, branding specialist and video editor. Proficient in a range of design tools and software, with a passion of delivering innovative and effective solutions.</p>
+          <p>Highly creative and detail-oriented web developer. Proficient in a range of software solutions, with a passion of delivering innovative and effective solutions.</p>
           <div class="row">
             <div class="col-lg-6">
               <h3 class="resume-title">Summary</h3>
               <div class="resume-item pb-0">
                 <h4>Salay Abdul Muhaimin Kanton</h4>
-                <p><em>Innovative and deadline-driven web developer with 3+ years of experience designing and developing user-centered websites from initial concept to final, polished deliverable.</em></p>
+                <p><em>Innovative web developer with 3+ years of experience designing and developing user-centered websites from initial concept to final, polished deliverable websites.</em></p>
                 <ul>
                   <li>Mamobi, Accra, Ghana</li>
                   <li><a href="tel:+233535760503">+233 53 576 0503</a></li>
@@ -43,20 +43,20 @@ function Resume(){
             <div class="col-lg-6">
               <h3 class="resume-title">Professional Experience</h3>
               <div class="resume-item">
-                <h4>Graphic Designer and Video Editor</h4>
+                <h4>Frontend Web Developer</h4>
                 <h5>2023 - Present</h5>
-                <p><em>Hexohub Limited, Spintex-Accra</em></p>
+                <p><em>Verix Solutions Ltd. Accra</em></p>
                 <ul>
-                  <li>Conceptualize and design engaging visual materials, including logos and social media graphics and promotional videos.</li>
-                  <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+                  <li>Conceptualize and design engaging websites.</li>
+                  <li>Developed numerous web application programs.</li>
                 </ul>
               </div>
               <div class="resume-item">
-                <h4>Freelance Graphic Designer and Video Editor</h4>
-                <h5>2020 - Present</h5>
-                <p><em>Self-employed, Greda Estates-Teshie, Accra</em></p>
+                <h4>Freelance Web Developer and Desktop App Developer</h4>
+                <h5>2022 - Present</h5>
+                <p><em>Self-employed, Mamobi, Accra</em></p>
                 <ul>
-                  <li>Managed various freelance projects for clients in diverse industries like the corporate institutions, retail etc. Demonstrating adaptability and versatility in Website Development</li>
+                  <li>Managed various freelance projects for clients in diverse industries like the corporate institutions, retail services etc. Demonstrating adaptability and versatility in Website Development</li>
                   <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
                   <li>Recommended and consulted with clients on the most appropriate websites and apps</li>
                 </ul>

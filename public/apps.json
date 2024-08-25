@@ -17,8 +17,8 @@
     "size": "0 MB",
     "description": "Interactive Periodic Table of Elements app. Explore elements details, history and atomic structures in a user-friendly interface.",
     "downloads": {
-      "globe2": ["https://qrcode-api-six.vercel.app/"],
-      "github": ["https://github.com/heli-toon/qrcode-api/"]
+      "globe2": ["/"],
+      "github": ["https://github.com/heli-toon/periodictable/"]
     }
   },
   {
@@ -30,7 +30,7 @@
     "downloads": {
       "android2": ["googleplay", "apk"],
       "apple": ["dmg", "pkg"],
-      "globe2": ["url"]
+      "globe2": ["https://sendmeweb.netlify.app/"]
     }
   },
   {
@@ -40,7 +40,7 @@
     "size": "22.0 MB",
     "description": "A comprehensive Library Management System which allows library administrators to manage the library resources with impecable ease.",
     "downloads": {
-      "windows": ["https://github.com/heli-toon/LBSHS-LMS/releases/download/LBSHSLMS_Setup_v.1.3.0-x64.exe/LBSHSLMS_Setup_v.1.3.0-x64.exe"],
+      "windows": ["https://github.com/heli-toon/LBSHS-LMS/releases/download/LBSHSLMS_Setup_v.1.3.0-x64.exe/LBSHSLMS_Setup_v.1.3.0-x64.exe/"],
       "ubuntu": ["deb"],
       "github": ["https://github.com/heli-toon/LBSHS-LMS/"]
     }
@@ -54,22 +54,6 @@
     "downloads": {
       "link-45deg": ["https://qrcode-api-six.vercel.app/"],
       "github": ["https://github.com/heli-toon/qrcode-api/"]
-    }
-  },
-  {
-    "title": "App 1",
-    "status": "incomplete",
-    "icon": "icons/icon1.png",
-    "size": "0 MB",
-    "description": "BLAH blah Lorem Ipsum dolor. amet sut compersandir okay d'accord danke thanks merci ",
-    "downloads": {
-      "android2": ["googleplay", "apk"],
-      "windows": ["exe", "msi"],
-      "ubuntu": ["deb", "rpm"],
-      "apple": ["dmg", "pkg"],
-      "link-45deg": ["url"],
-      "browser-chrome": ["chrome"],
-      "github": ["url"]
     }
   }
 ]
