@@ -8,11 +8,11 @@ function ContactForm() {
     <form onSubmit={handleSubmit} className="email-form bg-dg bg-dg-card">
       <div className="row gy-4">
         <div className="col-md-6">
-            <input id="name" type="text" name="name" className="form-control" placeholder="Your Name" required />
+            <input id="name" type="text" name="name" className="form-control" placeholder="Your Name" autoComplete="name" required />
             <ValidationError prefix="Name" field="name" errors={state.errors} />
         </div>
         <div className="col-md-6">
-            <input id="email" type="email" name="email" className="form-control" placeholder="Your Email" required />
+            <input id="email" type="email" name="email" className="form-control" placeholder="Your Email" autoComplete="email" required />
             <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
         <div className="col-md-12">
