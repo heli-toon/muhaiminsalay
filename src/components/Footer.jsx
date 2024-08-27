@@ -89,12 +89,12 @@ export default function Footer() {
                 <h4>Useful Links</h4>
                 <ul>
                   <li>
-                    <i className="bi bi-chevron-right"></i>{" "}
+                    <i className="bi bi-chevron-right"></i>
                     <a href="/#about">About Me</a>
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <a href="/#portfolio">Portfolio</a>
+                    <a href="/#contact">Contacts</a>
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
