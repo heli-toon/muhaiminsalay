@@ -820,6 +820,7 @@ nav .logo img{
   transition: 0.4s;
   border-radius: 4px;
 }
+.contact .email-form button[type="submit"]:disabled,
 .contact .email-form button[type="submit"]:hover{
   background: var(--primarydark);
   color: var(--black);
