@@ -55,5 +55,15 @@
       "link-45deg": ["https://qrcode-api-six.vercel.app/"],
       "github": ["https://github.com/heli-toon/qrcode-api/"]
     }
+  },
+  {
+    "title": "Smart Lighting Automation",
+    "status": "incomplete",
+    "icon": "icons/arduinoproj.jpg",
+    "size": "20 B",
+    "description": "An ardunio based system that automatically controls lights ensuring efficiency and seamless ambience of control. Experience a blend of tech and convience.",
+    "downloads": {
+      "github": ["https://github.com/heli-toon/lights-automation/"]
+    }
   }
 ]
