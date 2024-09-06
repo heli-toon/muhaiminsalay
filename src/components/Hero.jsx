@@ -1,4 +1,4 @@
-import map from "../assets/images/dotted-map-bg.webp";
+import map from "/menobackground.png";
 export default function Hero() {
   return (
     <>
@@ -57,7 +57,7 @@ export default function Hero() {
                   <i className="bi bi-github"></i>
                 </a>
                 <a
-                  href="https://www.wa.me/233535760503"
+                  href="https://www.wa.me/233535760503/"
                   className="whatsapp"
                   title="WhatsApp Number"
                   target="_blank"

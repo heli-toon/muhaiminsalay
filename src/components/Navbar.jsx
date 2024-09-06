@@ -2,10 +2,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import Home from "../pages/Home.jsx";
 import logo from "../assets/images/logo.webp";
-import BlogCollection from "../pages/BlogCollection.jsx";
+// import BlogCollection from "../pages/BlogCollection.jsx";
 import Apps from "../pages/Apps.jsx";
-import Blog0 from "../pages/blogs/Blog0.jsx";
-import Skills from "../pages/Skills.jsx";
+// import Blog0 from "../pages/blogs/Blog0.jsx";
+// import Skills from "../pages/Skills.jsx";
 
 const Navbar = () => {
   const [showNavbarCollapse, setShowNavbarCollapse] = useState(false);
@@ -73,13 +73,13 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/apps">Apps</a>
+                <a className="nav-link" href="#apps">Apps</a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link" href="/blog">
                   Blog
                 </a>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <a className="nav-link" href="/#contact">
                   Contact
@@ -90,10 +90,10 @@ const Navbar = () => {
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<BlogCollection />} />
-          <Route path="/apps" element={<Apps />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/blog/0" element={<Blog0 />} />
+          {/* <Route path="/blog" element={<BlogCollection />} /> */}
+          <Route path="#apps" element={<Apps />} />
+          {/* <Route path="/skills" element={<Skills />} /> */}
+          {/* <Route path="/blog/0" element={<Blog0 />} /> */}
         </Routes>
       </BrowserRouter>
     </>
