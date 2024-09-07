@@ -15,7 +15,7 @@ export default function Hero() {
                 your vision to life.
               </p>
               <div className="d-flex justify-content-center justify-content-lg-start">
-                <a href="/apps" className="btn-get-started scrollto">
+                <a href="/#apps" className="btn-get-started scrollto">
                   Explore My Work <i className="bi bi-chevron-right"></i>
                 </a>
               </div>

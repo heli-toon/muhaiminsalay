@@ -98,7 +98,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <a href="/apps">Apps</a>
+                    <a href="/#apps">Apps</a>
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
@@ -112,19 +112,19 @@ export default function Footer() {
                 <ul>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <a href="/apps">Desktop Apps</a>
+                    <a href="/#apps">Desktop Apps</a>
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <a href="/apps">Web Apps</a>
+                    <a href="/#apps">Web Apps</a>
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <a href="/apps">Websites</a>
+                    <a href="/#apps">Websites</a>
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <a href="/apps">APIs</a>
+                    <a href="/#apps">APIs</a>
                   </li>
                 </ul>
               </div>
