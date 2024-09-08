@@ -65,5 +65,15 @@
     "downloads": {
       "github": ["https://github.com/heli-toon/lights-automation/"]
     }
+  },
+  {
+    "title": "Pulsenet.io",
+    "status": "incomplete",
+    "icon": "icons/pulsenetio.png",
+    "size": "0 MB",
+    "description": "A simple social media app for authentic connections. Designed to facilitate to meaning to meaningful interactions and community building.",
+    "downloads": {
+      "github": ["https://github.com/heli-toon/pulsenetio/"]
+    }
   }
 ]
