@@ -133,7 +133,7 @@ export default function Blog() {
                                     <h4>Salay Abdul Muhaimin Kanton</h4>
                                     <div className="social-links">
                                         <a href="https://x.com/SalayAbdul"><i className="bi bi-twitter-x"></i></a>
-                                        <a href="https://facebook.com/#"><i className="bi bi-facebook"></i></a>
+                                        <a href="https://www.facebook.com/profile.php?id=61552612385341"><i className="bi bi-facebook"></i></a>
                                         <a href="https://www.instagram.com/heli.toon/"><i className="bi bi-instagram"></i></a>
                                     </div>
                                     <p>
