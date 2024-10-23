@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import AppCard from "../components/AppCard";
-import Footer from "../components/Footer";
 import WebCard from "../components/WebCard";
 
 const Apps = () => {
@@ -11,16 +10,16 @@ const Apps = () => {
   //     "content",
   //     "Discover all of Muhaimin's projects & creations. Download and experience innovation."
   //   );
-  const [data, setData] = React.useState([]);
-  const [data2, setData2] = React.useState([]);
+  const [data, setData] = useState([]);
+  const [data2, setData2] = useState([]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     fetch("apps.json")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     fetch("web.json")
       .then((response) => response.json())
       .then((data) => setData2(data));
@@ -28,10 +27,10 @@ const Apps = () => {
 
   return (
     <>
-      <section className="apps">
+      <section className="app-projects">
         <div className="container">
           <header className="section-header">
-            <div className="section-title">
+            <div className="section-title text-center">
               <h2>Apps</h2>
               <span className="line-bar">...</span>
             </div>
@@ -44,8 +43,6 @@ const Apps = () => {
             </p>
           </header>
         </div>
-      </section>
-      <section className="app-projects">
         <div className="container">
           <div className="row apps-container">
             {data.map((app) => (

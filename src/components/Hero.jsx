@@ -1,5 +1,8 @@
 import map from "/menobackground.png";
 export default function Hero() {
+  const handleContextMenu = (e) =>{
+    e.preventDefault()
+  }
   return (
     <>
       <section id="hero" className="d-flex align-items-center">
@@ -25,7 +28,9 @@ export default function Hero() {
                 <img
                   src={map}
                   className="img-fluid"
-                  alt="Salay Abdul Muhaimin Kanton"
+                  alt="Salay Abdul Muhaimin Kanton Photo"
+                  draggable="false"
+                  onContextMenu={handleContextMenu}
                 />
               </div>
               <div className="bg-dg bg-dg-card social-links">

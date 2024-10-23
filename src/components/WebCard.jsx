@@ -18,7 +18,7 @@
                 <ul className="d-flex download-icons">
                   {platforms.map((platform) => (
                     <li key={platform}>
-                      <a href={downloads[platform].join(", ")} target="_blank" title={downloads}>
+                      <a href={downloads[platform].join(", ")} target="_blank" title={downloads[platform]}>
                         <i className={`bi bi-${platform}`}></i>
                       </a>
                     </li>
