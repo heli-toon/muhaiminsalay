@@ -35,9 +35,9 @@ function Resume(){
               </div>
               <div className="resume-item">
                 <h4>Certificates</h4>
-                <h5>2020 - 2023</h5>
+                <h5>2021 - 2024</h5>
                 <p><em>Certification Programs</em></p>
-                <p>SoloLearn HTML, CSS, JavaScript</p>
+                <p>SoloLearn HTML, CSS, JavaScript & Python</p>
               </div>
             </div>
             <div className="col-lg-6">

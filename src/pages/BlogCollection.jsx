@@ -20,7 +20,7 @@ export default function BlogCollection() {
             <div className="col-lg-4 col-md-6 my-4">
               <div className="post-box bg-dg">
                 <div className="post-img">
-                  <img src={verba} className="img-fluid" alt="" />
+                  <img src="/blog/cvp.jpg" className="img-fluid" alt="" />
                 </div>
                 <div className="meta d-flex align-items-center">
                   <div className="meta-date">
@@ -33,7 +33,7 @@ export default function BlogCollection() {
                   </div>
                 </div>
                 <h3 className="post-title">
-                  Coding vs Programming: Unraveling the Mysteries of Software Development
+                  Coding vs Programming
                 </h3>
                 <p>
                   In the world of software development, two terms are often used interchangeably: coding and programming. 
@@ -65,7 +65,7 @@ export default function BlogCollection() {
                   </div>
                 </div>
                 <h3 className="post-title">
-                  Et repellendus molestiae qui est sed omnis voluptates magnam
+                  Coming Very Soon
                 </h3>
                 <p>
                   Voluptatem nesciunt omnis libero autem tempora enim ut ipsam
@@ -98,7 +98,7 @@ export default function BlogCollection() {
                   </div>
                 </div>
                 <h3 className="post-title">
-                  Quia assumenda est et veritatis aut quae
+                  Coming Soon
                 </h3>
                 <p>
                   Quia nam eaque omnis explicabo similique eum quaerat similique

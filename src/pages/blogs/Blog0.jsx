@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Footer from "../../components/Footer";
-import map from "../../assets/images/dotted-map-bg.webp";
 import Backtotop from "../../components/Backtotop";
-
 
 export default function Blog() {
     const [searchText, setSearchText] = useState('');
@@ -45,7 +43,7 @@ export default function Blog() {
                         <div className="col-lg-8">  
                             <article className="blog-details bg-dg">
                                 <div className="post-img">
-                                    <img src={map} alt="" className="img-fluid" />
+                                    <img src="/blog/cvp.jpg" alt="" className="img-fluid" />
                                 </div>  
                                 <h2 className="title">Coding vs Programming: Unraveling the Mysteries of Software Development</h2>
                                 <div className="meta-top">
@@ -128,7 +126,7 @@ export default function Blog() {
                                 </div>
                             </article>  
                             <div className="post-author bg-dg d-flex align-items-center">
-                                <img src={map} className="rounded-circle flex-shrink-0" alt="" />
+                                <img src="/menobackground.png" className="rounded-circle flex-shrink-0" alt="" />
                                 <div>
                                     <h4>Salay Abdul Muhaimin Kanton</h4>
                                     <div className="social-links">

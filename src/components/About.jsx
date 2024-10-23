@@ -9,10 +9,10 @@ export default function About() {
               <span className="line-bar">...</span>
             </div>
             <p>
-              Hello, I'm Salay Abdul Muhaimin Kanton, a passionate web developer
-              and desktop application creator with a strong foundation in both
-              frontend and backend development. With 3 years of learning and
-              building experience, I specialize in creating dynamic websites
+              Hello, I'm Salay Abdul Muhaimin Kanton, a passionate full-stack 
+              developer and desktop application creator with a strong foundation 
+              in both frontend and backend development. With 3 years of learning 
+              and building experience, I specialize in creating dynamic websites
               using React, HTML, CSS and Javascript for the frontend, and Django
               and Flask for the backend. I also have a keen interest in
               exploring the world of Internet of Things (IoT) with Arduino and
