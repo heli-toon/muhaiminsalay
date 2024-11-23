@@ -21,7 +21,7 @@ html{
   scrollbar-color: var(--primary) var(--black);
 }
 *:before,*:after{box-sizing: border-box}
-html::-webkit-scrollbar{width: 0.85vw}
+html::-webkit-scrollbar{width: 0.9vw}
 html::-webkit-scrollbar-thumb {
   background-color: var(--primary);
   border-radius: var(--border-radius-card);
@@ -107,62 +107,126 @@ mark{
   border-right: 1px solid rgba(255, 255, 255, 0.2)!important;
 }
 .bg-dg-card{border-radius: var(--border-radius-card)!important}
-#navbar{
-  transition: background var(--anim-mid) ease-in-out;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+#header{
+  transition:all var(--anim-mid);
+  z-index:997;
+  padding:1rem 0;
+  background-color:transparent;
+  border-radius:0  0 var(--border-rad-card) var(--border-rad-card);
 }
-.navbar-brand{margin-left: 2.5rem!important}
-#navbarNav{
-  justify-content: flex-end;
-  margin-right: 2em;
-  margin-left: 2em;
-  color: var(--primary)!important;
+#header .logo{
+  font-size:2rem;
+  margin:0;
+  padding:0;
+  line-height:1;
+  font-weight:600;
+  letter-spacing:2px;
+  display: flex;
 }
-.nav-item{padding-left: 1.5rem}
-.nav-link{
-  transition: var(--anim-mid) all ease;
-  color: var(--primary)!important;
-  font-weight: 900!important;
-  padding-left: 0.5rem !important;
+#header .logo img{
+  align-self: center;
+  width: 4rem;
+}
+.header-wrapper{
+  display:flex;
+  justify-content:space-between;
+}
+.navbar{padding:0}
+.navbar ul{
+  margin:0;
+  padding:0;
+  display:flex;
+  gap: 2.5rem;
+  list-style:none;
+  align-items:center;
+  justify-content: center;
+  margin:0.7rem 0 0.7rem 0;
+}
+.navbar li{position:relative}
+.navbar a,
+.navbar a:focus{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  font-size:1rem;
+  font-weight:600;
+  color:var(--white1);
+  white-space:nowrap;
+  transition:var(--anim-short);
+}
+.navbar .nav-link {
+  padding: .35rem;
   border-radius: var(--border-radius-card);
 }
+.navbar a:hover,
+.navbar .nav-link a.active{color:var(--primary);}
 .nav-link:hover{
-  color: var(--white)!important;
+  color: var(--primary)!important;
   background: var(--black);
 }
-.navbar-toggler,
-.navbar-toggler:focus{
-  margin-right: 2.5rem;
-  outline: 0!important;
-  border: none!important;
+/*--------------------
+  * Desktop Navigation 
+-----------------------*/
+/* Mobile Nav */
+.mobile-nav-toggle{
+  color:var(--primary);
+  font-size:2rem;
+  cursor:pointer;
+  display:none;
+  line-height:0;
+  transition:var(--anim-short);
 }
-nav .logo{
-  font-size: 32px;
-  margin-bottom:0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-nav .logo a{color: var(--primary)}
-nav .logo img{
-  height: 35px;
-  max-height: 35px;
-}
-@media (max-width: 992px){
-  nav{
-    background: var(--darkgray)!important;
-    border-top: 1px solid rgba(255, 255, 255, 0.2)!important;
-    border-left: 1px solid rgba(255, 255, 255, 0.2)!important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2)!important;
+.mobile-nav-toggle:hover{color:var(--white1)}
+@media (max-width:991px){
+  .mobile-nav-toggle{display:block}
+  .navbar ul{
+    display:none; 
+    gap: 2.5rem;
   }
-  body {animation: none}
-  .nav-item{padding-left: .5rem!important}
-  .navbar-collapse {
-    border-top: 1px solid var(--lightgray);
-    margin-top: 1rem;
-  }
+  #header{background: var(--darkgray)!important}
 }
-.nav-item{padding-bottom: .75rem}
+.navbar-mobile{
+  position:fixed !important;
+  overflow:hidden;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  background:rgba(0, 0, 0, 0.8);
+  transition:var(--anim-short);
+  z-index:999;
+}
+.navbar-mobile .mobile-nav-toggle{
+  position:absolute;
+  top:15px;
+  right:15px;
+}
+.navbar-mobile ul{
+  display:block;
+  position:absolute;
+  top:55px;
+  right:15px;
+  bottom:15px;
+  left:15px;
+  padding:0.7rem 0;
+  border-radius:var(--border-rad-card) !important;
+  background:var(--darkgray);
+  overflow-y:auto;
+  transition:var(--anim-short);
+  color:var(--white1) !important;
+}
+.navbar-mobile a,
+.navbar-mobile a:focus{
+  padding:0.7rem 1.4rem !important;
+  font-size:1rem;
+  color:var(--white1);
+}
+.navbar ul:last-child a{
+  color: var(--black1) !important;
+}
 #hero{
   margin-top: 1.5rem;
   width: 100%;

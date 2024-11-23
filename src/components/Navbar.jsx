@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import Home from "../pages/Home.jsx";
 import logo from "../assets/images/logo.webp";
@@ -10,13 +10,19 @@ import Blog0 from "../pages/blogs/Blog0.jsx";
 const Navbar = () => {
   const [showNavbarCollapse, setShowNavbarCollapse] = useState(false);
   const navbarRef = useRef(null);
+  const navbarIconRef = useRef(null)
 
   const handleToggleNavbarCollapse = () => {
     setShowNavbarCollapse(!showNavbarCollapse);
+    if (showNavbarCollapse == false){
+      navbarIconRef.current.classList.add('bi-x')
+    }else{
+      navbarIconRef.current.classList.remove('bi-x')
+    }
   };
 
   const handleWindowScroll = () => {
-    if (window.scrollY > 20) {
+    if (window.scrollY > 25) {
       navbarRef.current.classList.add("bg-dg");
     } else {
       navbarRef.current.classList.remove("bg-dg");
@@ -30,42 +36,32 @@ const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    window.addEventListener("scroll", handleWindowScroll);
+    return () => {
+      window.removeEventListener("scroll", handleWindowScroll);
+    };
+  }, []);
+
   return (
     <>
       <BrowserRouter>
-        <nav
-          id="navbar"
-          className="navbar navbar-expand-lg navbar-dark fixed-top"
-          ref={navbarRef}
-        >
-          <a
-            className="navbar-brand justify-content-center logo d-flex flex-row"
-            href="/#"
-            title="Portfolio Home"
-          >
-            <img src={logo} width={70} height={35} alt="Muhaimin Salay Logo" />
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle Navigation"
-            onClick={handleToggleNavbarCollapse}
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div
-            className={`collapse navbar-collapse ${
-              showNavbarCollapse ? "show" : ""
-            }`}
-            id="navbarNav"
-          >
-            <ul className="navbar-nav">
+        <header id="header" className="fixed-top" ref={navbarRef}>
+          <div className="header-wrapper container d-flex align-items-center justify-content-lg-between space-between">
+            <div className="d-flex flex-row align-items-center justify-content-center">
+              <a className="logo me-auto me-lg-0" title="Home" href="/">
+                <img src={logo} width={56} height={56} className="img-fluid" alt="Verix Solutions Ltd. Logo" />
+              </a>
+              <h1 className="logo me-auto me-lg-0 hide-m d-none">
+                <Link title="Verix Solutions Ltd." href="/">
+                  Verix Solution
+                </Link>
+              </h1>
+            </div>
+            <nav id="navbar" className={`navbar order-last order-lg-0 ${showNavbarCollapse ? "navbar-mobile" : ""}`} >
+              <ul>
               <li className="nav-item active">
-                <a className="nav-link" href="/#">Home</a>
+                <Link className="nav-link" to="/#">Home</Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/#about">
@@ -73,21 +69,23 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#apps">Apps</a>
+                <a className="nav-link" href="/#apps">Apps</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/blog">
+                <Link className="nav-link" to="/blog">
                   Blog
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/#contact">
                   Contact
                 </a>
               </li>
-            </ul>
+              </ul>
+              <i className="bi bi-list mobile-nav-toggle" ref={navbarIconRef} onClick={handleToggleNavbarCollapse}></i>
+            </nav>
           </div>
-        </nav>
+        </header>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<BlogCollection />} />

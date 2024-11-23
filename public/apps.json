@@ -48,7 +48,7 @@
   {
     "title": "QRGenie",
     "status": "completed",
-    "icon": "icons/icon1.png",
+    "icon": "",
     "size": "0 MB",
     "description": "QRGenie is a robust API for generating dynamic QR codes with ease. It is ideal for industries like marketing, payments and secure authentication.",
     "downloads": {
