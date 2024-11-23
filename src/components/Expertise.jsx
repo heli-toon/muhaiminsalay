@@ -51,8 +51,8 @@ function Expertise() {
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                 <div className="icon-box bg-dg bg-dg-card">
                   <div className="icon"><i className="bi bi-server"></i></div>
-                  <h4><a href="/#apps">Django Backend</a></h4>
-                  <p>Leverage the power of Django to build robust, scalable backend solutions that drive buisness growth and innovation.</p>
+                  <h4><a href="/#apps">Django & Flask Backend</a></h4>
+                  <p>Leverage the power of Django / Flask to build robust, scalable backend solutions that drive buisness growth and innovation.</p>
                 </div>
             </div>
           </div>

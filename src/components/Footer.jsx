@@ -21,65 +21,25 @@ export default function Footer() {
                   every desicion to create something truly remarkable.
                 </p>
                 <div className="social-links mt-3">
-                  <a
-                    href="https://x.com/SalayAbdul"
-                    className="twitter"
-                    title="Twitter Account"
-                    target="_blank"
-                  >
+                  <a href="https://x.com/SalayAbdul" className="twitter" title="Twitter Account" target="_blank" rel="noreferrer">
                     <i className="bi bi-twitter-x"></i>
                   </a>
-                  <a
-                    href="https://www.facebook.com/profile.php?id=61552612385341&mibextid=ZbWKwL"
-                    className="facebook"
-                    title="Facebook Page"
-                    target="_blank"
-                  >
+                  <a href="https://www.facebook.com/profile.php?id=61552612385341&mibextid=ZbWKwL" className="facebook" title="Facebook Page" target="_blank" rel="noreferrer">
                     <i className="bi bi-facebook"></i>
                   </a>
-                  <a
-                    href="https://www.linkedin.com/in/muhaimin-salay-a653b6299/"
-                    className="linkedin"
-                    title="LinkedIn Account"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href="https://www.linkedin.com/in/muhaimin-salay-a653b6299/" className="linkedin" title="LinkedIn Account" target="_blank" rel="noreferrer">
                     <i className="bi bi-linkedin"></i>
                   </a>
-                  <a
-                    href="https://www.instagram.com/heli.toon/"
-                    className="instagram"
-                    title="Instagram Page"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href="https://www.instagram.com/heli.toon/" className="instagram" title="Instagram Page" target="_blank" rel="noreferrer">
                     <i className="bi bi-instagram"></i>
                   </a>
-                  <a
-                    href="https://www.github.com/heli-toon/"
-                    className="github"
-                    title="GitHub Profile"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href="https://www.github.com/heli-toon/" className="github" title="GitHub Profile" target="_blank" rel="noreferrer">
                     <i className="bi bi-github"></i>
                   </a>
-                  <a
-                    href="https://www.wa.me/233535760503/"
-                    className="whatsapp"
-                    title="WhatsApp Number"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href="https://www.wa.me/233535760503/" className="whatsapp" title="WhatsApp Number" target="_blank" rel="noreferrer">
                     <i className="bi bi-whatsapp"></i>
                   </a>
-                  <a
-                    href="mailto:abdulkanton2005@gmail.com"
-                    className="envelope"
-                    title="Email Address"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href="mailto:abdulkanton2005@gmail.com" className="envelope" title="Email Address" target="_blank" rel="noreferrer">
                     <i className="bi bi-envelope"></i>
                   </a>
                 </div>
@@ -160,7 +120,7 @@ export default function Footer() {
           <div className="credits">
             Designed by {" "}
             <a href="/" target="_blank">
-              ME
+              SALAY
             </a>
           </div>
         </div>

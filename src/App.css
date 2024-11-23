@@ -2,12 +2,13 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
-  --black: #252525;
+  --black: #0c0c0c;
+  --black2: #252525;
   --primary: #f6700d;
   --primarydark: #d28338;
-  --white: #f1f2f5;
-  --darkgray: #414141;
-  --lightgray: #bebebe;
+  --white: #fff;
+  --darkgray: #2e2e2e;
+  --lightgray: #d8d8d8;
   --border-radius-card: 8px;
   --anim-short: 250ms;
   --anim-mid: 600ms;
