@@ -39,11 +39,11 @@ body {
   background: var(--black);
   color: var(--white);
   overflow-x: hidden;
-  font-family: "Poppins",Inter,sans-serif,system-ui;
+  font-family: "Cabin","Poppins",Inter,sans-serif,system-ui;
 }
 @font-face{
-  font-family: "Poppins";
-  src: url("./assets/fonts/Poppins-Regular.ttf");
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Regular.ttf");
 }
 @font-face{
   font-family: "Cabin";
@@ -54,7 +54,7 @@ body {
 }
 h1,h2,h3,h4,h5,h6 {
   font-display: swap;
-  font-family: "Cabin","Ubuntu", serif;
+  font-family: "Montserrat","Ubuntu", serif;
   font-weight: 600;
   line-height: inherit;
   letter-spacing: .5px;
@@ -100,11 +100,13 @@ mark{
   display: block;
   font-size: 5em;
   line-height:0;
+  font-family: "Poppins", 'Ubuntu', system-ui;
 }
 .bg-dg{
   background: var(--darkgray)!important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2)!important;
   border-right: 1px solid rgba(255, 255, 255, 0.2)!important;
+  overflow: hidden;
 }
 .bg-dg-card{border-radius: var(--border-radius-card)!important}
 /*--------------------------------------------------------------
@@ -223,9 +225,6 @@ mark{
   padding:0.7rem 1.4rem !important;
   font-size:1rem;
   color:var(--white1);
-}
-.navbar ul:last-child a{
-  color: var(--black1) !important;
 }
 #hero{
   margin-top: 1.5rem;
@@ -1044,8 +1043,3 @@ mark{
   justify-content: center;
 }
 .loader i{font-size: 20px}
-.fade-in {animation: fadeIn 1s ease-in-out forwards}
-@keyframes fadeIn {
-  0% {filter: blur(4px) grayscale(1)}
-  100% {filter: blur(0) grayscale(0)}
-}

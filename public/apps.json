@@ -57,16 +57,6 @@
     }
   },
   {
-    "title": "Smart Lighting Automation",
-    "status": "incomplete",
-    "icon": "icons/arduinoproj.jpg",
-    "size": "20 B",
-    "description": "Ardunio based system that automatically controls lights ensuring efficiency & seamless ambience of control. Experience a blend of tech and convience.",
-    "downloads": {
-      "github": ["https://github.com/heli-toon/lights-automation/"]
-    }
-  },
-  {
     "title": "Pulsenet.io",
     "status": "incomplete",
     "icon": "icons/pulsenetio.png",
@@ -74,6 +64,16 @@
     "description": "A simple social media app for authentic connections. Designed to facilitate to meaning to meaningful interactions and community building.",
     "downloads": {
       "github": ["https://github.com/heli-toon/pulsenetio/"]
+    }
+  },
+  {
+    "title": "Smart Lighting Automation",
+    "status": "incomplete",
+    "icon": "icons/arduinoproj.jpg",
+    "size": "20 B",
+    "description": "Ardunio based system that automatically controls lights ensuring efficiency & seamless ambience of control. Experience a blend of tech and convience.",
+    "downloads": {
+      "github": ["https://github.com/heli-toon/lights-automation/"]
     }
   }
 ]

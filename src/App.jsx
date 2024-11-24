@@ -4,7 +4,6 @@ import "./assets/bootstrap.min.css";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Preloader from "./components/Preloader";
-import FadeInAnimation from "./components/FadeInAnimation";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -12,7 +11,7 @@ export default function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 0);
   }, []);
 
   return (
@@ -22,7 +21,6 @@ export default function App() {
       ) : (
         <>
           <Navbar />
-          <FadeInAnimation />
         </>
       )}
     </>

@@ -27,14 +27,14 @@ const Apps = () => {
 
   return (
     <>
-      <section className="app-projects">
+      <section className="app-projects" id="apps">
         <div className="container">
           <header className="section-header">
             <div className="section-title text-center">
               <h2>Apps</h2>
               <span className="line-bar">...</span>
             </div>
-            <p>
+            <p className="text-center">
               Explore my app portfolio, featuring a range of desktop, mobile and
               browser extension projects. From completed solutions to ongoing
               endeavours, I showcase my passion for innovative software

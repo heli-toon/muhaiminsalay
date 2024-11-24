@@ -11,10 +11,10 @@ export default function Hero() {
             <div className="hero-description col-lg-6 d-flex flex-column justify-content-center">
               <h1>Salay Abdul Muhaimin Kanton</h1>
               <p>
-                Welcome to my digital studio! I'm a passionate web developer 
+                Welcome to my digital studio! I&apos;m a passionate web developer 
                 dedicated to crafting exceptional online experiences. With 
                 expertise in cutting-edge technologies, I create visually stunning
-                and user-friendly websites and apps that drive results. Let's bring
+                and user-friendly websites and apps that drive results. Let&apos;s bring
                 your vision to life.
               </p>
               <div className="d-flex justify-content-center justify-content-lg-start">
