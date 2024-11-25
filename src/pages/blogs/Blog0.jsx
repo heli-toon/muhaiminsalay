@@ -41,9 +41,9 @@ export default function Blog() {
                 <div className="container">
                     <div className="row g-5">
                         <div className="col-lg-8">  
-                            <article className="blog-details bg-dg">
+                            <article className="blog-details bg-dg" data-aos="fade-up" data-aos-delay="200">
                                 <div className="post-img">
-                                    <img src="/blog/cvp.jpg" alt="" className="img-fluid" />
+                                    <img src="/blog/cvp.jpg" alt="Coders Coding AI Generated Image" className="img-fluid" />
                                 </div>  
                                 <h2 className="title">Coding vs Programming: Unraveling the Mysteries of Software Development</h2>
                                 <div className="meta-top">
@@ -55,12 +55,12 @@ export default function Blog() {
                                 <div className="content">
                                     <p className='paragraph'>
                                         In the world of software development, two terms are often used interchangeably: coding and programming. While they are related, they have distinct differences. 
-                                        In this blog post, we'll delve into the similarities and differences between coding and programming, providing a comprehensive understanding of these fundamental concepts.
+                                        In this blog post, we&apos;ll delve into the similarities and differences between coding and programming, providing a comprehensive understanding of these fundamental concepts.
                                     </p>
                                     <h3>The Coding Process</h3>
                                     <p className='paragraph'>
                                         Coding refers to the act of writing code in a programming language to create a software, app, or website. It's the process of translating human instructions into a language that computers can understand. Think of coding as writing a recipe for your computer to follow. 
-                                        A coder's primary focus is on implementing a plan, using programming languages like Python, Java, HTML or C++ to bring a design to life.
+                                        A coder&apos;s primary focus is on implementing a plan, using programming languages like Python, Java, HTML or C++ to bring a design to life.
                                     </p>
                                     <blockquote>
                                         <p className='paragraph'>
@@ -109,7 +109,7 @@ export default function Blog() {
                                     <h3>Final Thoughts</h3>
                                     <p className='paragraph'>
                                         In the world of software development, coding and programming are fundamental concepts that work together to create innovative solutions. 
-                                        By understanding the similarities and differences between these two terms, you'll be better equipped to navigate the exciting world of software development. <br />
+                                        By understanding the similarities and differences between these two terms, you&apos;ll be better equipped to navigate the exciting world of software development. <br />
                                         Happy coding and programming 😁!
                                     </p>
                                 </div>
@@ -135,7 +135,7 @@ export default function Blog() {
                                         <a href="https://www.instagram.com/heli.toon/"><i className="bi bi-instagram"></i></a>
                                     </div>
                                     <p>
-                                        I'm a passionate web developer dedicated to crafting exceptional online experiences. With expertise in cutting-edge technologies, I create visually stunning and user-friendly websites and apps that drive results.
+                                        I&apos;m a passionate web developer dedicated to crafting exceptional online experiences. With expertise in cutting-edge technologies, I create visually stunning and user-friendly websites and apps that drive results.
                                     </p>
                                 </div>
                             </div>  
@@ -160,10 +160,9 @@ export default function Blog() {
                                 <div className="sidebar-item tags">
                                     <h3 className="sidebar-title">Tags</h3>
                                     <ul className="mt-3">
-                                        <li><a href="#">App</a></li>
                                         <li><a href="#">IT</a></li>
+                                        <li><a href="#">Software</a></li>
                                         <li><a href="#">Business</a></li>
-                                        <li><a href="#">Mac</a></li>
                                     </ul>
                                 </div>
                             </div>  

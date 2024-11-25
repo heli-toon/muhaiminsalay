@@ -2,14 +2,14 @@ export default function About() {
   return (
     <>
       <section className="about" id="about">
-        <div className="container">
+        <div className="container" data-aos="fade-up">
           <header className="section-header">
             <div className="section-title">
               <h2>About Me</h2>
               <span className="line-bar">...</span>
             </div>
             <p>
-              Hello, I'm Salay Abdul Muhaimin Kanton, a passionate full-stack 
+              Hello, I&apos;m Salay Abdul Muhaimin Kanton, a passionate full-stack 
               developer and desktop application creator with a strong foundation 
               in both frontend and backend development. With 3 years of learning 
               and building experience, I specialize in creating dynamic websites
@@ -26,7 +26,7 @@ export default function About() {
             </p>
           </header>
           <div className="row">
-            <div className="skills">
+            <div className="skills" data-aos="fade-up" data-aos-delay="100">
               <div className="skills-grid bg-dg bg-dg-card">
                 <div className="grid-cell">
                   <h6>Proficient In</h6>

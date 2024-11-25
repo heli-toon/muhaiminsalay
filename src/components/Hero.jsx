@@ -5,8 +5,8 @@ export default function Hero() {
   }
   return (
     <>
-      <section id="hero" className="d-flex align-items-center">
-        <div className="container">
+      <section id="hero" className="d-flex align-items-center" data-aos="zoom-out">
+        <div className="container" data-aos="zoom-out">
           <div className="row">
             <div className="hero-description col-lg-6 d-flex flex-column justify-content-center">
               <h1>Salay Abdul Muhaimin Kanton</h1>
@@ -23,7 +23,7 @@ export default function Hero() {
                 </a>
               </div>
             </div>
-            <div className="col-lg-6 hero-graph d-flex flex-column align-items-center justify-content-center">
+            <div className="col-lg-6 hero-graph d-flex flex-column align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="200">
               <div className="hero-img-conatiner bg-dg bg-dg-card">
                 <img
                   src={map}
@@ -34,7 +34,7 @@ export default function Hero() {
                 />
               </div>
               <div className="bg-dg bg-dg-card social-links">
-                <a
+                <a 
                   href="https://www.linkedin.com/in/muhaimin-salay-a653b6299/"
                   className="linkedin"
                   title="LinkedIn Account"

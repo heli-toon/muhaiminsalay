@@ -7,18 +7,18 @@ const AppCard = ({ app }) => {
 
   return (
     <>
-      <div className="col-lg-6 col-md-6">
+      <div className="col-lg-6 col-md-6" data-aos="fade-up">
         <div className="bg-dg app-card my-4 p-4 d-flex">
           <img src={icon} alt={title} />
           <div className="app-desc">
             <h3>{title}</h3>
             <span className={`status ${statusClass}`}>{statusText}</span>
             <p>{description}</p>
-            <div className="d-flex justify-content-space-between card-bottom">
+            <div className="d-flex justify-content-space-between card-bottom" data-aos="fade-up" data-aos-delay="100">
               <ul className="d-flex download-icons">
                 {platforms.map((platform) => (
                   <li key={platform}>
-                    <a href={downloads[platform].join(", ")} target="_blank" title={downloads[platform]}>
+                    <a href={downloads[platform].join(", ")} target="_blank" title={downloads[platform]} rel="noreferrer">
                       <i className={`bi bi-${platform}`}></i>
                     </a>
                   </li>

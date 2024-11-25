@@ -8,7 +8,7 @@ export default function BlogCollection() {
   return (
     <>
       <section id="recent-blog-posts" className="recent-blog-posts">
-        <div className="container">
+        <div className="container" data-aos="fade-up">
           <div className="section-header">
             <div className="section-title">
               <h2>Blog</h2>
@@ -17,7 +17,7 @@ export default function BlogCollection() {
             <p>Explore my vast library of blog posts, covering a wide range of topics and themes in IT. My articles are to educate, inform, spark new ideas &amp; demystifying trends. Welcome to my world</p>
           </div>
           <div className="row">
-            <div className="col-lg-4 col-md-6 my-4">
+            <div className="col-lg-4 col-md-6 my-4" data-aos="fade-up" data-aos-delay="100">
               <div className="post-box bg-dg">
                 <div className="post-img">
                   <img src="/blog/cvp.jpg" className="img-fluid" alt="" />
@@ -45,7 +45,7 @@ export default function BlogCollection() {
                 </a>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 my-4">
+            <div className="col-lg-4 col-md-6 my-4" data-aos="fade-up" data-aos-delay="200">
               <div className="post-box bg-dg">
                 <div className="post-img">
                   <img
@@ -78,7 +78,7 @@ export default function BlogCollection() {
                 </a>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 my-4">
+            <div className="col-lg-4 col-md-6 my-4" data-aos="fade-up" data-aos-delay="300">
               <div className="post-box bg-dg">
                 <div className="post-img">
                   <img
