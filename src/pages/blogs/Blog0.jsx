@@ -131,8 +131,8 @@ export default function Blog() {
                                     <h4>Salay Abdul Muhaimin Kanton</h4>
                                     <div className="social-links">
                                         <a href="https://x.com/SalayAbdul"><i className="bi bi-twitter-x"></i></a>
-                                        <a href="https://www.facebook.com/profile.php?id=61552612385341"><i className="bi bi-facebook"></i></a>
-                                        <a href="https://www.instagram.com/heli.toon/"><i className="bi bi-instagram"></i></a>
+                                        <a href="https://www.facebook.com/muhaiminsalay"><i className="bi bi-facebook"></i></a>
+                                        <a href="https://www.instagram.com/muhaiminsalay/"><i className="bi bi-instagram"></i></a>
                                     </div>
                                     <p>
                                         I&apos;m a passionate web developer dedicated to crafting exceptional online experiences. With expertise in cutting-edge technologies, I create visually stunning and user-friendly websites and apps that drive results.

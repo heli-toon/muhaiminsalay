@@ -24,13 +24,13 @@ export default function Footer() {
                   <a href="https://x.com/SalayAbdul" className="twitter" title="Twitter Account" target="_blank" rel="noreferrer">
                     <i className="bi bi-twitter-x"></i>
                   </a>
-                  <a href="https://www.facebook.com/profile.php?id=61552612385341&mibextid=ZbWKwL" className="facebook" title="Facebook Page" target="_blank" rel="noreferrer">
+                  <a href="https://www.facebook.com/muhaiminsalay" className="facebook" title="Facebook Page" target="_blank" rel="noreferrer">
                     <i className="bi bi-facebook"></i>
                   </a>
                   <a href="https://www.linkedin.com/in/muhaimin-salay-a653b6299/" className="linkedin" title="LinkedIn Account" target="_blank" rel="noreferrer">
                     <i className="bi bi-linkedin"></i>
                   </a>
-                  <a href="https://www.instagram.com/heli.toon/" className="instagram" title="Instagram Page" target="_blank" rel="noreferrer">
+                  <a href="https://www.instagram.com/muhaiminsalay/" className="instagram" title="Instagram Page" target="_blank" rel="noreferrer">
                     <i className="bi bi-instagram"></i>
                   </a>
                   <a href="https://www.github.com/heli-toon/" className="github" title="GitHub Profile" target="_blank" rel="noreferrer">

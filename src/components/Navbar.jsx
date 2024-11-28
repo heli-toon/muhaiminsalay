@@ -50,13 +50,8 @@ const Navbar = () => {
           <div className="header-wrapper container d-flex align-items-center justify-content-lg-between space-between">
             <div className="d-flex flex-row align-items-center justify-content-center">
               <a className="logo me-auto me-lg-0" title="Home" href="/">
-                <img src={logo} width={56} height={56} className="img-fluid" alt="Verix Solutions Ltd. Logo" />
+                <img src={logo} width={56} height={56} className="img-fluid" alt="Muhaimin Salay Logo" />
               </a>
-              <h1 className="logo me-auto me-lg-0 hide-m d-none">
-                <Link title="Verix Solutions Ltd." href="/">
-                  Verix Solution
-                </Link>
-              </h1>
             </div>
             <nav id="navbar" className={`navbar order-last order-lg-0 ${showNavbarCollapse ? "navbar-mobile" : ""}`} >
               <ul>
