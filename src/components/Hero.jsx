@@ -5,7 +5,7 @@ export default function Hero() {
   }
   return (
     <>
-      <section id="hero" className="d-flex align-items-center" data-aos="zoom-out">
+      <section id="hero" className="d-flex align-items-center">
         <div className="container" data-aos="zoom-out">
           <div className="row">
             <div className="hero-description col-lg-6 d-flex flex-column justify-content-center">

@@ -109,6 +109,16 @@ mark{
   overflow: hidden;
 }
 .bg-dg-card{border-radius: var(--border-radius-card)!important}
+.btned{
+  background: var(--primary) !important;
+  border-radius: var(--border-radius-card);
+  color: var(--white);
+  transition: var(--anim-short);
+}
+.btned:hover{
+  background: var(--primarydark) !important;
+  color: var(--black);
+}
 /*--------------------------------------------------------------
 # Navbar
 --------------------------------------------------------------*/
@@ -1001,6 +1011,9 @@ mark{
 .back-to-top.active{
   visibility: visible;
   opacity: 1;
+}
+.errorpage h1{
+  font-size: 8rem;
 }
 #preloader {
   position: fixed;
