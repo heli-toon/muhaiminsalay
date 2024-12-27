@@ -115,7 +115,7 @@ export default function Footer() {
             <strong>
               <span>Salay Kanton</span>
             </strong> {" "}
-            2024. All Rights Reserved
+            {new Date().getFullYear()}. All Rights Reserved
           </div>
           <div className="credits">
             Designed by {" "}
