@@ -14,10 +14,10 @@ export default function BlogDetails() {
   const [paragraphs, setParagraphs] = useState([]);
 
   useEffect(() => {
-    const paraElements = document.querySelectorAll(".paragraph");
+    const paraElements = document.querySelectorAll(".content .paragraph");
     setParagraphs(paraElements);
-  }, []);
-  
+  }, [blog]);
+
   const handleSearch = (event) => {
     event.preventDefault();
     const textToSearch = searchText.trim();
@@ -26,7 +26,7 @@ export default function BlogDetails() {
     const pattern = new RegExp(`${textToSearch}`, "gi");
 
     paragraphs.forEach((para) => {
-      const markedText = para.textContent.replace(
+      const markedText = para.innerHTML.replace(
         pattern,
         (match) => `<mark>${match}</mark>`
       );
@@ -119,7 +119,7 @@ export default function BlogDetails() {
                 <div className="post-img">
                   <img
                     src={blog.imageURL}
-                    alt="Coders Coding AI Generated Image"
+                    alt={blog.imageDesc}
                     className="img-fluid"
                   />
                 </div>
