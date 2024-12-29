@@ -6,6 +6,7 @@ import BlogCollection from "../pages/BlogCollection.jsx";
 import Apps from "../pages/Apps.jsx";
 import Blog0 from "../pages/blogs/Blog0.jsx";
 import ErrorPage from "../pages/Error404.jsx";
+import BlogDetails from "../pages/BlogDetails.jsx";
 // import Skills from "../pages/Skills.jsx";
 
 const Navbar = () => {
@@ -87,7 +88,8 @@ const Navbar = () => {
           <Route path="/blog" element={<BlogCollection />} />
           <Route path="#apps" element={<Apps />} />
           {/* <Route path="/skills" element={<Skills />} /> */}
-          <Route path="/blog/0" element={<Blog0 />} />
+          <Route path="/blog/:slug" element={<BlogDetails />} />
+          {/* <Route path="/blog/0" element={<Blog0 />} /> */}
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
