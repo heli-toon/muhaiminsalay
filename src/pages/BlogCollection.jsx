@@ -1,10 +1,55 @@
+import { useState, useEffect } from "react";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebase"; // Firestore initialization
+
 import Footer from "../components/Footer";
 import Backtotop from "../components/Backtotop";
-import verba from "../assets/images/verba.png"
+import Preloader from "../components/Preloader";
 
 export default function BlogCollection() {
-  window.document.title = "Blog | Muhaimin Abdul Salay Kanton";
-  window.document.querySelector('meta[name="description"]').setAttribute('content', "Dive into my thoughts on software development and more. Read my latest articles, insights, and musings on my blog")
+  const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const querySnapshot = await getDocs(collection(db, "blogs"));
+        const blogsData = querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setBlogs(blogsData);
+      } catch (error) {
+        console.error("Error fetching blogs:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBlogs();
+  }, []);
+
+  const stripHtml = (html) => {
+    const tmp = document.createElement("DIV");
+    tmp.innerHTML = html;
+    return tmp.textContent || tmp.innerText || "";
+  };
+
+  const getBlogPreview = (content) => {
+    const strippedContent = stripHtml(content);
+    const maxLength = 250; // Adjust this value based on how much preview you want
+    const startIndex = 22;
+    const previewContent = strippedContent.length > startIndex
+      ? strippedContent.substring(startIndex, startIndex + maxLength) + "..."
+      : strippedContent;
+
+    return previewContent;
+  };
+
+  if (loading) {
+    return <Preloader />;
+  }
+
   return (
     <>
       <section id="recent-blog-posts" className="recent-blog-posts">
@@ -14,103 +59,34 @@ export default function BlogCollection() {
               <h2>Blog</h2>
               <span className="line-bar">...</span>
             </div>
-            <p>Explore my vast library of blog posts, covering a wide range of topics and themes in IT. My articles are to educate, inform, spark new ideas &amp; demystifying trends. Welcome to my world</p>
+            <p>Explore my vast library of blog posts, covering a wide range of topics and themes in IT. My articles are to educate, inform, spark new ideas &amp; demystify trends. Welcome to my world.</p>
           </div>
           <div className="row">
-            <div className="col-lg-4 col-md-6 my-4" data-aos="fade-up" data-aos-delay="100">
-              <div className="post-box bg-dg">
-                <div className="post-img">
-                  <img src="/blog/cvp.jpg" className="img-fluid" alt="" />
-                </div>
-                <div className="meta d-flex align-items-center">
-                  <div className="meta-date">
-                    <i className="bi bi-calendar mx-1"></i>
-                    <span className="post-date">Tue, June 25, 2024</span>
+            {blogs.map((blog, index) => (
+              <div key={blog.slug} className="col-lg-4 col-md-6 my-4" data-aos="fade-up" data-aos-delay={`${100 * (index + 1)}`}>
+                <div className="post-box bg-dg">
+                  <div className="post-img">
+                    <img src={blog.imageURL} className="img-fluid" alt={blog.imageDesc || blog.title} />
                   </div>
-                  <div className="meta-time">
-                    <i className="bi bi-clock mx-1"></i>
-                    <span className="post-date">2.1 min read</span>
-                  </div>
-                </div>
-                <h3 className="post-title">
-                  Coding vs Programming
-                </h3>
-                <p>
-                  In the world of software development, two terms are often used interchangeably: coding and programming. 
-                  While they are related, they have distinct differences...
-                </p>
-                <a href="/blog/0/" className="readmore btn-get-started">
-                  <span>Read More</span>
-                  <i className="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 my-4" data-aos="fade-up" data-aos-delay="200">
-              <div className="post-box bg-dg">
-                <div className="post-img">
-                  <img
-                    src={verba}
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div className="meta d-flex align-items-center">
-                  <div className="meta-date">
+                  <div className="meta d-flex align-items-center">
+                    <div className="meta-date">
                       <i className="bi bi-calendar mx-1"></i>
-                      <span className="post-date">Tue, June 25, 2024</span>
+                      <span className="post-date">{new Date(blog.createdAt.seconds * 1000).toDateString()}</span>
                     </div>
                     <div className="meta-time">
                       <i className="bi bi-clock mx-1"></i>
-                      <span className="post-date">2.5 min read</span>
-                  </div>
-                </div>
-                <h3 className="post-title">
-                  Coming Very Soon
-                </h3>
-                <p>
-                  Voluptatem nesciunt omnis libero autem tempora enim ut ipsam
-                  id. Odit quia ab eum assumenda. Quisquam omnis aliquid
-                  necessitatibus tempora...
-                </p>
-                <a href="/blog/" className="readmore btn-get-started">
-                  <span>Read More</span>
-                  <i className="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 my-4" data-aos="fade-up" data-aos-delay="300">
-              <div className="post-box bg-dg">
-                <div className="post-img">
-                  <img
-                    src={verba}
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div className="meta d-flex align-items-center">
-                  <div className="meta-date">
-                      <i className="bi bi-calendar mx-1"></i>
-                      <span className="post-date">Tue, June 25, 2024</span>
+                      <span className="post-date">{blog.readTime} min read</span>
                     </div>
-                    <div className="meta-time">
-                      <i className="bi bi-clock mx-1"></i>
-                      <span className="post-date">2.5 min read</span>
                   </div>
+                  <h3 className="post-title">{blog.title}</h3>
+                  <p>{getBlogPreview(blog.content)}</p>
+                  <a href={`/blog/${blog.slug}/`} className="readmore btn-get-started">
+                    <span>Read More</span>
+                    <i className="bi bi-arrow-right"></i>
+                  </a>
                 </div>
-                <h3 className="post-title">
-                  Coming Soon
-                </h3>
-                <p>
-                  Quia nam eaque omnis explicabo similique eum quaerat similique
-                  laboriosam. Quis omnis repellat sed quae consectetur magnam
-                  veritatis...
-                </p>
-                <a href="/blog/" className="readmore btn-get-started">
-                  <span>Read More</span>
-                  <i className="bi bi-arrow-right"></i>
-                </a>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

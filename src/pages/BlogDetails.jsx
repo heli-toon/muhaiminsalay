@@ -5,6 +5,7 @@ import { db } from "../firebase"; // Firestore initialization
 
 import Footer from "../components/Footer";
 import Backtotop from "../components/Backtotop";
+import Preloader from "../components/Preloader";
 
 export default function BlogDetails() {
   const { slug } = useParams(); // Capture the slug from the route
@@ -57,11 +58,10 @@ export default function BlogDetails() {
         setLoading(false);
       }
     };
-
     fetchBlog();
   }, [slug]);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p><Preloader /></p>;
   if (!blog)
     return (
       <>
@@ -130,7 +130,7 @@ export default function BlogDetails() {
                   <ul>
                     <li className="d-flex align-items-center">
                       <i className="bi bi-calendar"></i>{" "}
-                      <a href="blog-details.html">
+                      <a href="">
                         <time dateTime={blog.createdAt.toISOString()}>{blog.createdAt.toDateString()}</time>
                       </a>
                     </li>
