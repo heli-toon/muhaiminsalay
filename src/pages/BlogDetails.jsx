@@ -67,7 +67,7 @@ export default function BlogDetails() {
       <>
         <div className="breadcrumbs bg-dg">
           <div className="container">
-            <div className="d-flex justify-content-between align-items-center">
+            <div className="d-flex justify-content-between align-items-between">
               <h2>Blog Not Found</h2>
               <ol>
                 <li>
