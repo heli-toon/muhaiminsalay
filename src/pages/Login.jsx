@@ -18,7 +18,7 @@ export default function Login() {
   return (
     <>
         <section>
-            <h2>Login</h2>
+            <h2>Login as Admin</h2>
             <button onClick={handleLogin} className="btned btn"><i className="bi bi-google"></i> Sign in with Google</button>
         </section>
     </>
