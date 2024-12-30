@@ -48,16 +48,16 @@ function Resume(){
                 <p><em>Verix Solutions Ltd. Accra</em></p>
                 <ul>
                   <li>Conceptualize and design engaging websites.</li>
-                  <li>Developed numerous web application programs.</li>
+                  <li>Developed a few web application programs.</li>
                 </ul>
               </div>
               <div className="resume-item" data-aos="fade-up" data-aos-delay="100">
-                <h4>Freelance Web Developer and Desktop App Developer</h4>
+                <h4>Freelance Web &amp; Desktop App Developer</h4>
                 <h5>2022 - Present</h5>
                 <p><em>Self-employed, Mamobi, Accra</em></p>
                 <ul>
-                  <li>Managed various freelance projects for clients in diverse industries like the corporate institutions, retail services etc. Demonstrating adaptability and versatility in Website Development</li>
-                  <li>Managed up to 5 projects at a given time while under pressure</li>
+                  <li>Managed various freelance projects for clients in diverse industries like the corporate institutions, retail services, personal brands etc. Demonstrating adaptability and versatility in Website Development.</li>
+                  <li>Managed up to 4 projects at a given time while under pressure</li>
                   <li>Recommended and consulted with clients on the most appropriate websites and apps</li>
                 </ul>
               </div>
