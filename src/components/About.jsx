@@ -13,9 +13,9 @@ export default function About() {
               developer and desktop application creator with a strong foundation 
               in both frontend and backend development. With 3 years of learning 
               and building experience, I specialize in creating dynamic websites
-              using React, HTML, CSS and Javascript for the frontend, and Django
-              and Flask for the backend. I also have a keen interest in
-              exploring the world of Internet of Things (IoT) with Arduino and
+              using React, React Native, HTML + CSS and Javascript for the frontends, 
+              and Django, Flask and Firebase for backends. I also have a keen interest
+              in exploring the world of Internet of Things (IoT) with Arduino and
               Raspberry Pi. Additionally, I develop desktop applications using
               Tkinter (Python) and Electron (JavaScript), bringing my ideas to
               life on the desktop. I believe that determination, curiosity, and

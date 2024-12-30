@@ -10,6 +10,7 @@ export default function BlogEdit() {
   const navigate = useNavigate();
   const { currentUser, logout } = useAuth();
 
+  const [slug2, setSlug] = useState("");
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [imageURL, setImageURL] = useState("");
@@ -31,6 +32,7 @@ export default function BlogEdit() {
 
         if (docSnap.exists()) {
           const blog = docSnap.data();
+          setSlug(blog.slug);
           setTitle(blog.title);
           setContent(blog.content);
           setImageURL(blog.imageURL);
@@ -59,6 +61,7 @@ export default function BlogEdit() {
       imageURL,
       imageDesc,
       readTime,
+      slug2,
       tags: tags.split(",").map((tag) => tag.trim()),
       createdAt: new Date(),
     };
@@ -68,15 +71,15 @@ export default function BlogEdit() {
         // Update existing blog
         const docRef = doc(db, "blogs", slug);
         await updateDoc(docRef, blogData);
-        console.log("Blog updated successfully!");
+        alert("Blog updated successfully!");
       } else {
         // Add new blog
         await addDoc(collection(db, "blogs"), blogData);
-        console.log("Blog added successfully!");
+        alert("Blog added successfully!");
       }
       navigate("/");
     } catch (error) {
-      console.error("Error saving blog:", error);
+      alert("Error saving blog:", error);
     }
   };
 
@@ -107,6 +110,16 @@ export default function BlogEdit() {
             </div>
           </div>
           <form onSubmit={handleSave} className="mt-3">
+            <div className="mb-3">
+              <label className="form-label text-left">Slug</label>
+              <input
+                type="text"
+                className="form-control"
+                value={title}
+                onChange={(e) => setSlug(e.target.value)}
+                required
+              />
+            </div>
             <div className="mb-3">
               <label className="form-label text-left">Title</label>
               <input
