@@ -10,7 +10,7 @@ export default function BlogEdit() {
   const navigate = useNavigate();
   const { currentUser, logout } = useAuth();
 
-  const [slug2, setSlug] = useState("");
+  const [slug2, setSlug2] = useState("");
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [imageURL, setImageURL] = useState("");
@@ -56,12 +56,12 @@ export default function BlogEdit() {
     e.preventDefault();
 
     const blogData = {
+      slug2,
       title,
       content,
       imageURL,
       imageDesc,
       readTime,
-      slug2,
       tags: tags.split(",").map((tag) => tag.trim()),
       createdAt: new Date(),
     };
@@ -115,8 +115,8 @@ export default function BlogEdit() {
               <input
                 type="text"
                 className="form-control"
-                value={title}
-                onChange={(e) => setSlug(e.target.value)}
+                value={slug2}
+                onChange={(e) => setSlug2(e.target.value)}
                 required
               />
             </div>

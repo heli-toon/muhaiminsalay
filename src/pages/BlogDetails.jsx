@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom"; // For dynamic routing
+import { Link, useParams } from "react-router-dom";
 import { collection, query, where, getDocs } from "firebase/firestore";
-import { db } from "../firebase"; // Firestore initialization
+import { db } from "../firebase";
 
 import Footer from "../components/Footer";
 import Backtotop from "../components/Backtotop";
@@ -49,8 +49,11 @@ export default function BlogDetails() {
           blogData.createdAt = blogData.createdAt.toDate();
 
           setBlog(blogData);
+          window.document.title = `${blogData.title} | Blog`; // Set the window title
+
         } else {
           console.error(`Blog with slug "${slug}" not found.`);
+          window.document.title = "Blog Not Found | Blog"; // Set the window title
         }
       } catch (error) {
         console.error("Error fetching blog:", error);
@@ -58,6 +61,7 @@ export default function BlogDetails() {
         setLoading(false);
       }
     };
+
     fetchBlog();
   }, [slug]);
 
@@ -83,7 +87,9 @@ export default function BlogDetails() {
         </div>
         <section id="blog" className="blog">
           <div className="container">
-            Blog not found.
+            <h2>This Blog doesn&apos;t exist</h2>
+            <p>No Blog was found.</p>
+            <Link to="/blog" className="btned btn">See All blogs</Link>
           </div>
         </section>
       </>

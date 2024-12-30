@@ -7,6 +7,8 @@ import Backtotop from "../components/Backtotop";
 import Preloader from "../components/Preloader";
 
 export default function BlogCollection() {
+  window.document.title = "Muhaimin Abdul Salay Kanton | Blog";
+
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
 

@@ -1056,3 +1056,7 @@ mark{
   justify-content: center;
 }
 .loader i{font-size: 20px}
+input, textarea{
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+}
