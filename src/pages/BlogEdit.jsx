@@ -77,7 +77,7 @@ export default function BlogEdit() {
         await addDoc(collection(db, "blogs"), blogData);
         alert("Blog added successfully!");
       }
-      navigate("/");
+      navigate("/blog");
     } catch (error) {
       alert("Error saving blog:", error);
     }

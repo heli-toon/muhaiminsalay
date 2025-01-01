@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import Apps from "../pages/Apps.jsx";
 import Home from "../pages/Home.jsx";
 import Login from "../pages/Login.jsx";
+import Skills from "../pages/Skills.jsx";
 import BlogEdit from "../pages/BlogEdit.jsx";
 import ErrorPage from "../pages/Error404.jsx";
 import logo from "../assets/images/logo.webp";
@@ -84,12 +85,13 @@ const Navbar = () => {
         <AuthProvider>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/blog" element={<BlogCollection />} />
             <Route path="#apps" element={<Apps />} />
-            <Route path="/blog/:slug" element={<BlogDetails />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/edit/:slug" element={<PrivateRoute><BlogEdit /></PrivateRoute>} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/blog" element={<BlogCollection />} />
+            <Route path="/blog/:slug" element={<BlogDetails />} />
             <Route path="/add" element={<PrivateRoute><BlogEdit /></PrivateRoute>} />
+            <Route path="/edit/:slug" element={<PrivateRoute><BlogEdit /></PrivateRoute>} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </AuthProvider>
