@@ -72,6 +72,9 @@ const Navbar = () => {
                   <a className="nav-link" href="/#apps" onClick={closeMobileNavbar}> Apps </a>
                 </li>
                 <li className="nav-item">
+                  <a className="nav-link" href="/skills" onClick={closeMobileNavbar}> Skills </a>
+                </li>
+                <li className="nav-item">
                   <Link className="nav-link" to="/blog" onClick={closeMobileNavbar}> Blog </Link>
                 </li>
                 <li className="nav-item">

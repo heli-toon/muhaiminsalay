@@ -441,6 +441,15 @@ mark{
 }
 /* SKILLS */
 .skills{margin-top: 1.5rem}
+.skills .section-body {margin-bottom:2rem}
+.skills .row {justify-content:center}
+.skill-icon {
+  width: 50px; /* Set a consistent width */
+  height: 50px; /* Set a consistent height */
+  display: block;
+  margin: 10px auto; /* Center and add margin */
+}
+.skills h4 {text-align:center}
 /*--------------------------------------------------------------
 # Recent Blog Posts
 --------------------------------------------------------------*/

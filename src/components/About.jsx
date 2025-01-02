@@ -67,6 +67,9 @@ export default function About() {
               </div>
             </div>
           </div>
+          <div className="mt-4 d-flex align-items-center justify-content-center">
+            <a href="/skills" className="btn btned">See All Skills</a>
+          </div>
         </div>
       </section>
     </>
