@@ -10,6 +10,7 @@ export default function Skills() {
               <span className="line-bar">...</span>
             </div>
           </div>
+
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
             <h4>Languages</h4>
             <div className="row justify-content-center">
@@ -30,7 +31,7 @@ export default function Skills() {
               </div>
             </div>
           </div>
-          
+
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
             <h4>Frontend Frameworks</h4>
             <div className="row justify-content-center">
@@ -48,7 +49,7 @@ export default function Skills() {
               </div>
             </div>
           </div>
-          
+
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
             <h4>Mobile Frameworks</h4>
             <div className="row justify-content-center">
@@ -60,16 +61,19 @@ export default function Skills() {
               </div>
             </div>
           </div>
-          
+
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
             <h4>Backend Frameworks</h4>
             <div className="row justify-content-center">
               <div className="col-6 col-sm-4 col-md-2">
                 <img src="./skills/django.svg" alt="Django" className="img-fluid skill-icon" />
               </div>
+              <div className="col-6 col-sm-4 col-md-2">
+                <img src="./skills/flask.jpg" alt="Flask" className="img-fluid skill-icon" />
+              </div>
             </div>
           </div>
-          
+
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
             <h4>Tooling</h4>
             <div className="row justify-content-center">
@@ -87,7 +91,7 @@ export default function Skills() {
               </div>
             </div>
           </div>
-          
+
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
             <h4>Hosting</h4>
             <div className="row justify-content-center">
@@ -102,7 +106,7 @@ export default function Skills() {
               </div>
             </div>
           </div>
-          
+
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
             <h4>Other Tools</h4>
             <div className="row justify-content-center">
@@ -126,6 +130,18 @@ export default function Skills() {
               </div>
               <div className="col-6 col-sm-4 col-md-2">
                 <img src="./skills/shell.svg" alt="Shell" className="img-fluid skill-icon" />
+              </div>
+              <div className="col-6 col-sm-4 col-md-2">
+                <img src="./skills/gimp.svg" alt="GIMP" className="img-fluid skill-icon" />
+              </div>
+              <div className="col-6 col-sm-4 col-md-2">
+                <img src="./skills/openshot.svg" alt="OpenShot" className="img-fluid skill-icon" />
+              </div>
+              <div className="col-6 col-sm-4 col-md-2">
+                <img src="./skills/obsstudio.svg" alt="OBS Studio" className="img-fluid skill-icon" />
+              </div>
+              <div className="col-6 col-sm-4 col-md-2">
+                <img src="./skills/tkinter.svg" alt="Tkinter" className="img-fluid skill-icon" />
               </div>
             </div>
           </div>
