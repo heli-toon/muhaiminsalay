@@ -138,7 +138,7 @@ export default function Skills() {
                 <img src="./skills/openshot.svg" alt="OpenShot" className="img-fluid skill-icon" />
               </div>
               <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/obs-studio.svg" alt="OBS Studio" className="img-fluid skill-icon" />
+                <img src="./skills/obs-studio.jpg" alt="OBS Studio" className="img-fluid skill-icon" />
               </div>
               <div className="col-6 col-sm-4 col-md-2">
                 <img src="./skills/tkinter.svg" alt="Tkinter" className="img-fluid skill-icon" />
