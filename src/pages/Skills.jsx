@@ -141,6 +141,9 @@ export default function Skills() {
                 <img src="./skills/obs-studio.jpg" alt="OBS Studio" className="img-fluid skill-icon" />
               </div>
               <div className="col-6 col-sm-4 col-md-2">
+                <img src="./skills/app-sheet.svg" alt="App Sheet" className="img-fluid skill-icon" />
+              </div>
+              <div className="col-6 col-sm-4 col-md-2">
                 <img src="./skills/tkinter.svg" alt="Tkinter" className="img-fluid skill-icon" />
               </div>
             </div>
