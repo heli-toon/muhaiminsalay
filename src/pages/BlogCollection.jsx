@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "../firebase"; // Firestore initialization
+import { db } from "../firebase";
 
 import Footer from "../components/Footer";
 import Backtotop from "../components/Backtotop";
@@ -11,7 +11,6 @@ export default function BlogCollection() {
 
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
@@ -27,7 +26,6 @@ export default function BlogCollection() {
         setLoading(false);
       }
     };
-
     fetchBlogs();
   }, []);
 
@@ -36,22 +34,18 @@ export default function BlogCollection() {
     tmp.innerHTML = html;
     return tmp.textContent || tmp.innerText || "";
   };
-
   const getBlogPreview = (content) => {
     const strippedContent = stripHtml(content);
-    const maxLength = 250; // Adjust this value based on how much preview you want
+    const maxLength = 250; // Adjust this value based on how much preview wanted
     const startIndex = 22;
     const previewContent = strippedContent.length > startIndex
       ? strippedContent.substring(startIndex, startIndex + maxLength) + "..."
       : strippedContent;
-
     return previewContent;
   };
-
   if (loading) {
     return <Preloader />;
   }
-
   return (
     <>
       <section id="recent-blog-posts" className="recent-blog-posts">

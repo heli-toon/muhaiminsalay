@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function About() {
   return (
     <>
@@ -68,7 +69,7 @@ export default function About() {
             </div>
           </div>
           <div className="mt-4 d-flex align-items-center justify-content-center">
-            <a href="/skills" className="btn btned">See All Skills</a>
+            <Link to="/skills" className="btn btned">See All Skills</Link>
           </div>
         </div>
       </section>

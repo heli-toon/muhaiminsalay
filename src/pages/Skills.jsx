@@ -10,7 +10,6 @@ export default function Skills() {
               <span className="line-bar">...</span>
             </div>
           </div>
-
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
             <h4>Languages</h4>
             <div className="row justify-content-center">
@@ -31,7 +30,6 @@ export default function Skills() {
               </div>
             </div>
           </div>
-
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
             <h4>Frontend Frameworks</h4>
             <div className="row justify-content-center">
@@ -49,7 +47,6 @@ export default function Skills() {
               </div>
             </div>
           </div>
-
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
             <h4>Mobile Frameworks</h4>
             <div className="row justify-content-center">
@@ -61,7 +58,6 @@ export default function Skills() {
               </div>
             </div>
           </div>
-
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
             <h4>Backend Frameworks</h4>
             <div className="row justify-content-center">
@@ -73,7 +69,6 @@ export default function Skills() {
               </div>
             </div>
           </div>
-
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
             <h4>Tooling</h4>
             <div className="row justify-content-center">
@@ -91,7 +86,6 @@ export default function Skills() {
               </div>
             </div>
           </div>
-
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
             <h4>Hosting</h4>
             <div className="row justify-content-center">
@@ -106,7 +100,6 @@ export default function Skills() {
               </div>
             </div>
           </div>
-
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
             <h4>Other Tools</h4>
             <div className="row justify-content-center">

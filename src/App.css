@@ -179,10 +179,6 @@ mark{
   color: var(--primary)!important;
   background: var(--black);
 }
-/*--------------------
-  * Desktop Navigation 
------------------------*/
-/* Mobile Nav */
 .mobile-nav-toggle{
   color:var(--primary);
   font-size:2rem;
@@ -444,10 +440,10 @@ mark{
 .skills .section-body {margin-bottom:2rem}
 .skills .row {justify-content:center}
 .skill-icon {
-  width: 50px; /* Set a consistent width */
-  height: 50px; /* Set a consistent height */
+  width: 50px;
+  height: 50px;
   display: block;
-  margin: 10px auto; /* Center and add margin */
+  margin: 10px auto;
 }
 .skills h4 {text-align:center}
 /*--------------------------------------------------------------
@@ -660,12 +656,8 @@ mark{
   color: var(--white);
   content: ",";
 }
-.blog .blog-details .meta-bottom .share {
-  font-size: 1rem;
-}
-.blog .blog-details .meta-bottom .share i {
-  padding-left: 5px;
-}
+.blog .blog-details .meta-bottom .share {font-size: 1rem}
+.blog .blog-details .meta-bottom .share i {padding-left: 5px}
 .blog .post-author {
   padding: 20px;
   margin-top: 30px;
@@ -683,17 +675,13 @@ mark{
   padding: 0;
   color: var(--primary);
 }
-.blog .post-author .social-links {
-  margin: 0 10px 10px 0;
-}
+.blog .post-author .social-links {margin: 0 10px 10px 0}
 .blog .post-author .social-links a {
   color: var(--white);
   margin-right: 1em;
   transition: var(--anim-short);
 }
-.blog .post-author .social-links a:hover {
-  color: var(--primary);
-}
+.blog .post-author .social-links a:hover {color: var(--primary)}
 .blog .post-author p {
   font-style: italic;
   margin-bottom: 0;
@@ -747,7 +735,7 @@ mark{
 .blog .sidebar .categories ul li+li {padding-top: 10px}
 .blog .sidebar .categories ul a {
   color: var(--white);
-  transition: 0.3s;
+  transition: var(--anim-short);
 }
 .blog .sidebar .categories ul a:hover {color: var(--primary)}
 .blog .sidebar .categories ul a span {
@@ -799,9 +787,7 @@ mark{
   background: var(--primary);
   border-radius: 0px;
 }
-.services .icon {
-  margin-bottom: 15px;
-}
+.services .icon {margin-bottom: 15px}
 .services .icon i {
   font-size: 48px;
   line-height: 1;
@@ -885,12 +871,10 @@ mark{
 .contact .email-form input{
   padding: 10px 15px;
   border-radius: 4px;
-  background: var(--white);
 }
 .contact .email-form textarea{
   padding: 12px 15px;
   border-radius: 4px;
-  background: var(--white);
 }
 .contact .email-form button[type="submit"]{
   background: var(--primary);
@@ -1021,9 +1005,7 @@ mark{
   visibility: visible;
   opacity: 1;
 }
-.errorpage h1{
-  font-size: 8rem;
-}
+.errorpage h1{font-size: 8rem}
 #preloader {
   position: fixed;
   top: 0;

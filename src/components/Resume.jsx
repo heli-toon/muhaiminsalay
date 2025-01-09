@@ -23,7 +23,13 @@ function Resume(){
               <h3 className="resume-title">Education</h3>
               {/* <div className="resume-item" data-aos="fade-up" data-aos-delay="100">
                 <h4>Bachelor's Degree Computer Science</h4>
-                <h5>2025 - 2029</h5>
+                <h5>2027 - 2025</h5>
+                <p><em>Ghana Communication Technology University</em></p>
+                <p></p>
+              </div> */}
+              {/* <div className="resume-item" data-aos="fade-up" data-aos-delay="100">
+                <h4>Diploma Computer Science</h4>
+                <h5>2025 - 2027</h5>
                 <p><em>Ghana Communication Technology University</em></p>
                 <p></p>
               </div> */}

@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 export default function Login() {
   const { googleLogin } = useAuth();
   const navigate = useNavigate();
-
   const handleLogin = async () => {
     try {
       await googleLogin();
@@ -14,13 +13,14 @@ export default function Login() {
       alert("Failed to log in. Please try again.");
     }
   };
-
   return (
     <>
-        <section>
-            <h2>Login as Admin</h2>
-            <button onClick={handleLogin} className="btned btn"><i className="bi bi-google"></i> Sign in with Google</button>
-        </section>
+      <section>
+        <h2>Login as Admin</h2>
+        <button onClick={handleLogin} className="btned btn">
+          <i className="bi bi-google"></i> Sign in with Google
+        </button>
+      </section>
     </>
   );
 }

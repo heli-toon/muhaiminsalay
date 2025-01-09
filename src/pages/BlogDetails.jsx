@@ -8,24 +8,20 @@ import Backtotop from "../components/Backtotop";
 import Preloader from "../components/Preloader";
 
 export default function BlogDetails() {
-  const { slug } = useParams(); // Capture the slug from the route
+  const { slug } = useParams();
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(true);
   const [searchText, setSearchText] = useState("");
   const [paragraphs, setParagraphs] = useState([]);
-
   useEffect(() => {
     const paraElements = document.querySelectorAll(".content .paragraph");
     setParagraphs(paraElements);
   }, [blog]);
-
   const handleSearch = (event) => {
     event.preventDefault();
     const textToSearch = searchText.trim();
     if (textToSearch === "") return;
-
     const pattern = new RegExp(`${textToSearch}`, "gi");
-
     paragraphs.forEach((para) => {
       const markedText = para.innerHTML.replace(
         pattern,
@@ -34,26 +30,21 @@ export default function BlogDetails() {
       para.innerHTML = markedText;
     });
   };
-
   useEffect(() => {
     const fetchBlog = async () => {
       try {
         // Query the Firestore collection for the blog with the matching slug
         const q = query(collection(db, "blogs"), where("slug", "==", slug));
         const querySnapshot = await getDocs(q);
-
         if (!querySnapshot.empty) {
-          const blogData = querySnapshot.docs[0].data(); // Get the first matching document
-
+          const blogData = querySnapshot.docs[0].data();
           // Convert Firestore timestamp to JavaScript Date object
           blogData.createdAt = blogData.createdAt.toDate();
-
           setBlog(blogData);
-          window.document.title = `${blogData.title} | Blog`; // Set the window title
-
+          window.document.title = `${blogData.title} | Blog`;
         } else {
           console.error(`Blog with slug "${slug}" not found.`);
-          window.document.title = "Blog Not Found | Blog"; // Set the window title
+          window.document.title = "Blog Not Found | Blog";
         }
       } catch (error) {
         console.error("Error fetching blog:", error);
@@ -61,7 +52,6 @@ export default function BlogDetails() {
         setLoading(false);
       }
     };
-
     fetchBlog();
   }, [slug]);
 
@@ -117,17 +107,9 @@ export default function BlogDetails() {
         <div className="container">
           <div className="row g-5">
             <div className="col-lg-8">
-              <article
-                className="blog-details bg-dg"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
+              <article className="blog-details bg-dg" data-aos="fade-up" data-aos-delay="200">
                 <div className="post-img">
-                  <img
-                    src={blog.imageURL}
-                    alt={blog.imageDesc}
-                    className="img-fluid"
-                  />
+                  <img src={blog.imageURL} alt={blog.imageDesc} className="img-fluid" />
                 </div>
                 <h2 className="title">
                   {blog.title}
@@ -190,13 +172,7 @@ export default function BlogDetails() {
                 <div className="sidebar-item search-form">
                   <h3 className="sidebar-title">Search</h3>
                   <form className="mt-3" onSubmit={handleSearch}>
-                    <input
-                      type="search"
-                      value={searchText}
-                      onChange={(e) => setSearchText(e.target.value)}
-                      title="Search"
-                      placeholder="Search"
-                    />
+                    <input type="search" value={searchText} onChange={(e) => setSearchText(e.target.value)} title="Search" placeholder="Search" />
                     <button title="Search" className="btn">
                       <i className="bi bi-search"></i>
                     </button>
