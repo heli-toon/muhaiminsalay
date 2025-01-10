@@ -6,12 +6,12 @@
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
-    <!-- <url>
-        <loc>https://muhaiminsalay.netlify.app/#apps</loc>
-        <lastmod>2024-08-15</lastmod>
+    <url>
+        <loc>https://muhaiminsalay.netlify.app/skills</loc>
+        <lastmod>2025-01-09</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-    </url> -->
+        <priority>0.5</priority>
+    </url>
     <url>
         <loc>https://muhaiminsalay.netlify.app/blog</loc>
         <lastmod>2024-08-14</lastmod>
