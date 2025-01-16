@@ -23,27 +23,21 @@ function Resume(){
               <h3 className="resume-title">Education</h3>
               {/* <div className="resume-item" data-aos="fade-up" data-aos-delay="100">
                 <h4>Bachelor's Degree Computer Science</h4>
-                <h5>2027 - 2025</h5>
-                <p><em>Ghana Communication Technology University</em></p>
-                <p></p>
-              </div> */}
-              {/* <div className="resume-item" data-aos="fade-up" data-aos-delay="100">
-                <h4>Diploma Computer Science</h4>
-                <h5>2025 - 2027</h5>
+                <h5>2028 - 2025</h5>
                 <p><em>Ghana Communication Technology University</em></p>
                 <p></p>
               </div> */}
               <div className="resume-item" data-aos="fade-up" data-aos-delay="100">
-                <h4></h4>
-                <h5>2021 - 2023</h5>
-                <p><em>Labone Senior High School</em></p>
-                <p>General Science with Elective ICT, Physics, Chemistry &amp; Elective Mathematics.</p>
+                <h4>Diploma Computer Science</h4>
+                <h5>2025 - 2027</h5>
+                <p><em>Ghana Communication Technology University</em></p>
+                <p></p>
               </div>
               <div className="resume-item" data-aos="fade-up" data-aos-delay="100">
                 <h4>Certificates</h4>
                 <h5>2021 - 2024</h5>
                 <p><em>Certification Programs</em></p>
-                <p>SoloLearn HTML, CSS, JavaScript & Python</p>
+                <p>SoloLearn: HTML, CSS, JavaScript & Python</p>
               </div>
             </div>
             <div className="col-lg-6">
