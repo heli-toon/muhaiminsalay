@@ -67,6 +67,9 @@ export default function Skills() {
               <div className="col-6 col-sm-4 col-md-2">
                 <img src="./skills/flask.jpg" alt="Flask" className="img-fluid skill-icon" />
               </div>
+              <div className="col-6 col-sm-4 col-md-2">
+                <img src="./skills/next.svg" alt="Next" className="img-fluid skill-icon" />
+              </div>
             </div>
           </div>
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
