@@ -39,28 +39,28 @@ export default function About() {
                   <h6>Basic knowledge of</h6>
                 </div>
                 <div className="grid-cell">
-                  <p>Python</p>
+                  <p>Python, Flask, Django & Tkinter</p>
                 </div>
                 <div className="grid-cell">
-                  <p>Flask, Django, Tkinter</p>
+                  <p>Expo, React Native</p>
                 </div>
                 <div className="grid-cell">
                   <p>PHP</p>
                 </div>
                 <div className="grid-cell">
-                  <p>HTML, CSS & JavaScript</p>
+                  <p>React, HTML+CSS & JavaScript</p>
                 </div>
                 <div className="grid-cell">
                   <p>Git, SQL</p>
                 </div>
                 <div className="grid-cell">
-                  <p>Tailwindcss, Bulma</p>
+                  <p>Bulma, Next.js, Prisma & MongoDB</p>
                 </div>
                 <div className="grid-cell">
-                  <p>Bootstrap</p>
+                  <p>Bootstrap, Tailwindcss</p>
                 </div>
                 <div className="grid-cell">
-                  <p>React, Electron</p>
+                  <p>Electron</p>
                 </div>
                 <div className="grid-cell">
                   <p>Arduino & Rasperry Pi</p>
