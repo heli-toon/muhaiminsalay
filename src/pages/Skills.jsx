@@ -33,6 +33,10 @@ export default function Skills() {
                 <img src="./skills/typescript.svg" alt="Typescript" className="img-fluid skill-icon" />
                 <span>Typescript</span>
               </div>
+              <div className="col-6 col-sm-4 col-md-2">
+                <img src="./skills/cpp.svg" alt="C plus plus" className="img-fluid skill-icon" />
+                <span>C++</span>
+              </div>
             </div>
           </div>
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
@@ -109,6 +113,14 @@ export default function Skills() {
                 <img src="./skills/vite.svg" alt="Vite" className="img-fluid skill-icon" />
                 <span>Vite</span>
               </div>
+              <div className="col-6 col-sm-4 col-md-2">
+                <img src="./skills/node.svg" alt="Nodejs" className="img-fluid skill-icon" />
+                <span>Node</span>
+              </div>
+              <div className="col-6 col-sm-4 col-md-2">
+                <img src="./skills/prisma.svg" alt="Prisma" className="img-fluid skill-icon" />
+                <span>Prisma</span>
+              </div>
             </div>
           </div>
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
@@ -125,6 +137,10 @@ export default function Skills() {
               <div className="col-6 col-sm-4 col-md-2">
                 <img src="./skills/vercel.svg" alt="Vercel" className="img-fluid skill-icon" />
                 <span>Vercel</span>
+              </div>
+              <div className="col-6 col-sm-4 col-md-2">
+                <img src="./skills/render.png" alt="Render" className="img-fluid skill-icon" />
+                <span>Render</span>
               </div>
             </div>
           </div>
