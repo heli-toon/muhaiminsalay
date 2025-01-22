@@ -37,6 +37,10 @@ export default function Skills() {
                 <img src="./skills/cpp.svg" alt="C plus plus" className="img-fluid skill-icon" />
                 <span>C++</span>
               </div>
+              <div className="col-6 col-sm-4 col-md-2">
+                <img src="./skills/qbasic.png" alt="QBasic" className="img-fluid skill-icon" />
+                <span>QBasic</span>
+              </div>
             </div>
           </div>
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
@@ -168,8 +172,16 @@ export default function Skills() {
                 <span>SQLite</span>
               </div>
               <div className="col-6 col-sm-4 col-md-2">
+                <img src="./skills/mongo.svg" alt="Mongo DB" className="img-fluid skill-icon" />
+                <span>Mongo DB</span>
+              </div>
+              <div className="col-6 col-sm-4 col-md-2">
                 <img src="./skills/vscode.svg" alt="Visual Studio Code" className="img-fluid skill-icon" />
                 <span>Visual Studio Code</span>
+              </div>
+              <div className="col-6 col-sm-4 col-md-2">
+                <img src="./skills/lighthouse.svg" alt="Light House Tool" className="img-fluid skill-icon" />
+                <span>Light House</span>
               </div>
               <div className="col-6 col-sm-4 col-md-2">
                 <img src="./skills/shell.svg" alt="Shell" className="img-fluid skill-icon" />
