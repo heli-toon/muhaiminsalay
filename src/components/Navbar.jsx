@@ -23,26 +23,18 @@ const Navbar = () => {
   };
 
   const handleWindowScroll = () => {
-    if (window.scrollY > 25) {
-      navbarRef.current.classList.add("bg-dg");
-    } else {
-      navbarRef.current.classList.remove("bg-dg");
-    }
+    if (window.scrollY > 25) navbarRef.current.classList.add("bg-dg");
+    else navbarRef.current.classList.remove("bg-dg");
   };
 
   const closeMobileNavbar = () => {
-    if (showNavbarCollapse) {
-      setShowNavbarCollapse(false);
-    }
+    if (showNavbarCollapse) setShowNavbarCollapse(false)
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleWindowScroll);
-    return () => {
-      window.removeEventListener("scroll", handleWindowScroll);
-    };
+    return () => {window.removeEventListener("scroll", handleWindowScroll);};
   }, []);
-
   useEffect(() => {
     if (showNavbarCollapse) {
       navbarIconRef.current.classList.add("bi-x");
