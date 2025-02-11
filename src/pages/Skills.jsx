@@ -79,6 +79,10 @@ export default function Skills() {
                 <img src="./skills/tkinter.svg" alt="Tkinter" className="img-fluid skill-icon" />
                 <span>Tkinter</span>
               </div>
+              <div className="col-6 col-sm-4 col-md-2">
+                <img src="./skills/flet.svg" alt="Tkinter" className="img-fluid skill-icon" />
+                <span>Flet</span>
+              </div>
             </div>
           </div>
           <div className="section-body" data-aos="fade-up" data-aos-delay="100">
