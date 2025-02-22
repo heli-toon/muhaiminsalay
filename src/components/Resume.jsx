@@ -62,6 +62,9 @@ function Resume(){
                 </ul>
               </div>
             </div>
+              <div className="mt-4 d-flex align-items-center justify-content-center">
+                <a href="https://muhaiminsalayk.netlify.app/Abdul_Muhaimin_Salay_Kanton_Resume.pdf" target="_blank" rel="noreferrer" download title="Abdul Muhaimin Salay Kanton Resume" className="btn btned"> <i className="bi bi-file-earmark-arrow-down" /> Download My Resume</a>
+              </div>
           </div>
         </div>
       </section>
