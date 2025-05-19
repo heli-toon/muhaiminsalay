@@ -22,10 +22,10 @@ function Resume(){
               </div>
               <h3 className="resume-title">Education</h3>
               {/* <div className="resume-item" data-aos="fade-up" data-aos-delay="100">
-                <h4>Bachelor's Degree Computer Science</h4>
+                <h4>Bachelor&apos;s Degree Computer Science</h4>
                 <h5>2028 - 2025</h5>
                 <p><em>Ghana Communication Technology University</em></p>
-                <p></p>
+                <p>Specialized program focusing on programming concepts, software development methodologies & computing fundamentals. Curriculum includes data structures, algorithms, database management, web applications & software engineering principles.</p>
               </div> */}
               <div className="resume-item" data-aos="fade-up" data-aos-delay="100">
                 <h4>Diploma in Computer Science</h4>
