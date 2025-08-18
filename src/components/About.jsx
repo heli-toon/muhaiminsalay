@@ -69,7 +69,7 @@ export default function About() {
             </div>
           </div>
           <div className="mt-4 d-flex align-items-center justify-content-center">
-            <Link to="/skills" className="btn btned">See All Skills</Link>
+            <Link to="/skills" className="btn btned py-3 px-4">See All Skills</Link>
           </div>
         </div>
       </section>

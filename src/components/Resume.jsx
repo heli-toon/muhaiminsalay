@@ -74,7 +74,7 @@ function Resume(){
               </div>
             </div>
               <div className="mt-4 d-flex align-items-center justify-content-center">
-                <a href="https://muhaiminsalayk.netlify.app/Abdul_Muhaimin_Salay_Kanton_Resume.pdf" target="_blank" rel="noreferrer" download title="Abdul Muhaimin Salay Kanton Resume" className="btn btned"> <i className="bi bi-file-earmark-arrow-down" /> Download My Resumé</a>
+                <a href="https://muhaiminsalayk.netlify.app/Abdul_Muhaimin_Salay_Kanton_Resume.pdf" target="_blank" rel="noreferrer" download title="Abdul Muhaimin Salay Kanton Resume" className="btn btned py-3 px-4"> <i className="bi bi-file-earmark-arrow-down" /> Download My Resumé</a>
               </div>
           </div>
         </div>

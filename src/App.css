@@ -39,11 +39,11 @@ body {
   background:var(--black);
   color:var(--white);
   overflow-x:hidden;
-  font-family:"Cabin","Poppins",Inter,sans-serif,system-ui;
+  font-family:"Inter","Poppins",Inter,sans-serif,system-ui;
 }
 @font-face{
-  font-family:"Montserrat";
-  src:url("./assets/fonts/Montserrat-Regular.ttf");
+  font-family:"Inter";
+  src:url("./assets/fonts/Inter-Regular.ttf");
 }
 @font-face{
   font-family:"Cabin";
@@ -54,7 +54,7 @@ body {
 }
 h1,h2,h3,h4,h5,h6 {
   font-display:swap;
-  font-family:"Montserrat","Ubuntu", serif;
+  font-family: "Cabin","Montserrat","Ubuntu", serif;
   font-weight:600;
   line-height:inherit;
   letter-spacing:.5px;
@@ -71,7 +71,7 @@ section{
 }
 p{
   color:var(--white);
-  font-size:14px;
+  font-size:16px;
   font-weight:normal;
   line-height:25px;
 }
