@@ -46,6 +46,17 @@
     }
   },
   {
+    "title": "TypeRush",
+    "status": "completed",
+    "icon": "icons/typerush.ico",
+    "size": "13.1 MB",
+    "description": "TypeRush is an engaging typing game that challenges players to improve their typing speed and accuracy through fun and interactive gameplay.",
+    "downloads": {
+      "windows": ["https://github.com/heli-toon/typerush/releases/download/TypeRush-v.0.0.2/TypeRush_Setup-v.0.0.2.exe"],
+      "github": ["https://github.com/heli-toon/typerush/"]
+    }
+  },
+  {
     "title": "QRGenie",
     "status": "completed",
     "icon": "",
