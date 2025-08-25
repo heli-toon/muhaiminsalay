@@ -1,30 +1,35 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 
-import Apps from "../pages/Apps.jsx";
-import Home from "../pages/Home.jsx";
-import Login from "../pages/Login.jsx";
-import Skills from "../pages/Skills.jsx";
-import BlogEdit from "../pages/BlogEdit.jsx";
-import ErrorPage from "../pages/Error404.jsx";
+import Apps from "../pages/Apps.tsx";
+import Home from "../pages/Home.tsx";
+import Login from "../pages/Login.tsx";
+import Skills from "../pages/Skills.tsx";
+import BlogEdit from "../pages/BlogEdit.tsx";
+import ErrorPage from "../pages/Error404.tsx";
 import logo from "../assets/images/logo.webp";
-import PrivateRoute from "./PrivateRoutes.jsx";
-import BlogDetails from "../pages/BlogDetails.jsx";
-import BlogCollection from "../pages/BlogCollection.jsx";
-import { AuthProvider } from "../context/AuthContext.jsx";
+import PrivateRoute from "./PrivateRoutes.tsx";
+import BlogDetails from "../pages/BlogDetails.tsx";
+import BlogCollection from "../pages/BlogCollection.tsx";
+import { AuthProvider } from "../context/AuthContext.tsx";
 
 const Navbar = () => {
   const [showNavbarCollapse, setShowNavbarCollapse] = useState(false);
-  const navbarRef = useRef(null);
-  const navbarIconRef = useRef(null);
+  const navbarRef = useRef<HTMLElement | null>(null);
+  const navbarIconRef = useRef<HTMLElement | null>(null);
 
   const handleToggleNavbarCollapse = () => {
     setShowNavbarCollapse(!showNavbarCollapse);
   };
 
   const handleWindowScroll = () => {
-    if (window.scrollY > 25) navbarRef.current.classList.add("bg-dg");
-    else navbarRef.current.classList.remove("bg-dg");
+    if (navbarRef.current) {
+      if (window.scrollY > 25) {
+        navbarRef.current.classList.add("bg-dg");
+      } else {
+        navbarRef.current.classList.remove("bg-dg");
+      }
+    }
   };
 
   const closeMobileNavbar = () => {
@@ -36,10 +41,12 @@ const Navbar = () => {
     return () => {window.removeEventListener("scroll", handleWindowScroll);};
   }, []);
   useEffect(() => {
-    if (showNavbarCollapse) {
-      navbarIconRef.current.classList.add("bi-x");
-    } else {
-      navbarIconRef.current.classList.remove("bi-x");
+    if (navbarIconRef.current) {
+      if (showNavbarCollapse) {
+        navbarIconRef.current.classList.add("bi-x");
+      } else {
+        navbarIconRef.current.classList.remove("bi-x");
+      }
     }
   }, [showNavbarCollapse]);
 
