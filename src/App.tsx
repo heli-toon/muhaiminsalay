@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 
 import Navbar from "./components/Navbar";
 import Preloader from "./components/Preloader";
-
-import "./assets/bootstrap-icons.min.css";
-import "./assets/bootstrap.min.css";
-import 'aos/dist/aos.css'
 import AOS from 'aos'
+
+import "bootstrap-icons/font/bootstrap-icons.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import 'aos/dist/aos.css'
 import "./App.css";
 
 export default function App() {

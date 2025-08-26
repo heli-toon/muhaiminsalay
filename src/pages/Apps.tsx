@@ -2,8 +2,22 @@ import { useEffect, useState } from "react";
 import AppCard from "../components/AppCard";
 import WebCard from "../components/WebCard";
 
-type AppType = { title: string; [key: string]: any };
-type WebType = { title: string; [key: string]: any };
+type AppType = {
+  title: string;
+  status: string;
+  icon: string;
+  size: string;
+  downloads: { [platform: string]: string[] };
+  description: string;
+};
+
+type WebType = {
+  title: string;
+  status: string;
+  icon: string;
+  downloads: { [platform: string]: string[] };
+  description: string;
+};
 
 const Apps = () => {
   // window.document.title = "Applications | Muhaimin Abdul Salay Kanton";

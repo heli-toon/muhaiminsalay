@@ -1,5 +1,3 @@
-import logo from "../assets/images/logo.webp";
-
 export default function Footer() {
   return (
     <>
@@ -10,7 +8,7 @@ export default function Footer() {
               <div className="col-lg-5 col-md-12 footer-info">
                 <a href="/" className="logo d-flex align-items-center">
                   <img
-                    src={logo}
+                    src={"/images/logo.webp"}
                     width={70}
                     height={35}
                     alt="Muhaimin Salay Logo"
@@ -21,25 +19,25 @@ export default function Footer() {
                   every desicion to create something truly remarkable.
                 </p>
                 <div className="social-links mt-3">
-                  <a href="https://x.com/SalayAbdul" className="twitter" title="Twitter Account" target="_blank" rel="noreferrer">
+                  <a href="https://x.com/SalayAbdul" className="twitter" title="Twitter Account" target="_blank" rel="noreferrer noopener">
                     <i className="bi bi-twitter-x"></i>
                   </a>
-                  <a href="https://www.facebook.com/muhaiminsalay" className="facebook" title="Facebook Page" target="_blank" rel="noreferrer">
+                  <a href="https://www.facebook.com/muhaiminsalay" className="facebook" title="Facebook Page" target="_blank" rel="noreferrer noopener">
                     <i className="bi bi-facebook"></i>
                   </a>
-                  <a href="https://www.linkedin.com/in/muhaimin-salay-a653b6299/" className="linkedin" title="LinkedIn Account" target="_blank" rel="noreferrer">
+                  <a href="https://www.linkedin.com/in/muhaimin-salay-a653b6299/" className="linkedin" title="LinkedIn Account" target="_blank" rel="noreferrer noopener">
                     <i className="bi bi-linkedin"></i>
                   </a>
-                  <a href="https://www.instagram.com/muhaiminsalay/" className="instagram" title="Instagram Page" target="_blank" rel="noreferrer">
+                  <a href="https://www.instagram.com/muhaiminsalay/" className="instagram" title="Instagram Page" target="_blank" rel="noreferrer noopener">
                     <i className="bi bi-instagram"></i>
                   </a>
-                  <a href="https://www.github.com/heli-toon/" className="github" title="GitHub Profile" target="_blank" rel="noreferrer">
+                  <a href="https://www.github.com/heli-toon/" className="github" title="GitHub Profile" target="_blank" rel="noreferrer noopener">
                     <i className="bi bi-github"></i>
                   </a>
-                  <a href="https://www.wa.me/233535760503/" className="whatsapp" title="WhatsApp Number" target="_blank" rel="noreferrer">
+                  <a href="https://www.wa.me/233535760503/" className="whatsapp" title="WhatsApp Number" target="_blank" rel="noreferrer noopener">
                     <i className="bi bi-whatsapp"></i>
                   </a>
-                  <a href="mailto:abdulkanton2005@gmail.com" className="envelope" title="Email Address" target="_blank" rel="noreferrer">
+                  <a href="mailto:abdulkanton2005@gmail.com" className="envelope" title="Email Address" target="_blank" rel="noreferrer noopener">
                     <i className="bi bi-envelope"></i>
                   </a>
                 </div>

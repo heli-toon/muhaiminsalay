@@ -7,7 +7,6 @@ import Login from "../pages/Login.tsx";
 import Skills from "../pages/Skills.tsx";
 import BlogEdit from "../pages/BlogEdit.tsx";
 import ErrorPage from "../pages/Error404.tsx";
-import logo from "../assets/images/logo.webp";
 import PrivateRoute from "./PrivateRoutes.tsx";
 import BlogDetails from "../pages/BlogDetails.tsx";
 import BlogCollection from "../pages/BlogCollection.tsx";
@@ -57,7 +56,7 @@ const Navbar = () => {
           <div className="header-wrapper container d-flex align-items-center justify-content-lg-between space-between">
             <div className="d-flex flex-row align-items-center justify-content-center">
               <a className="logo me-auto me-lg-0" title="Home" href="/">
-                <img src={logo} width={56} height={56} className="img-fluid" alt="Muhaimin Salay Logo" />
+                <img src={"/images/logo.webp"} width={56} height={56} className="img-fluid" alt="Muhaimin Salay Logo" />
               </a>
             </div>
             <nav id="navbar" className={`navbar order-last order-lg-0 ${showNavbarCollapse ? "navbar-mobile" : ""}`}>

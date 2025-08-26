@@ -39,7 +39,7 @@ body {
   background:var(--black);
   color:var(--white);
   overflow-x:hidden;
-  font-family:"Inter","Poppins",Inter,sans-serif,system-ui;
+  font-family:"Inter","Poppins",sans-serif,system-ui;
 }
 @font-face{
   font-family:"Inter";

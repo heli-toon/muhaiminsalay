@@ -35,7 +35,12 @@ const AppCard: React.FC<AppCardProps> = ({ app }) => {
               <ul className="d-flex download-icons">
                 {platforms.map((platform) => (
                   <li key={platform}>
-                    <a href={downloads[platform].join(", ")} target="_blank" title={downloads[platform]} rel="noreferrer">
+                    <a
+                      href={downloads[platform].join(", ")}
+                      target="_blank"
+                      title={downloads[platform].join(", ")}
+                      rel="noreferrer"
+                    >
                       <i className={`bi bi-${platform}`}></i>
                     </a>
                   </li>
