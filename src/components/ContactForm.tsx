@@ -21,7 +21,7 @@ function ContactForm() {
             <ValidationError prefix="Subject" field="subject" errors={state.errors} />
         </div>
         <div className="col-md-12">
-            <textarea id="message" name="message" className="form-control" rows="6" placeholder="Message" required spellCheck />
+            <textarea id="message" name="message" className="form-control" rows={6} placeholder="Message" required spellCheck />
             <ValidationError prefix="Message" field="message" errors={state.errors} />
         </div>
         <div className="col-md-12">

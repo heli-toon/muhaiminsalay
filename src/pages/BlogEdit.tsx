@@ -5,10 +5,14 @@ import { db } from "../firebase";
 import { useAuth } from "../context/AuthContext";
 import Preloader from "../components/Preloader";
 
+type AuthContextType = {
+  logout: () => Promise<void>;
+};
+
 export default function BlogEdit() {
   const { slug } = useParams();
   const navigate = useNavigate();
-  const { logout } = useAuth();
+  const { logout } = useAuth() as AuthContextType;
 
   const [slug2, setSlug2] = useState("");
   const [title, setTitle] = useState("");
@@ -48,22 +52,41 @@ export default function BlogEdit() {
     };
     fetchBlog();
   }, [slug]);
-  const handleSave = async (e) => {
+  interface BlogData {
+    slug2: string;
+    title: string;
+    content: string;
+    imageURL: string;
+    imageDesc: string;
+    readTime: string;
+    tags: string[];
+    createdAt: Date;
+  }
+
+  const handleSave = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const blogData = {
+    const blogData: BlogData = {
       slug2,
       title,
       content,
       imageURL,
       imageDesc,
       readTime,
-      tags: tags.split(",").map((tag) => tag.trim()),
+      tags: tags.split(",").map((tag: string) => tag.trim()),
       createdAt: new Date(),
     };
     try {
       if (slug) {
         const docRef = doc(db, "blogs", slug);
-        await updateDoc(docRef, blogData);
+        await updateDoc(docRef, {
+          slug: slug2,
+          title,
+          content,
+          imageURL,
+          imageDesc,
+          readTime,
+          tags: tags.split(",").map((tag: string) => tag.trim()),
+        });
         alert("Blog updated successfully!");
       } else {
         await addDoc(collection(db, "blogs"), blogData);
@@ -71,7 +94,7 @@ export default function BlogEdit() {
       }
       navigate("/blog");
     } catch (error) {
-      alert("Error saving blog:", error);
+      alert("Error saving blog: " + error);
     }
   };
   const handleLogout = async () => {
@@ -101,31 +124,31 @@ export default function BlogEdit() {
           <form onSubmit={handleSave} className="mt-3">
             <div className="mb-3">
               <label className="form-label text-left">Slug</label>
-              <input type="text" className="form-control" value={slug2} onChange={(e) => setSlug2(e.target.value)} required />
+              <input type="text" title="Slug" className="form-control" value={slug2} onChange={(e) => setSlug2(e.target.value)} required />
             </div>
             <div className="mb-3">
               <label className="form-label text-left">Title</label>
-              <input type="text" className="form-control" value={title} onChange={(e) => setTitle(e.target.value)} required />
+              <input type="text" title="Title" className="form-control" value={title} onChange={(e) => setTitle(e.target.value)} required />
             </div>
             <div className="mb-3">
               <label className="form-label">Content</label>
-              <textarea className="form-control" value={content} onChange={(e) => setContent(e.target.value)} required />
+              <textarea className="form-control" title="Content" value={content} onChange={(e) => setContent(e.target.value)} required />
             </div>
             <div className="mb-3">
               <label className="form-label">Image URL</label>
-              <input type="text" className="form-control" value={imageURL} onChange={(e) => setImageURL(e.target.value)} required />
+              <input type="text" className="form-control" title="Image URL" value={imageURL} onChange={(e) => setImageURL(e.target.value)} required />
             </div>
             <div className="mb-3">
               <label className="form-label">Image Description</label>
-              <input type="text" className="form-control" value={imageDesc} onChange={(e) => setImageDesc(e.target.value)} required />
+              <input type="text" className="form-control" title="Image Description" value={imageDesc} onChange={(e) => setImageDesc(e.target.value)} required />
             </div>
             <div className="mb-3">
               <label className="form-label">Read Time (in minutes)</label>
-              <input type="number" className="form-control" value={readTime} onChange={(e) => setReadTime(e.target.value)} required />
+              <input type="number" className="form-control" title="Read Time" value={readTime} onChange={(e) => setReadTime(e.target.value)} required />
             </div>
             <div className="mb-3">
               <label className="form-label">Tags (comma separated)</label>
-              <input type="text" className="form-control" value={tags} onChange={(e) => setTags(e.target.value)} required />
+              <input type="text" className="form-control" title="Tags" value={tags} onChange={(e) => setTags(e.target.value)} required />
             </div>
             <button type="submit" className="btned btn">
                 <i className="bi bi-plus-circle-fill"></i> {" "}

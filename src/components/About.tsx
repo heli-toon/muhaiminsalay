@@ -18,7 +18,7 @@ export default function About() {
               and Django, Flask and Firebase for backends. I also have a keen interest
               in exploring the world of Internet of Things (IoT) with Arduino and
               Raspberry Pi. Additionally, I develop desktop applications using
-              Tkinter (Python) and Electron (JavaScript), bringing my ideas to
+              Tkinter, Flet (Python) and Electron (JavaScript), bringing my ideas to
               life on the desktop. I believe that determination, curiosity, and
               self-discipline are essential qualities for success in any field.
               I embody these values in my approach to web development and

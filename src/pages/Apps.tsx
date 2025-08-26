@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import AppCard from "../components/AppCard";
 import WebCard from "../components/WebCard";
+
+type AppType = { title: string; [key: string]: any };
+type WebType = { title: string; [key: string]: any };
 
 const Apps = () => {
   // window.document.title = "Applications | Muhaimin Abdul Salay Kanton";
@@ -10,8 +13,8 @@ const Apps = () => {
   //     "content",
   //     "Discover all of Muhaimin's projects & creations. Download and experience innovation."
   //   );
-  const [data, setData] = useState([]);
-  const [data2, setData2] = useState([]);
+  const [data, setData] = useState<AppType[]>([]);
+  const [data2, setData2] = useState<WebType[]>([]);
 
   useEffect(() => {
     fetch("apps.json")

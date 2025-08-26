@@ -1,4 +1,21 @@
-const AppCard = ({ app }) => {
+interface AppDownloads {
+  [platform: string]: string[];
+}
+
+interface App {
+  title: string;
+  status: string;
+  icon: string;
+  size: string;
+  downloads: AppDownloads;
+  description: string;
+}
+
+interface AppCardProps {
+  app: App;
+}
+
+const AppCard: React.FC<AppCardProps> = ({ app }) => {
   const { title, status, icon, size, downloads, description } = app;
   const platforms = Object.keys(downloads);
 

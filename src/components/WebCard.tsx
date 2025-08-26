@@ -1,4 +1,20 @@
-  const WebCard = ({ web }) => {
+  interface DownloadLinks {
+    [platform: string]: string[];
+  }
+  
+  interface Web {
+    title: string;
+    status: string;
+    icon: string;
+    downloads: DownloadLinks;
+    description: string;
+  }
+  
+  interface WebCardProps {
+    web: Web;
+  }
+  
+  const WebCard: React.FC<WebCardProps> = ({ web }) => {
     const { title, status, icon, downloads, description } = web;
     const platforms = Object.keys(downloads);
   
@@ -18,7 +34,7 @@
                 <ul className="d-flex download-icons">
                   {platforms.map((platform) => (
                     <li key={platform}>
-                      <a href={downloads[platform].join(", ")} target="_blank" title={downloads[platform]} rel="noreferrer">
+                      <a href={downloads[platform].join(", ")} target="_blank" title={downloads[platform].join(", ")} rel="noreferrer">
                         <i className={`bi bi-${platform}`}></i>
                       </a>
                     </li>

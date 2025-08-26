@@ -7,25 +7,38 @@ import Footer from "../components/Footer";
 import Backtotop from "../components/Backtotop";
 import Preloader from "../components/Preloader";
 
+type Blog = {
+  title: string;
+  slug: string;
+  imageURL: string;
+  imageDesc: string;
+  createdAt: Date;
+  readTime: number;
+  content: string;
+  tags: string[];
+};
+
 export default function BlogDetails() {
   const { slug } = useParams();
-  const [blog, setBlog] = useState(null);
+  const [blog, setBlog] = useState<Blog | null>(null);
   const [loading, setLoading] = useState(true);
   const [searchText, setSearchText] = useState("");
-  const [paragraphs, setParagraphs] = useState([]);
+  const [paragraphs, setParagraphs] = useState<Element[]>([]);
   useEffect(() => {
     const paraElements = document.querySelectorAll(".content .paragraph");
-    setParagraphs(paraElements);
+    setParagraphs(Array.from(paraElements));
   }, [blog]);
-  const handleSearch = (event) => {
+  interface SearchEvent extends React.FormEvent<HTMLFormElement> {}
+
+  const handleSearch = (event: SearchEvent): void => {
     event.preventDefault();
-    const textToSearch = searchText.trim();
+    const textToSearch: string = searchText.trim();
     if (textToSearch === "") return;
-    const pattern = new RegExp(`${textToSearch}`, "gi");
-    paragraphs.forEach((para) => {
-      const markedText = para.innerHTML.replace(
+    const pattern: RegExp = new RegExp(`${textToSearch}`, "gi");
+    paragraphs.forEach((para: Element) => {
+      const markedText: string = para.innerHTML.replace(
         pattern,
-        (match) => `<mark>${match}</mark>`
+        (match: string) => `<mark>${match}</mark>`
       );
       para.innerHTML = markedText;
     });
@@ -33,15 +46,22 @@ export default function BlogDetails() {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        // Query the Firestore collection for the blog with the matching slug
         const q = query(collection(db, "blogs"), where("slug", "==", slug));
         const querySnapshot = await getDocs(q);
         if (!querySnapshot.empty) {
           const blogData = querySnapshot.docs[0].data();
-          // Convert Firestore timestamp to JavaScript Date object
-          blogData.createdAt = blogData.createdAt.toDate();
-          setBlog(blogData);
-          window.document.title = `${blogData.title} | Blog`;
+          const mappedBlog: Blog = {
+            title: blogData.title,
+            slug: blogData.slug,
+            imageURL: blogData.imageURL,
+            imageDesc: blogData.imageDesc,
+            createdAt: blogData.createdAt.toDate(),
+            readTime: blogData.readTime,
+            content: blogData.content,
+            tags: blogData.tags,
+          };
+          setBlog(mappedBlog);
+          window.document.title = `${mappedBlog.title} | Blog`;
         } else {
           console.error(`Blog with slug "${slug}" not found.`);
           window.document.title = "Blog Not Found | Blog";

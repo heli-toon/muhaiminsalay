@@ -1,13 +1,15 @@
 import { useEffect, useRef } from "react";
 
 export default function Backtotop() {
-  const toTop = useRef(null);
+  const toTop = useRef<HTMLAnchorElement>(null);
 
   const handleWindowScrolltotop = () => {
-    if (window.scrollY > 25) {
-      toTop.current.classList.add("active");
-    } else {
-      toTop.current.classList.remove("active");
+    if (toTop.current) {
+      if (window.scrollY > 25) {
+        toTop.current.classList.add("active");
+      } else {
+        toTop.current.classList.remove("active");
+      }
     }
   };
   useEffect(() => {

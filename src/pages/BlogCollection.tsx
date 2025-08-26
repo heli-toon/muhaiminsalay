@@ -9,16 +9,36 @@ import Preloader from "../components/Preloader";
 export default function BlogCollection() {
   window.document.title = "Muhaimin Abdul Salay Kanton | Blog";
 
-  const [blogs, setBlogs] = useState([]);
+  type Blog = {
+    id: string;
+    slug: string;
+    imageURL: string;
+    imageDesc?: string;
+    title: string;
+    content: string;
+    createdAt: { seconds: number };
+    readTime: number;
+  };
+
+  const [blogs, setBlogs] = useState<Blog[]>([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
         const querySnapshot = await getDocs(collection(db, "blogs"));
-        const blogsData = querySnapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
+        const blogsData = querySnapshot.docs.map((doc) => {
+          const data = doc.data();
+          return {
+            id: doc.id,
+            slug: data.slug,
+            imageURL: data.imageURL,
+            imageDesc: data.imageDesc,
+            title: data.title,
+            content: data.content,
+            createdAt: data.createdAt,
+            readTime: data.readTime,
+          } as Blog;
+        });
         setBlogs(blogsData);
       } catch (error) {
         console.error("Error fetching blogs:", error);
@@ -29,16 +49,20 @@ export default function BlogCollection() {
     fetchBlogs();
   }, []);
 
-  const stripHtml = (html) => {
+  const stripHtml = (html: string) => {
     const tmp = document.createElement("DIV");
     tmp.innerHTML = html;
     return tmp.textContent || tmp.innerText || "";
   };
-  const getBlogPreview = (content) => {
-    const strippedContent = stripHtml(content);
-    const maxLength = 250; // Adjust this value based on how much preview wanted
-    const startIndex = 22;
-    const previewContent = strippedContent.length > startIndex
+  interface GetBlogPreview {
+    (content: string): string;
+  }
+
+  const getBlogPreview: GetBlogPreview = (content: string): string => {
+    const strippedContent: string = stripHtml(content);
+    const maxLength: number = 250; // Adjust this value based on how much preview wanted
+    const startIndex: number = 22;
+    const previewContent: string = strippedContent.length > startIndex
       ? strippedContent.substring(startIndex, startIndex + maxLength) + "..."
       : strippedContent;
     return previewContent;
