@@ -75,7 +75,7 @@ export default function BlogDetails() {
     fetchBlog();
   }, [slug]);
 
-  if (loading) return <p><Preloader /></p>;
+  if (loading) return <Preloader />;
   if (!blog)
     return (
       <>
@@ -85,10 +85,10 @@ export default function BlogDetails() {
               <h2>Blog Not Found</h2>
               <ol>
                 <li>
-                  <a href="/">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a href="/blog/">Blog</a>
+                  <Link to="/blog">Blog</Link>
                 </li>
                 <li>Blog Not Found</li>
               </ol>
@@ -113,10 +113,10 @@ export default function BlogDetails() {
             <h2>{blog.title}</h2>
             <ol>
               <li>
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="/blog/">Blog</a>
+                <Link to="/blog">Blog</Link>
               </li>
               <li>{blog.title}</li>
             </ol>

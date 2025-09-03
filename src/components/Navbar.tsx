@@ -1,16 +1,5 @@
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
-
-import Apps from "../pages/Apps.tsx";
-import Home from "../pages/Home.tsx";
-import Login from "../pages/Login.tsx";
-import Skills from "../pages/Skills.tsx";
-import BlogEdit from "../pages/BlogEdit.tsx";
-import ErrorPage from "../pages/Error404.tsx";
-import PrivateRoute from "./PrivateRoutes.tsx";
-import BlogDetails from "../pages/BlogDetails.tsx";
-import BlogCollection from "../pages/BlogCollection.tsx";
-import { AuthProvider } from "../context/AuthContext.tsx";
 
 const Navbar = () => {
   const [showNavbarCollapse, setShowNavbarCollapse] = useState(false);
@@ -39,6 +28,7 @@ const Navbar = () => {
     window.addEventListener("scroll", handleWindowScroll);
     return () => {window.removeEventListener("scroll", handleWindowScroll);};
   }, []);
+  
   useEffect(() => {
     if (navbarIconRef.current) {
       if (showNavbarCollapse) {
@@ -50,55 +40,38 @@ const Navbar = () => {
   }, [showNavbarCollapse]);
 
   return (
-    <>
-      <BrowserRouter>
-        <header id="header" className="fixed-top" ref={navbarRef}>
-          <div className="header-wrapper container d-flex align-items-center justify-content-lg-between space-between">
-            <div className="d-flex flex-row align-items-center justify-content-center">
-              <a className="logo me-auto me-lg-0" title="Home" href="/">
-                <img src={"/images/logo.webp"} width={56} height={56} className="img-fluid" alt="Muhaimin Salay Logo" />
-              </a>
-            </div>
-            <nav id="navbar" className={`navbar order-last order-lg-0 ${showNavbarCollapse ? "navbar-mobile" : ""}`}>
-              <ul>
-                <li className="nav-item active">
-                  <Link className="nav-link" to="/" onClick={closeMobileNavbar}> Home </Link>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/#about" onClick={closeMobileNavbar}> About </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/#apps" onClick={closeMobileNavbar}> Apps </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/skills" onClick={closeMobileNavbar}> Skills </a>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/blog" onClick={closeMobileNavbar}> Blog </Link>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/#contact" onClick={closeMobileNavbar}> Contact </a>
-                </li>
-              </ul>
-              <i className="bi bi-list mobile-nav-toggle" ref={navbarIconRef} onClick={handleToggleNavbarCollapse}></i>
-            </nav>
-          </div>
-        </header>
-        <AuthProvider>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="#apps" element={<Apps />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/blog" element={<BlogCollection />} />
-            <Route path="/blog/:slug" element={<BlogDetails />} />
-            <Route path="/add" element={<PrivateRoute><BlogEdit /></PrivateRoute>} />
-            <Route path="/edit/:slug" element={<PrivateRoute><BlogEdit /></PrivateRoute>} />
-            <Route path="*" element={<ErrorPage />} />
-          </Routes>
-        </AuthProvider>
-      </BrowserRouter>
-    </>
+    <header id="header" className="fixed-top" ref={navbarRef}>
+      <div className="header-wrapper container d-flex align-items-center justify-content-lg-between space-between">
+        <div className="d-flex flex-row align-items-center justify-content-center">
+          <Link className="logo me-auto me-lg-0" title="Home" to="/">
+            <img src={"/images/logo.webp"} width={56} height={56} className="img-fluid" alt="Muhaimin Salay Logo" />
+          </Link>
+        </div>
+        <nav id="navbar" className={`navbar order-last order-lg-0 ${showNavbarCollapse ? "navbar-mobile" : ""}`}>
+          <ul>
+            <li className="nav-item active">
+              <Link className="nav-link" to="/" onClick={closeMobileNavbar}> Home </Link>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/#about" onClick={closeMobileNavbar}> About </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/#apps" onClick={closeMobileNavbar}> Apps </a>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/skills" onClick={closeMobileNavbar}> Skills </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/blog" onClick={closeMobileNavbar}> Blog </Link>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/#contact" onClick={closeMobileNavbar}> Contact </a>
+            </li>
+          </ul>
+          <i className="bi bi-list mobile-nav-toggle" ref={navbarIconRef} onClick={handleToggleNavbarCollapse}></i>
+        </nav>
+      </div>
+    </header>
   );
 };
 

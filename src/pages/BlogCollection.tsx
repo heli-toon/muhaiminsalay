@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
 
@@ -100,10 +101,10 @@ export default function BlogCollection() {
                   </div>
                   <h3 className="post-title">{blog.title}</h3>
                   <p>{getBlogPreview(blog.content)}</p>
-                  <a href={`/blog/${blog.slug}/`} className="readmore btn-get-started">
+                  <Link to={`/blog/${blog.slug}`} className="readmore btn-get-started">
                     <span>Read More</span>
                     <i className="bi bi-arrow-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}
