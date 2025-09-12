@@ -5,7 +5,7 @@
   --black:#0c0c0c;
   --black2:#252525;
   --primary:#f6700d;
-  --primarydark:#d28338;
+  --primarydark:#EA3500;
   --white:#fff;
   --darkgray:#2e2e2e;
   --lightgray:#d8d8d8;
@@ -140,7 +140,6 @@ mark{
 }
 #header .logo img{
   align-self:center;
-  width:4rem;
 }
 .header-wrapper{
   display:flex;
@@ -654,7 +653,7 @@ mark{
 .blog .blog-details .meta-bottom .tags li+li::before {
   padding-right:6px;
   color:var(--white);
-  content:",";
+  content:","; 
 }
 .blog .blog-details .meta-bottom .share {font-size:1rem}
 .blog .blog-details .meta-bottom .share i {padding-left:5px}
@@ -906,7 +905,6 @@ mark{
   color:var(--primary);
 }
 .footer .footer-top .footer-info .logo img{
-  max-height:40px;
   margin-right:6px;
 }
 .footer .footer-top .footer-info .logo span{

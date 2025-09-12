@@ -44,7 +44,7 @@ const Navbar = () => {
       <div className="header-wrapper container d-flex align-items-center justify-content-lg-between space-between">
         <div className="d-flex flex-row align-items-center justify-content-center">
           <Link className="logo me-auto me-lg-0" title="Home" to="/">
-            <img src={"/images/logo.webp"} width={56} height={56} className="img-fluid" alt="Muhaimin Salay Logo" />
+            <img src={"/images/logo.webp"} width="48" height="48" className="img-fluid" alt="Muhaimin Salay Logo" />
           </Link>
         </div>
         <nav id="navbar" className={`navbar order-last order-lg-0 ${showNavbarCollapse ? "navbar-mobile" : ""}`}>

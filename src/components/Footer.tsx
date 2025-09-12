@@ -9,9 +9,9 @@ export default function Footer() {
                 <a href="/" className="logo d-flex align-items-center">
                   <img
                     src={"/images/logo.webp"}
-                    width={70}
-                    height={35}
                     alt="Muhaimin Salay Logo"
+                    width="52"
+                    height="52"
                   />
                 </a>
                 <p>
