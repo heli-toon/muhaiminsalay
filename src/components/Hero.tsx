@@ -1,5 +1,3 @@
-import map from "/menobackground.png";
-
 export default function Hero() {
   const handleContextMenu = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -95,7 +93,7 @@ export default function Hero() {
             <div className="mx-auto w-full max-w-[360px] sm:max-w-[420px] md:max-w-[460px] rounded-xl border border-white/10 bg-gray-800/40">
               <div className="aspect-square w-full rounded-lg bg-black/40 flex items-center justify-center">
                 <img
-                  src={map}
+                  src={"/menobackground.png"}
                   alt="Portrait"
                   className="w-full h-full object-contain select-none"
                   draggable="false"

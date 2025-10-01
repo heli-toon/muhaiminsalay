@@ -48,7 +48,6 @@ export default function BlogEdit() {
           return;
         }
 
-        // Fallback: fetch by slug field
         const q = query(collection(db, "blogs"), where("slug", "==", slug));
         const snap = await getDocs(q);
         if (!snap.empty) {
@@ -91,7 +90,6 @@ export default function BlogEdit() {
 
     try {
       if (docId) {
-        // Update only the intended fields; do not touch createdAt
         await updateDoc(doc(db, "blogs", docId), {
           slug: slug2,
           title,

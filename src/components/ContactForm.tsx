@@ -1,6 +1,7 @@
 import { useForm, ValidationError } from "@formspree/react";
 
 export default function ContactForm() {
+  // const formApiKey = process.env.REACT_APP_FORMSPREE_API_KEY;
   const [state, handleSubmit] = useForm("mjkbrjeq");
 
   if (state.succeeded) {
@@ -13,7 +14,7 @@ export default function ContactForm() {
           <h3 className="text-xl font-semibold text-white mb-2">Message Sent!</h3>
           <p className="text-gray-400">
             Thanks for sending us a message! We'll get back to you as fast as we can.
-          </p>
+          </p> 
         </div>
       </div>
     );

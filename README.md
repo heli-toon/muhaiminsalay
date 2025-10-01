@@ -1,4 +1,4 @@
 # Abdul Muhaimin Salay Kanton Portfolio Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+Welcome to my digital studio! I'm a passionate web developer dedicated to crafting exceptional online experiences. With expertise in cutting-edge technologies, I create visually stunning and user-friendly websites and apps that drive results. Let's bring your vision to life.
