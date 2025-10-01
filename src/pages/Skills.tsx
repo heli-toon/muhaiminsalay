@@ -1,221 +1,163 @@
-import Footer from "../components/Footer";
+import { useEffect } from "react";
+import AOS from "aos";
+
 export default function Skills() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: "ease-out",
+    });
+  }, []);
+
+  const skillGroups = [
+    {
+      title: "Languages",
+      skills: [
+        { name: "Python", icon: "./skills/python.svg" },
+        { name: "HTML 5", icon: "./skills/html.svg" },
+        { name: "CSS 3", icon: "./skills/css.svg" },
+        { name: "JavaScript", icon: "./skills/javascript.svg" },
+        { name: "Typescript", icon: "./skills/typescript.svg" },
+        { name: "C++", icon: "./skills/cpp.svg" },
+      ],
+    },
+    {
+      title: "Frontend",
+      skills: [
+        { name: "React", icon: "./skills/reactjs.svg" },
+        { name: "Bootstrap", icon: "./skills/bootstrap.svg" },
+        { name: "TailwindCSS", icon: "./skills/tailwind.svg" },
+        { name: "PostCSS", icon: "./skills/postcss.svg" },
+      ],
+    },
+    {
+      title: "Mobile & Desktop",
+      skills: [
+        { name: "Expo", icon: "./skills/expo.svg" },
+        { name: "React Native", icon: "./skills/react-native.svg" },
+        { name: "Tkinter", icon: "./skills/tkinter.svg" },
+        { name: "Flet", icon: "./skills/flet.svg" },
+      ],
+    },
+    {
+      title: "Backend",
+      skills: [
+        { name: "Django", icon: "./skills/django.svg" },
+        { name: "Flask", icon: "./skills/flask.jpg" },
+        { name: "Next.js", icon: "./skills/next.svg" },
+      ],
+    },
+    {
+      title: "Tooling",
+      skills: [
+        { name: "Git", icon: "./skills/git.svg" },
+        { name: "npm", icon: "./skills/npm.svg" },
+        { name: "PIP", icon: "./skills/pip.svg" },
+        { name: "Vite", icon: "./skills/vite.svg" },
+        { name: "Node.js", icon: "./skills/node.svg" },
+        { name: "Prisma", icon: "./skills/prisma.svg" },
+      ],
+    },
+    {
+      title: "Hosting",
+      skills: [
+        { name: "Firebase", icon: "./skills/firebase.svg" },
+        { name: "Netlify", icon: "./skills/netlify.svg" },
+        { name: "Vercel", icon: "./skills/vercel.svg" },
+        { name: "Render", icon: "./skills/render.png" },
+      ],
+    },
+    {
+      title: "Other Tools",
+      skills: [
+        { name: "Arduino", icon: "./skills/arduino.svg" },
+        { name: "NSIS", icon: "./skills/nsis.svg" },
+        { name: "Inno Setup", icon: "./skills/innosetup.svg" },
+        { name: "PostgreSQL", icon: "./skills/pgsql.svg" },
+        { name: "SQLite", icon: "./skills/sqlite.svg" },
+        { name: "MongoDB", icon: "./skills/mongo.svg" },
+        { name: "VS Code", icon: "./skills/vscode.svg" },
+        { name: "Light House", icon: "./skills/lighthouse.svg" },
+        { name: "Shell", icon: "./skills/shell.svg" },
+        { name: "GIMP", icon: "./skills/gimp.svg" },
+        { name: "OpenShot", icon: "./skills/openshot.svg" },
+        { name: "OBS Studio", icon: "./skills/obs-studio.jpg" },
+        { name: "App Sheet", icon: "./skills/app-sheet.svg" },
+        { name: "Github", icon: "./skills/github.svg" },
+      ],
+    },
+  ];
+
   return (
     <>
-      <section className="skills">
-        <div className="container">
-          <div className="section-header" data-aos="fade-up">
-            <div className="section-title">
-              <h2>Skills</h2>
-              <span className="line-bar">...</span>
-            </div>
+      <section className="bg-black/40 py-20 px-4 sm:px-6 lg:px-8 min-h-screen">
+        <div className="container mx-auto">
+          <div data-aos="fade-up" className="text-center mb-16">
+            <header className="text-center mb-16">
+              <div className="mb-6">
+                <h1 className="text-5xl font-bold text-white mb-4">
+                  Skills & Technologies
+                </h1>
+                <div className="flex items-center justify-center gap-2">
+                  <span className="w-12 h-1 bg-orange-500 rounded-full"></span>
+                  <span className="w-3 h-3 bg-orange-500 rounded-full"></span>
+                  <span className="w-12 h-1 bg-orange-500 rounded-full"></span>
+                </div>
+              </div>
+              <p className="text-xl text-gray-400">
+                  A comprehensive overview of my technical expertise
+              </p>
+            </header>
           </div>
-          <div className="section-body" data-aos="fade-up" data-aos-delay="100">
-            <h4>Languages</h4>
-            <div className="row justify-content-center">
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/python.svg" alt="Python" className="img-fluid skill-icon" />
-                <span>Python</span>
+
+          <div className="space-y-16">
+            {skillGroups.map((group, groupIndex) => (
+              <div
+                key={group.title}
+                data-aos="fade-up"
+                data-aos-delay={groupIndex * 100}
+              >
+                <h2 className="text-3xl font-bold text-white mb-8 text-center">
+                  {group.title}
+                </h2>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                  {group.skills.map((skill, skillIndex) => (
+                    <div
+                      key={skill.name}
+                      data-aos="zoom-in"
+                      data-aos-delay={groupIndex * 100 + skillIndex * 50}
+                      className="bg-gray-950/95 border-gray-900 border rounded-lg p-6 hover:bg-gray-900 transition-all duration-300 hover:scale-110 hover:border-orange-500 flex flex-col items-center justify-center text-center group"
+                    >
+                      <img
+                        src={skill.icon}
+                        alt={skill.name}
+                        className="w-12 h-12 mb-3 group-hover:scale-125 transition-transform duration-300"
+                      />
+                      <p className="text-white font-semibold text-sm">
+                        {skill.name}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/html.svg" alt="HTML" className="img-fluid skill-icon" />
-                <span>HTML 5</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/css.svg" alt="CSS" className="img-fluid skill-icon" />
-                <span>CSS 3</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/javascript.svg" alt="JavaScript" className="img-fluid skill-icon" />
-                <span>JavaScript</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/typescript.svg" alt="Typescript" className="img-fluid skill-icon" />
-                <span>Typescript</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/cpp.svg" alt="C plus plus" className="img-fluid skill-icon" />
-                <span>C++</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/qbasic.png" alt="QBasic" className="img-fluid skill-icon" />
-                <span>QBasic</span>
-              </div>
-            </div>
+            ))}
           </div>
-          <div className="section-body" data-aos="fade-up" data-aos-delay="100">
-            <h4>Frontend Frameworks</h4>
-            <div className="row justify-content-center">
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/reactjs.svg" alt="React" className="img-fluid skill-icon" />
-                <span>React</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/bootstrap.svg" alt="Bootstrap" className="img-fluid skill-icon" />
-                <span>Bootstrap</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/tailwind.svg" alt="Tailwind" className="img-fluid skill-icon" />
-                <span>Tailwindcss</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/postcss.svg" alt="PostCSS" className="img-fluid skill-icon" />
-                <span>Postcss</span>
-              </div>
-            </div>
-          </div>
-          <div className="section-body" data-aos="fade-up" data-aos-delay="100">
-            <h4>Mobile & Desktop Frameworks</h4>
-            <div className="row justify-content-center">
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/expo.svg" alt="Expo" className="img-fluid skill-icon" />
-                <span>Expo</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/react-native.svg" alt="React Native" className="img-fluid skill-icon" />
-                <span>React Native</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/tkinter.svg" alt="Tkinter" className="img-fluid skill-icon" />
-                <span>Tkinter</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/flet.svg" alt="Tkinter" className="img-fluid skill-icon" />
-                <span>Flet</span>
-              </div>
-            </div>
-          </div>
-          <div className="section-body" data-aos="fade-up" data-aos-delay="100">
-            <h4>Backend Frameworks</h4>
-            <div className="row justify-content-center">
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/django.svg" alt="Django" className="img-fluid skill-icon" />
-                <span>Django</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/flask.jpg" alt="Flask" className="img-fluid skill-icon" />
-                <span>Flask</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/next.svg" alt="Next" className="img-fluid skill-icon" />
-                <span>Next.js</span>
-              </div>
-            </div>
-          </div>
-          <div className="section-body" data-aos="fade-up" data-aos-delay="100">
-            <h4>Tooling</h4>
-            <div className="row justify-content-center">
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/git.svg" alt="Git" className="img-fluid skill-icon" />
-                <span>Git</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/npm.svg" alt="NPM" className="img-fluid skill-icon" />
-                <span>NPM</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/pip.svg" alt="PIP" className="img-fluid skill-icon" />
-                <span>PIP</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/vite.svg" alt="Vite" className="img-fluid skill-icon" />
-                <span>Vite</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/node.svg" alt="Nodejs" className="img-fluid skill-icon" />
-                <span>Node</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/prisma.svg" alt="Prisma" className="img-fluid skill-icon" />
-                <span>Prisma</span>
-              </div>
-            </div>
-          </div>
-          <div className="section-body" data-aos="fade-up" data-aos-delay="100">
-            <h4>Hosting</h4>
-            <div className="row justify-content-center">
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/firebase.svg" alt="Firebase" className="img-fluid skill-icon" />
-                <span>Firebase</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/netlify.svg" alt="Netlify" className="img-fluid skill-icon" />
-                <span>Netlify</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/vercel.svg" alt="Vercel" className="img-fluid skill-icon" />
-                <span>Vercel</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/render.png" alt="Render" className="img-fluid skill-icon" />
-                <span>Render</span>
-              </div>
-            </div>
-          </div>
-          <div className="section-body" data-aos="fade-up" data-aos-delay="100">
-            <h4>Other Tools</h4>
-            <div className="row justify-content-center">
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/arduino.svg" alt="Arduino" className="img-fluid skill-icon" />
-                <span>Arduino</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/nsis.svg" alt="NSIS" className="img-fluid skill-icon" />
-                <span>NSIS</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/innosetup.svg" alt="Innosetup" className="img-fluid skill-icon" />
-                <span>Inno Setup</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/pgsql.svg" alt="PostgreSQL" className="img-fluid skill-icon" />
-                <span>PostgreSQL</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/sqlite.svg" alt="SQLite" className="img-fluid skill-icon" />
-                <span>SQLite</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/mongo.svg" alt="Mongo DB" className="img-fluid skill-icon" />
-                <span>Mongo DB</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/vscode.svg" alt="Visual Studio Code" className="img-fluid skill-icon" />
-                <span>Visual Studio Code</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/lighthouse.svg" alt="Light House Tool" className="img-fluid skill-icon" />
-                <span>Light House</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/shell.svg" alt="Shell" className="img-fluid skill-icon" />
-                <span>Shell</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/gimp.svg" alt="GIMP" className="img-fluid skill-icon" />
-                <span>GIMP</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/openshot.svg" alt="OpenShot" className="img-fluid skill-icon" />
-                <span>OpenShot</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/obs-studio.jpg" alt="OBS Studio" className="img-fluid skill-icon" />
-                <span>OBS Studio</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/app-sheet.svg" alt="App Sheet" className="img-fluid skill-icon" />
-                <span>App Sheet</span>
-              </div>
-              <div className="col-6 col-sm-4 col-md-2">
-                <img src="./skills/github.svg" alt="Github" className="img-fluid skill-icon" />
-                <span>Github</span>
-              </div>
+
+          <div data-aos="fade-up" className="mt-20 text-center">
+            <div className="bg-gray-950/95 border-gray-900 border rounded-lg p-8 max-w-2xl mx-auto">
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Always Learning
+              </h3>
+              <p className="text-gray-400">
+                I&apos;m constantly expanding my skillset and staying
+                up-to-date with the latest technologies and industry best
+                practices. The tech world moves fast, and so do I.
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }

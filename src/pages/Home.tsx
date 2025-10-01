@@ -1,11 +1,11 @@
-import Backtotop from "../components/Backtotop";
+import { salayverseApps } from "../data/salayverseApps";
 import Expertise from "../components/Expertise";
 import Contact from "../components/Contact";
 import Resume from "../components/Resume";
-import Footer from "../components/Footer";
 import About from "../components/About";
 import Hero from "../components/Hero";
 import Apps from "./Apps";
+import RecentBlogPosts from "../components/RecentBlogs";
 
 export default function Home() {
   window.document.title = "Muhaimin Abdul Salay Kanton | Home";
@@ -15,10 +15,9 @@ export default function Home() {
       <About />
       <Resume />
       <Expertise />
-      <Apps />
+      <Apps apps={salayverseApps} maxItems={6} />
+      <RecentBlogPosts maxPosts={3} />
       <Contact />
-      <Footer />
-      <Backtotop />
     </>
   );
 }

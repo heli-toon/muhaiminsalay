@@ -1,26 +1,39 @@
-import { useEffect, useRef } from "react";
+import { useState, useEffect } from 'react';
 
-export default function Backtotop() {
-  const toTop = useRef<HTMLAnchorElement>(null);
+export default function BackToTop() {
+  const [isVisible, setIsVisible] = useState(false);
 
-  const handleWindowScrolltotop = () => {
-    if (toTop.current) {
-      if (window.scrollY > 25) {
-        toTop.current.classList.add("active");
-      } else {
-        toTop.current.classList.remove("active");
-      }
-    }
-  };
   useEffect(() => {
-    window.addEventListener("scroll", handleWindowScrolltotop);
-    return () => {
-      window.removeEventListener("scroll", handleWindowScrolltotop);
+    const toggleVisibility = () => {
+      if (window.pageYOffset > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
     };
+
+    window.addEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
-    return (
-      <>
-        <a ref={toTop} href="#" className="btned back-to-top d-flex align-items-center justify-content-center" title="Back to Top"><i className="bi bi-arrow-up"></i></a>
-      </>
-    )
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  return (
+    <>
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 bg-[#f6700d] hover:bg-[#EA3500] text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 hover:cursor-pointer z-50"
+          aria-label="Back to top"
+        >
+          <i className="bi bi-arrow-up text-xl"></i>
+        </button>
+      )}
+    </>
+  );
 }
