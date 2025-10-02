@@ -36,7 +36,7 @@ export default function Skills() {
       skills: [
         { name: "Expo", icon: "./skills/expo.svg" },
         { name: "React Native", icon: "./skills/react-native.svg" },
-        { name: "Tkinter", icon: "./skills/tkinter.svg" },
+        { name: "Tkinter", icon: "./skills/tkinter.png" },
         { name: "Flet", icon: "./skills/flet.svg" },
       ],
     },
@@ -65,6 +65,7 @@ export default function Skills() {
         { name: "Firebase", icon: "./skills/firebase.svg" },
         { name: "Netlify", icon: "./skills/netlify.svg" },
         { name: "Vercel", icon: "./skills/vercel.svg" },
+        { name: "Supabase", icon: "./skills/supabase.svg" },
         { name: "Render", icon: "./skills/render.png" },
       ],
     },
