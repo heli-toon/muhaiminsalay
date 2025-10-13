@@ -84,7 +84,7 @@ function Resume() {
               <h5 className="bg-gray-950/95 border border-gray-900 inline-block px-3 py-1 text-sm font-semibold text-white rounded mb-2">
                 2024 - Present
               </h5>
-              <p className="italic text-gray-400">Hexohub STEM Center, Spintex, Accra</p>
+              <p className="italic text-gray-400">ReGen Studios, Spintex, Accra</p>
               <ul className="list-disc pl-5 text-gray-300">
                 <li>Developed multiple web & mobile apps using Django, React & React Native</li>
                 <li>Built backend APIs with Django REST Framework</li>

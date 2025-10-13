@@ -10,7 +10,7 @@ export default function Footer() {
     { icon: 'bi-linkedin', href: 'https://www.linkedin.com/in/muhaimin-salay-a653b6299/', label: 'LinkedIn' },
     { icon: 'bi-instagram', href: 'https://www.instagram.com/muhaiminsalay/', label: 'Instagram' },
     { icon: 'bi-github', href: 'https://www.github.com/heli-toon/', label: 'GitHub' },
-    { icon: 'bi-whatsapp', href: 'https://www.wa.me/233535760503/', label: 'WhatsApp' },
+    { icon: 'bi-whatsapp', href: 'https://wa.me/233535760503/', label: 'WhatsApp' },
     { icon: 'bi-envelope', href: 'mailto:abdulkanton2005@gmail.com', label: 'Email' },
   ];
 
@@ -49,7 +49,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Useful Links */}
           <div>
             <h3 className="text-white font-bold text-lg mb-4">Useful Links</h3>
             <ul className="space-y-2 text-sm">
@@ -64,7 +63,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/#apps" className="text-gray-400 hover:text-orange-500 transition-colors">
+                <Link to="/salayverse/#" className="text-gray-400 hover:text-orange-500 transition-colors">
                   Apps
                 </Link>
               </li>
@@ -88,19 +87,23 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className='w-full'>
             <h3 className="text-white font-bold text-lg mb-4">Contact Me</h3>
             <p className="text-gray-400 text-sm">
               Accra, Ghana <br />
               <br />
-              <strong>Phone: </strong>
-              <a href="tel:+233535760503" className="text-orange-500 hover:text-orange-600 block">
-                +233 53 576 0503
-              </a>
-              <strong>Email: </strong>
-              <a href="mailto:abdulkanton2005@gmail.com" className="text-orange-500 hover:text-orange-600 block">
-                abdulkanton2005@gmail.com
-              </a>
+              <p className='flex items-center space-x-1'>
+                <strong>Phone: </strong>
+                <a href="tel:+233535760503" className="text-orange-500 hover:text-orange-600 block">
+                  +233 53 576 0503
+                </a>
+              </p>
+              <p className='flex items-center space-x-1'>
+                <strong>Email: </strong>
+                <a href="mailto:abdulkanton2005@gmail.com" className="text-orange-500 hover:text-orange-600 block">
+                  abdulkanton2005@gmail.com
+                </a>
+              </p>
             </p>
           </div>
         </div>

@@ -4,7 +4,7 @@ import Contact from "../components/Contact";
 import Resume from "../components/Resume";
 import About from "../components/About";
 import Hero from "../components/Hero";
-import Apps from "./Apps";
+import Apps from "../components/Apps";
 import RecentBlogPosts from "../components/RecentBlogs";
 
 export default function Home() {

@@ -2,6 +2,7 @@ export interface SalayverseApp {
     id: string;
     name: string;
     icon: string;
+    actualIcon?: string;
     description: string;
     screenshotLinks: string[];
     availablePlatforms: {
@@ -10,7 +11,7 @@ export interface SalayverseApp {
         size: string;
       };
     };
-    status?: string;
+    status?: 'Testing' | 'In Progress';
     category: string;
     author: string;
     isFeatured?: boolean;

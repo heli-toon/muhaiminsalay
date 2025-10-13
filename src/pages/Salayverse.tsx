@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import { salayverseApps } from '../data/salayverseApps';
+import AppIcon from '../components/AppIcon';
+import ScreenshotImage from '../components/ScreenshotImage';
 
 export default function Salayverse() {
   const [selectedPlatform, setSelectedPlatform] = useState<string>('All');
@@ -60,14 +62,19 @@ export default function Salayverse() {
                   to={`/salayverse/app/${app.id}`}
                   className="flex-shrink-0 w-80 bg-gray-950/95 border-gray-900 rounded-lg overflow-hidden hover:bg-gray-800 transition-all duration-300 hover:scale-105 border hover:border-[#f6700d] snap-start"
                 >
-                  <img
+                  <ScreenshotImage
                     src={app.screenshotLinks[0]}
                     alt={app.name}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-contain object-center bg-gray-800"
                   />
                   <div className="p-4">
                     <div className="flex items-center space-x-3 mb-2">
-                      <i className={`${app.icon} text-2xl text-[#f6700d]`}></i>
+                      <AppIcon 
+                        actualIcon={app.actualIcon}
+                        fallbackIcon={app.icon}
+                        alt={`${app.name} icon`}
+                        size="md"
+                      />
                       <h3 className="text-lg font-semibold text-white">{app.name}</h3>
                     </div>
                     <p className="text-gray-400 text-sm mb-2">{app.description}</p>
@@ -140,14 +147,19 @@ export default function Salayverse() {
                   <div className="absolute top-2 right-2 bg-[#f6700d] text-white text-xs px-2 py-1 rounded z-10">
                     Sponsored
                   </div>
-                  <img
+                  <ScreenshotImage
                     src={app.screenshotLinks[0]}
                     alt={app.name}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-contain object-center bg-gray-800"
                   />
                   <div className="p-4">
                     <div className="flex items-center space-x-3 mb-2">
-                      <i className={`${app.icon} text-2xl text-[#f6700d]`}></i>
+                      <AppIcon 
+                        actualIcon={app.actualIcon}
+                        fallbackIcon={app.icon}
+                        alt={`${app.name} icon`}
+                        size="md"
+                      />
                       <h3 className="text-lg font-semibold text-white group-hover:text-[#f6700d] transition-colors duration-300">
                         {app.name}
                       </h3>
@@ -173,14 +185,19 @@ export default function Salayverse() {
                   to={`/salayverse/app/${app.id}`}
                   className="bg-gray-950/95 border-gray-900 rounded-lg overflow-hidden hover:bg-gray-800 transition-all duration-300 hover:scale-105 border hover:border-[#f6700d] group"
                 >
-                  <img
+                  <ScreenshotImage
                     src={app.screenshotLinks[0]}
                     alt={app.name}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-contain object-center bg-gray-800"
                   />
                   <div className="p-4">
                     <div className="flex items-center space-x-3 mb-2">
-                      <i className={`${app.icon} text-2xl text-[#f6700d]`}></i>
+                      <AppIcon 
+                        actualIcon={app.actualIcon}
+                        fallbackIcon={app.icon}
+                        alt={`${app.name} icon`}
+                        size="md"
+                      />
                       <h3 className="text-lg font-semibold text-white group-hover:text-[#f6700d] transition-colors duration-300">
                         {app.name}
                       </h3>
@@ -203,14 +220,19 @@ export default function Salayverse() {
                   to={`/salayverse/app/${app.id}`}
                   className="bg-gray-950/95 border-gray-900 rounded-lg overflow-hidden hover:bg-gray-800 transition-all duration-300 hover:scale-105 border hover:border-[#f6700d] group"
                 >
-                  <img
+                  <ScreenshotImage
                     src={app.screenshotLinks[0]}
                     alt={app.name}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-contain object-center bg-gray-800"
                   />
                   <div className="p-4">
                     <div className="flex items-center space-x-3 mb-2">
-                      <i className={`${app.icon} text-2xl text-[#f6700d]`}></i>
+                      <AppIcon 
+                        actualIcon={app.actualIcon}
+                        fallbackIcon={app.icon}
+                        alt={`${app.name} icon`}
+                        size="md"
+                      />
                       <h3 className="text-lg font-semibold text-white group-hover:text-[#f6700d] transition-colors duration-300">
                         {app.name}
                       </h3>
@@ -235,14 +257,19 @@ export default function Salayverse() {
                 to={`/salayverse/app/${app.id}`}
                 className="bg-gray-950/95 border-gray-900 rounded-lg overflow-hidden hover:bg-gray-800 transition-all duration-300 hover:scale-105 border hover:border-[#f6700d] group"
               >
-                <img
+                <ScreenshotImage
                   src={app.screenshotLinks[0]}
                   alt={app.name}
-                  className="w-full h-40 object-cover"
+                  className="w-full h-40 object-contain object-center bg-gray-800"
                 />
                 <div className="p-4">
                   <div className="flex items-center space-x-2 mb-2">
-                    <i className={`${app.icon} text-xl text-[#f6700d]`}></i>
+                    <AppIcon 
+                      actualIcon={app.actualIcon}
+                      fallbackIcon={app.icon}
+                      alt={`${app.name} icon`}
+                      size="sm"
+                    />
                     <h3 className="text-base font-semibold text-white group-hover:text-[#f6700d] transition-colors duration-300">
                       {app.name}
                     </h3>

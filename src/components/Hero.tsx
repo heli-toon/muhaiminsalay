@@ -72,7 +72,7 @@ export default function Hero() {
                 <i className="bi bi-envelope text-2xl" />
               </a>
               <a
-                href="https://www.wa.me/233535760503/"
+                href="https://wa.me/233535760503/"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="text-gray-300 hover:text-[#f6700d] transition-colors"

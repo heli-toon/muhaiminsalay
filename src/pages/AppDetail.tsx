@@ -3,6 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import AOS from 'aos';
 import { salayverseApps } from '../data/salayverseApps';
 import { type SalayverseApp } from '../types';
+import AppIcon from '../components/AppIcon';
+import ScreenshotImage from '../components/ScreenshotImage';
 
 export default function AppDetail() {
   const { id } = useParams();
@@ -46,6 +48,9 @@ export default function AppDetail() {
     }
   };
 
+  const isWebPlatform = selectedPlatform === 'Web';
+  const buttonText = isWebPlatform ? `Visit ${app?.name}` : `Download for ${selectedPlatform}`;
+
   const nextScreenshot = () => {
     if (app) {
       setCurrentScreenshot((prev) => (prev + 1) % app.screenshotLinks.length);
@@ -85,10 +90,10 @@ export default function AppDetail() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div data-aos="fade-right">
             <div className="relative bg-gray-950/95 border-gray-900 border rounded-lg overflow-hidden mb-4">
-              <img
+              <ScreenshotImage
                 src={app.screenshotLinks[currentScreenshot]}
                 alt={`${app.name} screenshot ${currentScreenshot + 1}`}
-                className="w-full h-96 object-cover"
+                className="w-full h-96 object-contain object-center bg-gray-800"
               />
 
               {app.screenshotLinks.length > 1 && (
@@ -130,10 +135,10 @@ export default function AppDetail() {
                     index === currentScreenshot ? 'border-[#f6700d]' : 'border-transparent hover:border-gray-600'
                   }`}
                 >
-                  <img
+                  <ScreenshotImage
                     src={screenshot}
                     alt={`Thumbnail ${index + 1}`}
-                    className="w-full h-20 object-cover"
+                    className="w-full h-20 object-contain object-center bg-gray-800"
                   />
                 </button>
               ))}
@@ -143,7 +148,12 @@ export default function AppDetail() {
           <div data-aos="fade-left">
             <div className="flex items-center space-x-4 mb-4">
               <div className="bg-gray-950/95 border-gray-900 border p-4 rounded-lg">
-                <i className={`${app.icon} text-4xl text-[#f6700d]`}></i>
+                <AppIcon 
+                  actualIcon={app.actualIcon}
+                  fallbackIcon={app.icon}
+                  alt={`${app.name} icon`}
+                  size="xl"
+                />
               </div>
               <div>
                 <h1 className="text-4xl font-bold text-white mb-2">{app.name}</h1>
@@ -174,7 +184,9 @@ export default function AppDetail() {
             <p className="text-gray-300 mb-6 leading-relaxed">{app.description}</p>
 
             <div className="bg-gray-950/95 border-gray-900 border rounded-lg p-6 mb-6">
-              <h3 className="text-lg font-semibold text-white mb-4">Download</h3>
+              <h3 className="text-lg font-semibold text-white mb-4">
+                {isWebPlatform ? 'Access' : 'Download'}
+              </h3>
 
               <div className="mb-4">
                 <label className="block text-gray-400 mb-2 text-sm">Select Platform</label>
@@ -185,7 +197,7 @@ export default function AppDetail() {
                 >
                   {Object.entries(app.availablePlatforms).map(([platform, info]) => (
                     <option key={platform} value={platform}>
-                      {platform} ({info.size})
+                      {platform}{info.size ? ` (${info.size})` : ''}
                     </option>
                   ))}
                 </select>
@@ -195,11 +207,11 @@ export default function AppDetail() {
                 onClick={handleDownload}
                 className="w-full bg-[#f6700d] hover:bg-[#EA3500] text-white px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2 cursor-pointer"
               >
-                <i className="bi bi-download"></i>
-                <span>Download for {selectedPlatform}</span>
+                <i className={`bi ${isWebPlatform ? 'bi-box-arrow-up-right' : 'bi-download'}`}></i>
+                <span>{buttonText}</span>
               </button>
 
-              {selectedPlatform && app.availablePlatforms[selectedPlatform] && (
+              {selectedPlatform && app.availablePlatforms[selectedPlatform]?.size && (
                 <p className="text-gray-500 text-xs mt-2 text-center">
                   Size: {app.availablePlatforms[selectedPlatform].size}
                 </p>

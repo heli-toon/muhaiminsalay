@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import { salayverseApps } from '../data/salayverseApps';
+import ScreenshotImage from '../components/ScreenshotImage';
 
 export default function SalayverseSearch() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -18,6 +19,16 @@ export default function SalayverseSearch() {
 
   const categories = ['All', 'Games', 'Apps', 'CRM Tools', 'Showcases'];
   const platforms = ['All', 'Web', 'Windows', 'MacOS', 'Linux', 'Android', 'iOS'];
+
+  const isGitHubLink = (url: string) => {
+    return url.includes('github.com');
+  };
+
+  const getFirstPlatformInfo = (platforms: any) => {
+    const firstPlatform = Object.keys(platforms)[0];
+    const platformInfo = platforms[firstPlatform];
+    return { platform: firstPlatform, info: platformInfo };
+  };
 
   const filteredApps = salayverseApps.filter(app => {
     const matchesSearch = app.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -95,46 +106,59 @@ export default function SalayverseSearch() {
 
           {filteredApps.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredApps.map((app, index) => (
-                <Link
-                  key={app.id}
-                  to={`/salayverse/app/${app.id}`}
-                  data-aos="fade-up"
-                  data-aos-delay={index * 50}
-                  className="bg-gray-950/95 rounded-lg overflow-hidden hover:bg-gray-800 transition-all duration-300 hover:scale-105 border border-gray-900 hover:border-[#f6700d] group"
-                >
-                  <img
-                    src={app.screenshotLinks[0]}
-                    alt={app.name}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-4">
-                    <div className="flex items-center space-x-3 mb-2">
-                      <i className={`${app.icon} text-2xl text-[#f6700d]`}></i>
-                      <h3 className="text-lg font-semibold text-white group-hover:text-[#f6700d] transition-colors duration-300">
-                        {app.name}
-                      </h3>
-                    </div>
-                    <p className="text-gray-400 text-sm mb-3">{app.description}</p>
-                    <div className="flex items-center justify-between">
-                      <span className="inline-block bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">
-                        {app.category}
-                      </span>
-                      <div className="flex space-x-1">
-                        {Object.keys(app.availablePlatforms).slice(0, 3).map((platform) => (
-                          <span
-                            key={platform}
-                            className="text-gray-500 text-xs"
-                            title={platform}
-                          >
-                            <i className={`bi bi-${platform.toLowerCase() === 'web' ? 'globe' : platform.toLowerCase() === 'windows' ? 'windows' : platform.toLowerCase() === 'macos' ? 'apple' : platform.toLowerCase() === 'linux' ? 'ubuntu' : platform.toLowerCase() === 'android' ? 'android2' : 'phone'}`}></i>
-                          </span>
-                        ))}
+              {filteredApps.map((app, index) => {
+                const { info } = getFirstPlatformInfo(app.availablePlatforms);
+                const isGitHub = info ? isGitHubLink(info.downloadLink) : false;
+                
+                return (
+                  <Link
+                    key={app.id}
+                    to={`/salayverse/app/${app.id}`}
+                    data-aos="fade-up"
+                    data-aos-delay={index * 50}
+                    className="bg-gray-950/95 rounded-lg overflow-hidden hover:bg-gray-800 transition-all duration-300 hover:scale-105 border border-gray-900 hover:border-[#f6700d] group relative"
+                  >
+                    {/* GitHub Badge */}
+                    {isGitHub && (
+                      <div className="absolute top-2 left-2 bg-gray-800/90 backdrop-blur-sm text-gray-300 text-xs px-2 py-1 rounded z-10 flex items-center gap-1">
+                        <i className="bi bi-github text-xs"></i>
+                        GitHub
+                      </div>
+                    )}
+                    
+                    <ScreenshotImage
+                      src={app.screenshotLinks[0]}
+                      alt={app.name}
+                      className="w-full h-48 object-contain object-center bg-gray-800"
+                    />
+                    <div className="p-4">
+                      <div className="flex items-center space-x-3 mb-2">
+                        <i className={`${app.icon} text-2xl text-[#f6700d]`}></i>
+                        <h3 className="text-lg font-semibold text-white group-hover:text-[#f6700d] transition-colors duration-300">
+                          {app.name}
+                        </h3>
+                      </div>
+                      <p className="text-gray-400 text-sm mb-3">{app.description}</p>
+                      <div className="flex items-center justify-between">
+                        <span className="inline-block bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">
+                          {app.category}
+                        </span>
+                        <div className="flex space-x-1">
+                          {Object.keys(app.availablePlatforms).slice(0, 3).map((platformName) => (
+                            <span
+                              key={platformName}
+                              className="text-gray-500 text-xs"
+                              title={platformName}
+                            >
+                              <i className={`bi bi-${platformName.toLowerCase() === 'web' ? 'globe' : platformName.toLowerCase() === 'windows' ? 'windows' : platformName.toLowerCase() === 'macos' ? 'apple' : platformName.toLowerCase() === 'linux' ? 'ubuntu' : platformName.toLowerCase() === 'android' ? 'android2' : 'phone'}`}></i>
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Link>
-              ))}
+                  </Link>
+                );
+              })}
             </div>
           ) : (
             <div className="text-center py-12">
