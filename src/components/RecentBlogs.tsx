@@ -67,9 +67,8 @@ function RecentBlogPosts({ maxPosts = 3 }: RecentBlogPostsProps) {
   const getBlogPreview = (content: string): string => {
     const strippedContent = stripHtml(content);
     const maxLength = 100;
-    const startIndex = 22;
-    return strippedContent.length > startIndex
-      ? strippedContent.substring(startIndex, startIndex + maxLength) + "..."
+    return strippedContent.length > maxLength
+      ? strippedContent.substring(0, maxLength) + "..."
       : strippedContent;
   };
 

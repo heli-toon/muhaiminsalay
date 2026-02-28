@@ -7,8 +7,6 @@ import AOS from "aos";
 import TagChips from "../components/TagChips"; // added
 
 export default function Blog() {
-  window.document.title = "Muhaimin Abdul Salay Kanton | Blog";
-
   type Blog = {
     id: string;
     slug: string;
@@ -23,6 +21,10 @@ export default function Blog() {
 
   const [blogs, setBlogs] = useState<Blog[]>([]);
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    document.title = "Muhaimin Abdul Salay Kanton | Blog";
+  }, []);
 
   useEffect(() => {
     AOS.init({
@@ -68,9 +70,8 @@ export default function Blog() {
   const getBlogPreview = (content: string): string => {
     const strippedContent: string = stripHtml(content);
     const maxLength: number = 150;
-    const startIndex: number = 22;
-    return strippedContent.length > startIndex
-      ? strippedContent.substring(startIndex, startIndex + maxLength) + "..."
+    return strippedContent.length > maxLength
+      ? strippedContent.substring(0, maxLength) + "..."
       : strippedContent;
   };
 

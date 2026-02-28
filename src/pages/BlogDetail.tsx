@@ -16,12 +16,44 @@ type Blog = {
   tags?: string[]; // added
 };
 
+const sanitizeHtml = (rawHtml: string): string => {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(rawHtml, "text/html");
+
+  const blockedTags = ["script", "iframe", "object", "embed", "style", "link", "form"];
+  blockedTags.forEach((tag) => {
+    doc.querySelectorAll(tag).forEach((element) => element.remove());
+  });
+
+  doc.body.querySelectorAll("*").forEach((element) => {
+    Array.from(element.attributes).forEach((attribute) => {
+      const name = attribute.name.toLowerCase();
+      const value = attribute.value.trim().toLowerCase();
+
+      if (name.startsWith("on")) {
+        element.removeAttribute(attribute.name);
+      }
+
+      if (
+        (name === "href" || name === "src" || name === "xlink:href") &&
+        value.startsWith("javascript:")
+      ) {
+        element.removeAttribute(attribute.name);
+      }
+    });
+  });
+
+  return doc.body.innerHTML;
+};
+
+const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
 export default function BlogDetail() {
   const { slug } = useParams();
   const [blog, setBlog] = useState<Blog | null>(null);
   const [loading, setLoading] = useState(true);
   const [searchText, setSearchText] = useState("");
-  const [paragraphs, setParagraphs] = useState<Element[]>([]);
+  const [matchCount, setMatchCount] = useState<number | null>(null);
 
   useEffect(() => {
     AOS.init({ duration: 800, once: true, easing: "ease-out" });
@@ -40,7 +72,7 @@ export default function BlogDetail() {
             imageDesc: blogData.imageDesc,
             createdAt: blogData.createdAt.toDate(),
             readTime: blogData.readTime,
-            content: blogData.content,
+            content: sanitizeHtml(String(blogData.content ?? "")),
             tags: Array.isArray(blogData.tags) ? blogData.tags : [], // added
           };
           setBlog(mappedBlog);
@@ -59,41 +91,97 @@ export default function BlogDetail() {
     fetchBlog();
   }, [slug]);
 
-  useEffect(() => {
+  const clearHighlights = () => {
     const contentElement = document.querySelector(".blog-content");
-    if (contentElement) {
-      const paraElements = contentElement.querySelectorAll("p, h1, h2, h3, h4, h5, h6, li");
-      setParagraphs(Array.from(paraElements));
+    if (!contentElement) return;
+
+    const marks = contentElement.querySelectorAll('mark[data-search-highlight="true"]');
+    marks.forEach((mark) => {
+      const parent = mark.parentNode;
+      if (!parent) return;
+      parent.replaceChild(document.createTextNode(mark.textContent ?? ""), mark);
+      parent.normalize();
+    });
+  };
+
+  const highlightText = (textToSearch: string): number => {
+    const contentElement = document.querySelector(".blog-content");
+    if (!contentElement) return 0;
+
+    const escapedTerm = escapeRegExp(textToSearch);
+    if (!escapedTerm) return 0;
+
+    const regex = new RegExp(escapedTerm, "gi");
+    const textNodes: Text[] = [];
+    const walker = document.createTreeWalker(contentElement, NodeFilter.SHOW_TEXT);
+
+    while (walker.nextNode()) {
+      const node = walker.currentNode as Text;
+      if (node.textContent?.trim()) {
+        textNodes.push(node);
+      }
     }
-  }, [blog]);
+
+    let totalMatches = 0;
+
+    textNodes.forEach((textNode) => {
+      const text = textNode.textContent ?? "";
+      regex.lastIndex = 0;
+
+      let match = regex.exec(text);
+      if (!match) return;
+
+      const fragment = document.createDocumentFragment();
+      let lastIndex = 0;
+
+      while (match) {
+        const startIndex = match.index;
+        const endIndex = startIndex + match[0].length;
+
+        if (startIndex > lastIndex) {
+          fragment.appendChild(document.createTextNode(text.slice(lastIndex, startIndex)));
+        }
+
+        const mark = document.createElement("mark");
+        mark.dataset.searchHighlight = "true";
+        mark.className = "bg-orange-500 text-white px-1 rounded";
+        mark.textContent = text.slice(startIndex, endIndex);
+        fragment.appendChild(mark);
+
+        totalMatches += 1;
+        lastIndex = endIndex;
+        match = regex.exec(text);
+      }
+
+      if (lastIndex < text.length) {
+        fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
+      }
+
+      textNode.parentNode?.replaceChild(fragment, textNode);
+    });
+
+    return totalMatches;
+  };
 
   const handleSearch = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
     const textToSearch = searchText.trim();
     
-    if (textToSearch === "") return;
+    clearHighlights();
 
-    // Remove previous highlights
-    paragraphs.forEach((para) => {
-      para.innerHTML = para.innerHTML.replace(/<mark>(.*?)<\/mark>/gi, "$1");
-    });
+    if (textToSearch === "") {
+      setMatchCount(null);
+      return;
+    }
 
-    // Apply new highlights
-    const pattern = new RegExp(`(${textToSearch})`, "gi");
-    paragraphs.forEach((para) => {
-      const markedText = para.innerHTML.replace(
-        pattern,
-        (match) => `<mark class="bg-orange-500 text-white px-1 rounded">${match}</mark>`
-      );
-      para.innerHTML = markedText;
-    });
+    const count = highlightText(textToSearch);
+    setMatchCount(count);
   };
 
   const clearSearch = () => {
     setSearchText("");
-    paragraphs.forEach((para) => {
-      para.innerHTML = para.innerHTML.replace(/<mark[^>]*>(.*?)<\/mark>/gi, "$1");
-    });
+    setMatchCount(null);
+    clearHighlights();
   };
 
   if (loading) {
@@ -401,6 +489,11 @@ export default function BlogDetail() {
                     </button>
                   )}
                 </form>
+                {matchCount !== null && (
+                  <p className="text-xs text-gray-500 mt-3">
+                    {matchCount === 0 ? "No matches found" : `${matchCount} match${matchCount === 1 ? "" : "es"} found`}
+                  </p>
+                )}
                 <p className="text-xs text-gray-500 mt-3">
                   Search and highlight text within this blog post
                 </p>

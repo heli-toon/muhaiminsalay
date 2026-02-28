@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://sitemaps.org/schemas/sitemap/09">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://muhaiminsalay.me/</loc>
-        <lastmod>2025-10-1</lastmod>
+        <lastmod>2025-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -14,13 +14,13 @@
     </url>
         <url>
         <loc>https://muhaiminsalay.me/salayverse</loc>
-        <lastmod>2025-10-1</lastmod>
+        <lastmod>2025-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://muhaiminsalay.me/blog</loc>
-        <lastmod>2024-10-1</lastmod>
+        <lastmod>2024-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>

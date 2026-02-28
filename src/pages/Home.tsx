@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { salayverseApps } from "../data/salayverseApps";
 import Expertise from "../components/Expertise";
 import Contact from "../components/Contact";
@@ -8,7 +9,10 @@ import Apps from "../components/Apps";
 import RecentBlogPosts from "../components/RecentBlogs";
 
 export default function Home() {
-  window.document.title = "Muhaimin Abdul Salay Kanton | Home";
+  useEffect(() => {
+    document.title = "Muhaimin Abdul Salay Kanton | Home";
+  }, []);
+
   return (
     <>
       <Hero />

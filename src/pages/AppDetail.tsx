@@ -268,7 +268,7 @@ export default function AppDetail() {
               </div>
 
               <form
-                action="https://formspree.io/f/YOUR_FORM_ID"
+                action="https://formspree.io/f/mjkbrjeq"
                 method="POST"
                 className="space-y-4"
               >
