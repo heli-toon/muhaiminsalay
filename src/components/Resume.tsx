@@ -99,9 +99,11 @@ function Resume() {
               <h5 className="bg-gray-950/95 border border-gray-900 inline-block px-3 py-1 text-sm font-semibold text-white rounded mb-2">
                 2023 - Present
               </h5>
-              <p className="italic text-gray-400">Verix Solutions Ltd, Accra</p>
+              <p className="italic text-gray-400">Purchet, Accra</p>
               <ul className="list-disc pl-5 text-gray-300">
-                <li>Designed and built engaging websites</li>
+                <li>Collaborated closely with UI designers to bring the web app's frontend to life, enhancing user experience and engagement with a clean, modern interface.</li>
+                <li>Led a small team of developers, streamlining our workflow</li>
+                <li>Translated complex design concepts into intuitive, user-friendly interfaces, resulting in a 40% increase in user satisfaction based on feedback surveys.</li>
                 <li>Developed several web applications</li>
               </ul>
             </div>
@@ -125,7 +127,7 @@ function Resume() {
         {/* Download Button */}
         <div className="mt-10 flex justify-center">
           <a
-            href="https://muhaiminsalayk.netlify.app/Abdul_Muhaimin_Salay_Kanton_Resume.pdf"
+            href="https://muhaiminsalay.me/Abdul_Muhaimin_Salay_Kanton_Resume.pdf"
             target="_blank"
             rel="noreferrer noopener"
             download

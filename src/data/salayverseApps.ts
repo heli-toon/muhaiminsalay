@@ -198,5 +198,21 @@ export const salayverseApps: SalayverseApp[] = [
     },
     category: 'Showcases',
     author: 'Salay Abdul Muhaimin Kanton'
+  },
+  {
+    id: 'eclubgctu',
+    name: 'E-Club GCTU',
+    actualIcon: 'https://eclubgctu.online/ehub.png',
+    icon: 'bi-star',
+    description: "The Entrepreneurship and Innovation Club of GCTU is dedicated to fostering innovation and entrepreneurial spirit among students. We provide resources, mentorship, and networking opportunities to help aspiring entrepreneurs turn their ideas into reality.",
+    screenshotLinks: [
+      '/screenshots/eclubgctu.png'
+    ],
+    availablePlatforms: {
+      Web: { downloadLink: 'https://eclubgctu.online/', size: '' }
+    },
+    category: 'Landing Page',
+    author: 'Salay Abdul Muhaimin Kanton',
+    isFeatured: true
   }
 ];
