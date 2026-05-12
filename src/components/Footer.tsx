@@ -89,22 +89,22 @@ export default function Footer() {
           {/* Contact */}
           <div className='w-full'>
             <h3 className="text-white font-bold text-lg mb-4">Contact Me</h3>
-            <p className="text-gray-400 text-sm">
+            <div className="text-gray-400 text-sm">
               Accra, Ghana <br />
               <br />
-              <p className='flex items-center space-x-1'>
+              <div className='flex items-center space-x-1'>
                 <strong>Phone: </strong>
                 <a href="tel:+233535760503" className="text-orange-500 hover:text-orange-600 block">
                   +233 53 576 0503
                 </a>
-              </p>
-              <p className='flex items-center space-x-1'>
+              </div>
+              <div className='flex items-center space-x-1'>
                 <strong>Email: </strong>
                 <a href="mailto:abdulkanton2005@gmail.com" className="text-orange-500 hover:text-orange-600 block">
                   abdulkanton2005@gmail.com
                 </a>
-              </p>
-            </p>
+              </div>
+            </div>
           </div>
         </div>
 

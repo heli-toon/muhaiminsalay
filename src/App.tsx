@@ -15,6 +15,9 @@ import PrivateRoute from './components/PrivateRoutes';
 import BlogEdit from './pages/BlogEdit';
 import ErrorPage from './pages/Error404';
 import ScrollToTop from './components/ScrollToTop';
+import Prompts from './pages/Prompts';
+import PromptAdmin from './pages/PromptAdmin';
+
 
 function App() {
   return (
@@ -31,8 +34,11 @@ function App() {
             <Route path="/salayverse/search" element={<SalayverseSearch />} />
             <Route path="/salayverse/app/:id" element={<AppDetail />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/prompts" element={<Prompts />} />
+            <Route path="/prompts/admin" element={<PrivateRoute><PromptAdmin /></PrivateRoute>} />
             <Route path="/add" element={<PrivateRoute><BlogEdit /></PrivateRoute>} />
             <Route path="/edit/:slug" element={<PrivateRoute><BlogEdit /></PrivateRoute>} />
+
             <Route path="*" element={<ErrorPage />} />
           </Routes>
           <ScrollToTop />

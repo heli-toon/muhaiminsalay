@@ -11,5 +11,3 @@ Add
 - PDF-Ops
 
 Let's add a new 
-
-- I want to change the black and dark blue background. It's too dark (Not recommended at all). I need a page with 
