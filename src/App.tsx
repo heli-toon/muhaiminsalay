@@ -14,12 +14,13 @@ import Login from './pages/Login';
 import PrivateRoute from './components/PrivateRoutes';
 import BlogEdit from './pages/BlogEdit';
 import ErrorPage from './pages/Error404';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
       <AuthProvider>
-        <div className="min-h-screen bg-black/40 overflow-x-hidden">
+        <div className="min-h-screen bg-slate-950/70 overflow-x-hidden">
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -34,6 +35,7 @@ function App() {
             <Route path="/edit/:slug" element={<PrivateRoute><BlogEdit /></PrivateRoute>} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
+          <ScrollToTop />
           <Footer />
           <BackToTop />
         </div>

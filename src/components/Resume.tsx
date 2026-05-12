@@ -52,19 +52,19 @@ function Resume() {
             </div>
 
             <h3 className="text-xl font-semibold text-gray-200 mb-4">Education</h3>
-            <div className="border-l-2 border-orange-500 pl-5 mb-6 relative">
+            <div className="border-l-2 border-orange-500 pl-5 relative">
               <div className="absolute -left-2 top-0 w-4 h-4 bg-orange-500 border-2 border-orange-600 rounded-full"></div>
               <h4 className="text-orange-500 font-semibold">Diploma in Computer Science</h4>
               <h5 className="bg-gray-950/95 border border-gray-900 inline-block px-3 py-1 text-sm font-semibold text-white rounded mb-2">
                 2025 - 2027
               </h5>
-              <p className="text-gray-300">
+              <p className="text-gray-300 pb-6">
                 Ghana Communication Technology University. Focus on programming, software
                 methodologies, and computing fundamentals.
               </p>
             </div>
 
-            <div className="border-l-2 border-orange-500 pl-5 relative">
+            <div className="border-l-2 border-orange-500 pl-5 pt-0 relative">
               <div className="absolute -left-2 top-0 w-4 h-4 bg-orange-500 border-2 border-orange-600 rounded-full"></div>
               <h4 className="text-orange-500 font-semibold">Certificates</h4>
               <h5 className="bg-gray-950/95 border border-gray-900 inline-block px-3 py-1 text-sm font-semibold text-white rounded mb-2">
@@ -78,29 +78,29 @@ function Resume() {
           <div>
             <h3 className="text-xl font-semibold text-gray-200 mb-4">Professional Experience</h3>
 
-            <div className="border-l-2 border-orange-500 pl-5 mb-6 relative">
+            <div className="border-l-2 border-orange-500 pl-5 relative">
               <div className="absolute -left-2 top-0 w-4 h-4 bg-orange-500 border-2 border-orange-600 rounded-full"></div>
               <h4 className="text-orange-500 font-semibold">Remote Fullstack Web & Mobile Intern</h4>
               <h5 className="bg-gray-950/95 border border-gray-900 inline-block px-3 py-1 text-sm font-semibold text-white rounded mb-2">
-                2024 - Present
+                2024 - 2025
               </h5>
-              <p className="italic text-gray-400">ReGen Studios, Spintex, Accra</p>
-              <ul className="list-disc pl-5 text-gray-300">
+              <p className="italic text-gray-400">ReGen Studios (formerly Hexohub STEM Center), Spintex, Accra</p>
+              <ul className="list-disc pl-5 text-gray-300 pb-6">
                 <li>Developed multiple web & mobile apps using Django, React & React Native</li>
                 <li>Built backend APIs with Django REST Framework</li>
                 <li>Designed responsive interfaces with React</li>
-                <li>Created cross-platform apps with React Native</li>
+                <li>Learnt to Create cross-platform apps with React Native</li>
               </ul>
             </div>
 
-            <div className="border-l-2 border-orange-500 pl-5 mb-6 relative">
+            <div className="border-l-2 border-orange-500 pl-5 relative">
               <div className="absolute -left-2 top-0 w-4 h-4 bg-orange-500 border-2 border-orange-600 rounded-full"></div>
               <h4 className="text-orange-500 font-semibold">Frontend Web Developer</h4>
               <h5 className="bg-gray-950/95 border border-gray-900 inline-block px-3 py-1 text-sm font-semibold text-white rounded mb-2">
                 2023 - Present
               </h5>
               <p className="italic text-gray-400">Purchet, Accra</p>
-              <ul className="list-disc pl-5 text-gray-300">
+              <ul className="list-disc pl-5 text-gray-300 pb-6">
                 <li>Collaborated closely with UI designers to bring the web app's frontend to life, enhancing user experience and engagement with a clean, modern interface.</li>
                 <li>Led a small team of developers, streamlining our workflow</li>
                 <li>Translated complex design concepts into intuitive, user-friendly interfaces, resulting in a 40% increase in user satisfaction based on feedback surveys.</li>
