@@ -17,9 +17,13 @@ import ErrorPage from './pages/Error404';
 import ScrollToTop from './components/ScrollToTop';
 import Prompts from './pages/Prompts';
 import PromptAdmin from './pages/PromptAdmin';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+
 
 
 function App() {
+
   return (
     <BrowserRouter>
       <AuthProvider>
@@ -38,6 +42,9 @@ function App() {
             <Route path="/prompts/admin" element={<PrivateRoute><PromptAdmin /></PrivateRoute>} />
             <Route path="/add" element={<PrivateRoute><BlogEdit /></PrivateRoute>} />
             <Route path="/edit/:slug" element={<PrivateRoute><BlogEdit /></PrivateRoute>} />
+
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsOfService />} />
 
             <Route path="*" element={<ErrorPage />} />
           </Routes>

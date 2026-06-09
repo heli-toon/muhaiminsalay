@@ -72,8 +72,19 @@ export default function Footer() {
                   Blog
                 </Link>
               </li>
+              <li>
+                <Link to="/privacy" className="text-gray-400 hover:text-orange-500 transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/terms" className="text-gray-400 hover:text-orange-500 transition-colors">
+                  Terms of Service
+                </Link>
+              </li>
             </ul>
           </div>
+
 
           {/* Expertise */}
           <div>
