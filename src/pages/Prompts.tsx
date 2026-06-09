@@ -206,12 +206,12 @@ export default function Prompts() {
                   placeholder="Search by title, description, or prompt text..."
                   className="flex-1 rounded-md bg-gray-950/60 border border-gray-800 text-white px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#f6700d]"
                 />
-                <Link
+                {/* <Link
                   to="/prompts/admin"
                   className="whitespace-nowrap inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-2 rounded-md transition-colors hover:cursor-pointer"
                 >
                   <i className="bi bi-shield-lock" /> Admin
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
