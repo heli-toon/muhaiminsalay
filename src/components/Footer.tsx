@@ -12,6 +12,7 @@ export default function Footer() {
     { icon: 'bi-github', href: 'https://www.github.com/heli-toon/', label: 'GitHub' },
     { icon: 'bi-whatsapp', href: 'https://wa.me/233535760503/', label: 'WhatsApp' },
     { icon: 'bi-envelope', href: 'mailto:abdulkanton2005@gmail.com', label: 'Email' },
+    { icon: 'bi-globe', href: 'https://stackedbymuhaimin.blogspot.com/', label: 'Blogger' },
   ];
 
   return (

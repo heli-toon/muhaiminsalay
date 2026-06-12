@@ -451,6 +451,20 @@ export default function BlogDetail() {
                   </p>
                 </div>
               </div>
+
+              {/* Blogger Link */}
+              <div className="mt-8 bg-gray-950/95 border border-gray-900 rounded-lg p-6 text-center">
+                <h3 className="text-xl font-semibold text-white mb-2">Read on Blogger</h3>
+                <p className="text-gray-400 mb-4">You can also view this and other blogs on my Blogger page.</p>
+                <a 
+                  href="https://stackedbymuhaimin.blogspot.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors"
+                >
+                  Visit Blogger Page <i className="bi bi-box-arrow-up-right ml-2"></i>
+                </a>
+              </div>
             </article>
           </div>
 

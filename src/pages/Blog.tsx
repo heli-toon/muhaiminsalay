@@ -84,9 +84,17 @@ export default function Blog() {
       <div className="container mx-auto">
         <div data-aos="fade-up" className="text-center mb-16">
           <h1 className="text-5xl font-bold text-white mb-4">Blog</h1>
-          <p className="text-xl text-gray-400">
+          <p className="text-xl text-gray-400 mb-4">
             Explore my articles on IT, web development, and beyond.
           </p>
+          <a 
+            href="https://stackedbymuhaimin.blogspot.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-orange-500 hover:text-orange-600 font-semibold transition-colors duration-300 bg-gray-900/50 px-4 py-2 rounded-full border border-orange-500/30 hover:border-orange-500"
+          >
+            Visit my Blogger page <i className="bi bi-box-arrow-up-right"></i>
+          </a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
