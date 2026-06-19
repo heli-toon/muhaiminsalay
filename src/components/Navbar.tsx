@@ -16,9 +16,10 @@ export default function Navbar() {
 
   const navLinks = [
     { to: '/', label: 'Home' },
+    { to: '/portfolio', label: 'Portfolio' },
     { to: '/skills', label: 'Skills' },
     { to: '/blog', label: 'Blog' },
-    { to: '/salayverse', label: 'Salayverse' }
+    { to: '/salayverse', label: 'Salayverse' },
   ];
 
   return (

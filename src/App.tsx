@@ -30,8 +30,9 @@ function App() {
         <div className="min-h-screen bg-slate-950/70 overflow-x-hidden">
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/portfolio" element={<Home />} />
             <Route path="/skills" element={<Skills />} />
+            <Route path="/" element={<Blog />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogDetail />} />
             <Route path="/salayverse" element={<Salayverse />} />
@@ -42,11 +43,9 @@ function App() {
             <Route path="/prompts/admin" element={<PrivateRoute><PromptAdmin /></PrivateRoute>} />
             <Route path="/add" element={<PrivateRoute><BlogEdit /></PrivateRoute>} />
             <Route path="/edit/:slug" element={<PrivateRoute><BlogEdit /></PrivateRoute>} />
-
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsOfService />} />
-
             <Route path="*" element={<ErrorPage />} />
           </Routes>
           <ScrollToTop />
