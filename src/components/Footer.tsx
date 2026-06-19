@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   // Hardcode year for consistency
-  const currentYear = 2025;
+  const currentYear = 2026;
 
   const socialLinks = [
     { icon: 'bi-twitter-x', href: 'https://x.com/SalayAbdul', label: 'Twitter' },

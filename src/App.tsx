@@ -44,6 +44,7 @@ function App() {
             <Route path="/edit/:slug" element={<PrivateRoute><BlogEdit /></PrivateRoute>} />
 
             <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsOfService />} />
 
             <Route path="*" element={<ErrorPage />} />
