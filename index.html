@@ -2,6 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
+    <script>
+      if (window.location.hostname === "muhaiminsalay.netlify.app") {
+        window.location.replace("https://www.muhaiminsalay.me" + window.location.pathname + window.location.search);
+      }
+    </script>
     <meta name="keywords" content="Abdul Muhaimin Salay Kanton Portfolio Website, Salay Abdul Muhaimin Kanton, Kanton, Salay, Abdul Muhaimin" />
     <meta name="description" content="Explore Salay Abdul Muhaimin Kanton's creative journey through the portfolio showcasing innovative projects." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,11 +30,35 @@
     <link rel="canonical" href="https://muhaiminsalay.me/" />
 
     <title>Salay Muhaimin Abdul Kanton | Portfolio</title>
-    
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9803625350021259" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <header>
+        <h1>Muhaimin Salay | Software Engineer & Creator</h1>
+        <nav>
+          <a href="/">Home</a> | 
+          <a href="/blog">Blog</a> | 
+          <a href="/privacy-policy">Privacy Policy</a>
+        </nav>
+      </header>
+
+      <main>
+        <h2>About Me</h2>
+        <p>Welcome to my professional portfolio website. I am a software developer specializing in building modern web applications with React and Django. Here you can explore my latest projects, skills, and technical articles.</p>
+
+        <h2>Featured Blog Articles</h2>
+        <ul>
+          <li><strong>Latest Insights:</strong> Read my technical deep-dives and web development tutorials on my official blog.</li>
+          <li><strong>Privacy First:</strong> Review our terms and user safety guidelines on our dedicated privacy page.</li>
+        </ul>
+      </main>
+
+      <footer>
+        <p>© 2026 Muhaimin Salay. All rights reserved. View my Privacy Policy for more details.</p>
+      </footer>
+    </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
