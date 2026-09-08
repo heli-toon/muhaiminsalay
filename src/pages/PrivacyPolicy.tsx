@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
 
         <div className="prose prose-invert max-w-none">
           <p>
-            This Privacy Policy explains how muhaiminsalay.me (“we”, “us”, or “our”) collects, uses, and shares information
+            This Privacy Policy explains how muhaiminsalay.tech (“we”, “us”, or “our”) collects, uses, and shares information
             when you use our website.
           </p>
 

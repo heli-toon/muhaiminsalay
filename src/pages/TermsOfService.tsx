@@ -17,7 +17,7 @@ export default function TermsOfService() {
 
         <div className="prose prose-invert max-w-none">
           <p>
-            Welcome to muhaiminsalay.me (“Site”). By accessing or using the Site, you agree to these Terms of Service
+            Welcome to muhaiminsalay.tech (“Site”). By accessing or using the Site, you agree to these Terms of Service
             (“Terms”). If you do not agree, do not use the Site.
           </p>
 

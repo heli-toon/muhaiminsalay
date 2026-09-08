@@ -127,7 +127,7 @@ function Resume() {
         {/* Download Button */}
         <div className="mt-10 flex justify-center">
           <a
-            href="https://muhaiminsalay.me/Abdul_Muhaimin_Salay_Kanton_Resume.pdf"
+            href="https://muhaiminsalay.tech/Abdul_Muhaimin_Salay_Kanton_Resume.pdf"
             target="_blank"
             rel="noreferrer noopener"
             download
