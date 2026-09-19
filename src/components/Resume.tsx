@@ -40,12 +40,12 @@ function Resume() {
                 </li>
                 <li>
                   <a
-                    href="mailto:abdulkanton2005@gmail.com"
+                    href="mailto:muhaiminsalay@gmail.com"
                     className="text-orange-500 hover:text-orange-600"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    abdulkanton2005@gmail.com
+                    muhaiminsalay@gmail.com
                   </a>
                 </li>
               </ul>

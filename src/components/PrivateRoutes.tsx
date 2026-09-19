@@ -5,7 +5,7 @@ import { type ReactNode } from "react";
 
 const PrivateRoute = ({ children }: { children: ReactNode }) => {
   const auth = useAuth();
-  const adminEmail = "abdulkanton2005@gmail.com";
+  const adminEmail = "muhaiminsalay@gmail.com";
 
   return auth && auth.currentUser && auth.currentUser.email === adminEmail
     ? children

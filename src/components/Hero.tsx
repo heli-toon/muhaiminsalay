@@ -64,7 +64,7 @@ export default function Hero() {
                 <i className="bi bi-linkedin text-2xl" />
               </a>
               <a
-                href="mailto:abdulkanton2005@gmail.com"
+                href="mailto:muhaiminsalay@gmail.com"
                 className="text-gray-300 hover:text-[#f6700d] transition-colors"
                 aria-label="Email"
                 title="Email"

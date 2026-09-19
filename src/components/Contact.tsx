@@ -24,8 +24,8 @@ export default function Contact() {
     {
       icon: "bi bi-envelope",
       title: "Email",
-      content: "abdulkanton2005@gmail.com",
-      link: "mailto:abdulkanton2005@gmail.com",
+      content: "muhaiminsalay@gmail.com",
+      link: "mailto:muhaiminsalay@gmail.com",
       delay: 300
     },
     {
@@ -55,8 +55,8 @@ export default function Contact() {
             I have a proven track record of delivering high-quality results that always exceed expectations. 
             I'm always up for a new challenge. Have any questions or feedback? I'd love to hear from you! 
             Get in touch via email at{" "}
-            <a href="mailto:abdulkanton2005@gmail.com" className="text-orange-500 hover:text-orange-600 transition-colors">
-              abdulkanton2005@gmail.com
+            <a href="mailto:muhaiminsalay@gmail.com" className="text-orange-500 hover:text-orange-600 transition-colors">
+              muhaiminsalay@gmail.com
             </a>{" "}
             or call me at{" "}
             <a href="tel:+233535760503" className="text-orange-500 hover:text-orange-600 transition-colors">

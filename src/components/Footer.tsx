@@ -11,7 +11,7 @@ export default function Footer() {
     { icon: 'bi-instagram', href: 'https://www.instagram.com/muhaiminsalay/', label: 'Instagram' },
     { icon: 'bi-github', href: 'https://www.github.com/heli-toon/', label: 'GitHub' },
     { icon: 'bi-whatsapp', href: 'https://wa.me/233535760503/', label: 'WhatsApp' },
-    { icon: 'bi-envelope', href: 'mailto:abdulkanton2005@gmail.com', label: 'Email' },
+    { icon: 'bi-envelope', href: 'mailto:muhaiminsalay@gmail.com', label: 'Email' },
     { icon: 'bi-globe', href: 'https://stackedbymuhaimin.blogspot.com/', label: 'Blogger' },
   ];
 
@@ -112,8 +112,8 @@ export default function Footer() {
               </div>
               <div className='flex items-center space-x-1'>
                 <strong>Email: </strong>
-                <a href="mailto:abdulkanton2005@gmail.com" className="text-orange-500 hover:text-orange-600 block">
-                  abdulkanton2005@gmail.com
+                <a href="mailto:muhaiminsalay@gmail.com" className="text-orange-500 hover:text-orange-600 block">
+                  muhaiminsalay@gmail.com
                 </a>
               </div>
             </div>

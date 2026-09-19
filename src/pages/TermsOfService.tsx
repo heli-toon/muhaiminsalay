@@ -61,8 +61,8 @@ export default function TermsOfService() {
           <h2>7. Contact</h2>
           <p>
             If you have questions about these Terms, contact us at{' '}
-            <a className="text-orange-500 hover:text-orange-600" href="mailto:abdulkanton2005@gmail.com">
-              abdulkanton2005@gmail.com
+            <a className="text-orange-500 hover:text-orange-600" href="mailto:muhaiminsalay@gmail.com">
+              muhaiminsalay@gmail.com
             </a>
             .
           </p>
