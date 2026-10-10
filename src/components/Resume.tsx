@@ -14,7 +14,7 @@ function Resume() {
             </div>
           </div>
           <p className="text-gray-300 text-center max-w-2xl mx-auto mb-12">
-            Highly creative and detail-oriented web developer. Proficient in a range of
+            Highly creative and detail-oriented software developer. Proficient in a range of
             software solutions, with a passion for delivering innovative and effective solutions.
           </p>
         </header>
@@ -28,7 +28,7 @@ function Resume() {
               <div className="absolute -left-2 top-0 w-4 h-4 bg-orange-500 border-2 border-orange-600 rounded-full"></div>
               <h4 className="text-lg font-semibold text-orange-500">Salay Abdul Muhaimin Kanton</h4>
               <p className="italic text-gray-400">
-                Innovative web developer with 3+ years of experience designing and developing
+                Innovative software developer with 3+ years of experience designing and developing
                 user-centered websites from initial concept to polished deliverables.
               </p>
               <ul className="list-disc pl-5 text-gray-300">
@@ -77,6 +77,20 @@ function Resume() {
           {/* Right column */}
           <div>
             <h3 className="text-xl font-semibold text-gray-200 mb-4">Professional Experience</h3>
+            <div className="border-l-2 border-orange-500 pl-5 relative">
+              <div className="absolute -left-2 top-0 w-4 h-4 bg-orange-500 border-2 border-orange-600 rounded-full after:absolute after:inset-[-5px] after:rounded-full after:border-2 after:border-orange-400/70 after:animate-ping motion-reduce:after:animate-none"></div>
+              <h4 className="text-orange-500 font-semibold">Tech Consulting - Data Analyst Intern</h4>
+              <h5 className="bg-gray-950/95 border border-gray-900 inline-block px-3 py-1 text-sm font-semibold text-white rounded mb-2">
+                SEP 2026 - Present
+              </h5>
+              <p className="italic text-gray-400">PricewaterhouseCoopers Ghana, Cantonments, Accra</p>
+              <ul className="list-disc pl-5 text-gray-300 pb-6">
+                <li>Collected, cleaned, and analyzed data to support client projects and business decisions</li>
+                <li>Used Excel, SQL, and Python to organize datasets, identify trends, and validate results</li>
+                <li>Created reports and visualizations to communicate key findings to project teams</li>
+                <li>Collaborated with consultants and stakeholders to define data requirements and deliver insights</li>
+              </ul>
+            </div>
 
             <div className="border-l-2 border-orange-500 pl-5 relative">
               <div className="absolute -left-2 top-0 w-4 h-4 bg-orange-500 border-2 border-orange-600 rounded-full"></div>
