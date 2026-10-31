@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import { db } from "../lib/firebase";
 import Preloader from "../components/Preloader";
 import AOS from "aos";
@@ -35,7 +35,11 @@ export default function Blog() {
 
     const fetchBlogs = async () => {
       try {
-        const querySnapshot = await getDocs(collection(db, "blogs"));
+        const blogsQuery = query(
+          collection(db, "blogs"),
+          orderBy("createdAt", "desc")
+        );
+        const querySnapshot = await getDocs(blogsQuery);
         const blogsData = querySnapshot.docs.map((doc) => {
           const data = doc.data();
           return {
