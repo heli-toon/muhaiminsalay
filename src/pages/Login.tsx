@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useAuth } from "../context/AuthContext";
+import { useAuth, isAdminEmail, ADMIN_EMAILS } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
@@ -8,15 +8,13 @@ export default function Login() {
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
-  const adminEmail = "muhaiminsalay@gmail.com";
-
   useEffect(() => {
     if (currentUser) {
-      if (currentUser.email === adminEmail) {
+      if (isAdminEmail(currentUser.email)) {
         navigate("/add", { replace: true });
       } else {
         setErrorMsg(
-          `Signed in as ${currentUser.email}, but this account is not authorized as admin. Please sign in with ${adminEmail}.`
+          `Signed in as ${currentUser.email}, but this account is not authorized as admin. Please sign in with an authorized admin account (${ADMIN_EMAILS.join(" or ")}).`
         );
       }
     }

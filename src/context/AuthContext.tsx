@@ -18,6 +18,16 @@ interface AuthContextType {
   logout: () => Promise<void>;
 }
 
+export const ADMIN_EMAILS = [
+  "muhaiminsalay@gmail.com",
+  "abdulkanton2005@gmail.com",
+];
+
+export const isAdminEmail = (email?: string | null): boolean => {
+  if (!email) return false;
+  return ADMIN_EMAILS.includes(email.trim().toLowerCase());
+};
+
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const useAuth = () => {
