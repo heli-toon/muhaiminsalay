@@ -29,6 +29,22 @@ export const salayverseApps: SalayverseApp[] = [
   */
 
   {
+    id: 'playroom',
+    name: 'Playroom Games',
+    icon: 'bi-controller',
+    actualIcon: '/icons/playroom.svg',
+    description: 'A playful browser game catalogue for instant screen action. Play retro classics, puzzles, and arcade games directly in your browser.',
+    screenshotLinks: [
+      '/screenshots/playroom.svg'
+    ],
+    availablePlatforms: {
+      Web: { downloadLink: 'https://games.muhaiminsalay.tech/', size: '' }
+    },
+    category: 'Games',
+    author: 'Salay Abdul Muhaimin Kanton',
+    isFeatured: true
+  },
+  {
     id: 'docsculptor',
     name: 'DocSculptor',
     icon: 'bi-file-earmark-pdf',

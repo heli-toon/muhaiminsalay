@@ -69,6 +69,17 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <a
+                  href="https://games.muhaiminsalay.tech/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="text-gray-400 hover:text-orange-500 transition-colors inline-flex items-center gap-1"
+                >
+                  Playroom Games
+                  <i className="bi bi-arrow-up-right text-xs" />
+                </a>
+              </li>
+              <li>
                 <Link to="/blog" className="text-gray-400 hover:text-orange-500 transition-colors">
                   Blog
                 </Link>

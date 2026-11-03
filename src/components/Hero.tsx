@@ -9,11 +9,27 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Text */}
           <div className="lg:col-span-7 order-1">
-            <div className="inline-flex items-center gap-2 rounded-full border border-orange-500/40 bg-gray-900/40 px-3 py-1 mb-4">
-              <span className="h-2 w-2 rounded-full bg-[#f6700d]" />
-              <span className="text-xs font-semibold text-[#f6700d] tracking-wide">
-                Full-stack Developer
-              </span>
+            <div className="flex flex-wrap items-center gap-2.5 mb-4">
+              <div className="inline-flex items-center gap-2 rounded-full border border-orange-500/40 bg-gray-900/40 px-3 py-1">
+                <span className="h-2 w-2 rounded-full bg-[#f6700d]" />
+                <span className="text-xs font-semibold text-[#f6700d] tracking-wide">
+                  Full-stack Developer
+                </span>
+              </div>
+
+              <a
+                href="https://games.muhaiminsalay.tech/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="inline-flex items-center gap-2 rounded-full border border-orange-500/50 bg-orange-500/10 hover:bg-orange-500/20 px-3 py-1 text-xs font-semibold text-orange-400 hover:text-orange-300 transition-all duration-300 group shadow-sm shadow-orange-500/10"
+              >
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#f6700d]"></span>
+                </span>
+                <span>🎮 Just Launched: Playroom Games</span>
+                <i className="bi bi-arrow-up-right text-[10px] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </a>
             </div>
 
             <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight">
@@ -32,6 +48,16 @@ export default function Hero() {
               >
                 Explore My Work
                 <i className="bi bi-chevron-right text-base" />
+              </a>
+              <a
+                href="https://games.muhaiminsalay.tech/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="inline-flex items-center justify-center gap-2 border border-orange-500/60 bg-orange-500/10 hover:bg-[#f6700d] hover:text-black text-orange-400 rounded-md px-5 py-2.5 transition-all duration-300 font-semibold group"
+              >
+                <i className="bi bi-controller text-base group-hover:rotate-12 transition-transform" />
+                Play Games
+                <i className="bi bi-arrow-up-right text-xs opacity-75" />
               </a>
               <a
                 href="/#contact"
