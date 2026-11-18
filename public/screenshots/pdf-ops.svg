@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="po-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180808"/>
+      <stop offset="100%" stop-color="#280c0c"/>
+    </linearGradient>
+    <linearGradient id="po-red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#po-bg)"/>
+  <rect x="40" y="30" width="720" height="390" rx="16" fill="none" stroke="#451a1a" stroke-width="2"/>
+  <!-- Header Bar -->
+  <circle cx="75" cy="65" r="5" fill="#ef4444"/>
+  <circle cx="95" cy="65" r="5" fill="#f59e0b"/>
+  <circle cx="115" cy="65" r="5" fill="#10b981"/>
+  <text x="400" y="70" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#fca5a5" text-anchor="middle" font-weight="500">pdf-ops • desktop pdf operations</text>
+  <!-- Brand -->
+  <g transform="translate(75, 115)">
+    <rect x="0" y="0" width="56" height="56" rx="14" fill="url(#po-red)"/>
+    <path d="M18 16 H32 L40 24 V42 H18 Z" fill="#ffffff" opacity="0.95"/>
+    <path d="M32 16 V24 H40" fill="#b91c1c"/>
+    <text x="75" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="30" fill="#ffffff" font-weight="bold">PDF-Ops</text>
+    <text x="75" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#fca5a5">Desktop PDF Operations Suite (Windows)</text>
+  </g>
+  <!-- Content Cards -->
+  <g transform="translate(75, 205)">
+    <rect x="0" y="0" width="310" height="175" rx="12" fill="#220a0a" stroke="#7f1d1d" stroke-width="1.5"/>
+    <text x="20" y="34" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#ef4444" font-weight="bold">Core PDF Features</text>
+    <text x="20" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#fecaca">• Merge multiple PDF files</text>
+    <text x="20" y="96" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#fecaca">• Split &amp; extract pages</text>
+    <text x="20" y="124" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#fecaca">• Local AES encryption</text>
+    <rect x="20" y="140" width="110" height="22" rx="6" fill="#ef4444" fill-opacity="0.15"/>
+    <text x="28" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#ef4444" font-weight="600">DESKTOP APP</text>
+
+    <rect x="340" y="0" width="310" height="175" rx="12" fill="#220a0a" stroke="#7f1d1d" stroke-width="1.5"/>
+    <text x="360" y="34" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#f97316" font-weight="bold">Windows Utilities</text>
+    <text x="360" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#fecaca">• Native desktop executable</text>
+    <text x="360" y="96" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#fecaca">• 100% offline file safety</text>
+    <text x="360" y="124" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#fecaca">• Fast local processing</text>
+    <rect x="360" y="140" width="100" height="22" rx="6" fill="#f97316" fill-opacity="0.15"/>
+    <text x="368" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#f97316" font-weight="600">WINDOWS x64</text>
+  </g>
+</svg>

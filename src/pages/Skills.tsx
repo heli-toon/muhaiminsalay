@@ -20,6 +20,7 @@ export default function Skills() {
         { name: "JavaScript", icon: "./skills/javascript.svg" },
         { name: "Typescript", icon: "./skills/typescript.svg" },
         { name: "C++", icon: "./skills/cpp.svg" },
+        { name: "Bash", icon: "./skills/bash.svg" },
       ],
     },
     {
@@ -80,7 +81,6 @@ export default function Skills() {
         { name: "MongoDB", icon: "./skills/mongo.svg" },
         { name: "VS Code", icon: "./skills/vscode.svg" },
         { name: "Light House", icon: "./skills/lighthouse.svg" },
-        { name: "Shell", icon: "./skills/shell.svg" },
         { name: "GIMP", icon: "./skills/gimp.svg" },
         { name: "OpenShot", icon: "./skills/openshot.svg" },
         { name: "OBS Studio", icon: "./skills/obs-studio.jpg" },

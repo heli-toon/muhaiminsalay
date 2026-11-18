@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ss-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08120d"/>
+      <stop offset="100%" stop-color="#0d2318"/>
+    </linearGradient>
+    <linearGradient id="ss-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#ss-bg)"/>
+  <rect x="40" y="30" width="720" height="390" rx="16" fill="none" stroke="#164e32" stroke-width="2"/>
+  <!-- Header Bar -->
+  <circle cx="75" cy="65" r="5" fill="#ef4444"/>
+  <circle cx="95" cy="65" r="5" fill="#f59e0b"/>
+  <circle cx="115" cy="65" r="5" fill="#10b981"/>
+  <text x="400" y="70" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#6ee7b7" text-anchor="middle" font-weight="500">sika scan • on-device vision ai</text>
+  <!-- Brand -->
+  <g transform="translate(75, 115)">
+    <rect x="0" y="0" width="56" height="56" rx="14" fill="url(#ss-gold)"/>
+    <text x="28" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#064e3b" text-anchor="middle" font-weight="900">₵</text>
+    <text x="75" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="30" fill="#ffffff" font-weight="bold">Sika Scan</text>
+    <text x="75" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#a7f3d0">Offline AI Bookkeeping for Market Traders</text>
+  </g>
+  <!-- Content Cards -->
+  <g transform="translate(75, 205)">
+    <rect x="0" y="0" width="310" height="175" rx="12" fill="#09261a" stroke="#047857" stroke-width="1.5"/>
+    <text x="20" y="34" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#fbbf24" font-weight="bold">Vision Extraction</text>
+    <text x="20" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#d1fae5">• Gemma Vision processing</text>
+    <text x="20" y="96" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#d1fae5">• Scans ledger pages &amp; slips</text>
+    <text x="20" y="124" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#d1fae5">• Formats records to JSON</text>
+    <rect x="20" y="140" width="110" height="22" rx="6" fill="#fbbf24" fill-opacity="0.15"/>
+    <text x="28" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#fbbf24" font-weight="600">GEMMA VISION</text>
+
+    <rect x="340" y="0" width="310" height="175" rx="12" fill="#09261a" stroke="#047857" stroke-width="1.5"/>
+    <text x="360" y="34" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#34d399" font-weight="bold">Offline Architecture</text>
+    <text x="360" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#d1fae5">• 100% on-device inference</text>
+    <text x="360" y="96" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#d1fae5">• Zero cloud API costs</text>
+    <text x="360" y="124" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#d1fae5">• Built for informal trade</text>
+    <rect x="360" y="140" width="85" height="22" rx="6" fill="#34d399" fill-opacity="0.15"/>
+    <text x="368" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#34d399" font-weight="600">LOCAL AI</text>
+  </g>
+</svg>

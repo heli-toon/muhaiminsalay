@@ -92,16 +92,17 @@ function Resume() {
             <h3 className="text-xl font-semibold text-gray-200 mb-4">Professional Experience</h3>
             <div className="border-l-2 border-orange-500 pl-5 relative">
               <div className="absolute -left-2 top-0 w-4 h-4 bg-orange-500 border-2 border-orange-600 rounded-full"></div>
-              <h4 className="text-orange-500 font-semibold">Tech Consulting - Data Analyst Intern</h4>
+              <h4 className="text-orange-500 font-semibold">Technology Consulting Intern – Advisory</h4>
               <h5 className="bg-gray-950/95 border border-gray-900 inline-block px-3 py-1 text-sm font-semibold text-white rounded mb-2">
                 SEP 2026 - OCT 2026
               </h5>
-              <p className="italic text-gray-400">PricewaterhouseCoopers Ghana, Cantonments, Accra</p>
+              <p className="italic text-gray-400">PricewaterhouseCoopers (PwC) Ghana, Cantonments, Accra</p>
               <ul className="list-disc pl-5 text-gray-300 pb-6">
-                <li>Collected, cleaned, and analyzed data to support client projects and business decisions</li>
-                <li>Used Excel, SQL, and Python to organize datasets, identify trends, and validate results</li>
-                <li>Created reports and visualizations to communicate key findings to project teams</li>
-                <li>Collaborated with consultants and stakeholders to define data requirements and deliver insights</li>
+                <li>Developed enterprise AI agent prototypes using Microsoft Copilot (RFP-to-Proposal generation) applying the BXT agile framework, following initial evaluation of multi-LLM architectures with Streamlit, OpenRouter, and OpenAI</li>
+                <li>Executed data comparison, reconciliation, and manual gap analysis to detect anomalies across datasets; investigated data cleaning process automation via Excel VBA scripting</li>
+                <li>Designed detailed business process flowcharts in Microsoft Visio modeling payment workflows and sourcing lifecycles for client engagements</li>
+                <li>Conducted strategic research on emerging technologies, focusing on cybersecurity in the age of agentic AI, IT project implementation benchmarking, and the Big Push program</li>
+                <li>Crafted executive presentation decks with tailored AI-assisted visual design and curated PwC consultant profiles for client engagement proposals</li>
               </ul>
             </div>
 

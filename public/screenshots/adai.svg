@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ad-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180e29"/>
+      <stop offset="100%" stop-color="#2e1065"/>
+    </linearGradient>
+    <linearGradient id="ad-pink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#ad-bg)"/>
+  <rect x="40" y="30" width="720" height="390" rx="16" fill="none" stroke="#581c87" stroke-width="2"/>
+  <!-- Header Bar -->
+  <circle cx="75" cy="65" r="5" fill="#ef4444"/>
+  <circle cx="95" cy="65" r="5" fill="#f59e0b"/>
+  <circle cx="115" cy="65" r="5" fill="#10b981"/>
+  <text x="400" y="70" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#d8b4fe" text-anchor="middle" font-weight="500">adai • ai design aesthetic inspiration</text>
+  <!-- Brand -->
+  <g transform="translate(75, 115)">
+    <rect x="0" y="0" width="56" height="56" rx="14" fill="url(#ad-pink)"/>
+    <circle cx="21" cy="24" r="7" fill="#ffffff" opacity="0.9"/>
+    <circle cx="35" cy="32" r="10" fill="#ffffff" opacity="0.7"/>
+    <text x="75" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="30" fill="#ffffff" font-weight="bold">ADAI</text>
+    <text x="75" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#e9d5ff">AI Design Aesthetic Hub &amp; Prompt Engine</text>
+  </g>
+  <!-- Content Cards -->
+  <g transform="translate(75, 205)">
+    <rect x="0" y="0" width="310" height="175" rx="12" fill="#3b0764" stroke="#7e22ce" stroke-width="1.5"/>
+    <text x="20" y="34" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#f472b6" font-weight="bold">Aesthetic Index</text>
+    <text x="20" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#f5d0fe">• 13 curated design styles</text>
+    <text x="20" y="96" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#f5d0fe">• Typography &amp; color guides</text>
+    <text x="20" y="124" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#f5d0fe">• Multi-filter style search</text>
+    <rect x="20" y="140" width="120" height="22" rx="6" fill="#f472b6" fill-opacity="0.15"/>
+    <text x="28" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#f472b6" font-weight="600">DESIGN STYLES</text>
+
+    <rect x="340" y="0" width="310" height="175" rx="12" fill="#3b0764" stroke="#7e22ce" stroke-width="1.5"/>
+    <text x="360" y="34" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#c084fc" font-weight="bold">Prompt Engine</text>
+    <text x="360" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#f5d0fe">• Reusable AI UI prompts</text>
+    <text x="360" y="96" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#f5d0fe">• Deployed live on Netlify</text>
+    <text x="360" y="124" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#f5d0fe">• Modern responsive catalog</text>
+    <rect x="360" y="140" width="115" height="22" rx="6" fill="#c084fc" fill-opacity="0.15"/>
+    <text x="368" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#c084fc" font-weight="600">LIVE PLATFORM</text>
+  </g>
+</svg>
