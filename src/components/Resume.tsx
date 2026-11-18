@@ -53,14 +53,26 @@ function Resume() {
 
             <h3 className="text-xl font-semibold text-gray-200 mb-4">Education</h3>
             <div className="border-l-2 border-orange-500 pl-5 relative">
+              <div className="absolute -left-2 top-0 w-4 h-4 bg-orange-500 border-2 border-orange-600 rounded-full after:absolute after:inset-[-5px] after:rounded-full after:border-2 after:border-orange-400/70 after:animate-ping motion-reduce:after:animate-none"></div>
+              <h4 className="text-orange-500 font-semibold">BSc. Data Science and Analytics</h4>
+              <h5 className="bg-gray-950/95 border border-gray-900 inline-block px-3 py-1 text-sm font-semibold text-white rounded mb-2">
+                2026 - 2029
+              </h5>
+              <p className="italic text-gray-400">Ghana Communication Technology University</p>
+              <p className="text-gray-300 pb-6">
+                Focus on data science, machine learning, statistical modeling, and big data analytics.
+              </p>
+            </div>
+
+            <div className="border-l-2 border-orange-500 pl-5 relative">
               <div className="absolute -left-2 top-0 w-4 h-4 bg-orange-500 border-2 border-orange-600 rounded-full"></div>
               <h4 className="text-orange-500 font-semibold">Diploma in Computer Science</h4>
               <h5 className="bg-gray-950/95 border border-gray-900 inline-block px-3 py-1 text-sm font-semibold text-white rounded mb-2">
-                2025 - 2027
+                2025 - 2026
               </h5>
+              <p className="italic text-gray-400">Ghana Communication Technology University</p>
               <p className="text-gray-300 pb-6">
-                Ghana Communication Technology University. Focus on programming, software
-                methodologies, and computing fundamentals.
+                Focus on programming, software methodologies, and computing fundamentals.
               </p>
             </div>
 
@@ -70,7 +82,8 @@ function Resume() {
               <h5 className="bg-gray-950/95 border border-gray-900 inline-block px-3 py-1 text-sm font-semibold text-white rounded mb-2">
                 2021 - 2024
               </h5>
-              <p className="text-gray-300">SoloLearn: HTML, CSS, JavaScript & Python</p>
+              <p className="italic text-gray-400">SoloLearn</p>
+              <p className="text-gray-300">HTML, CSS, JavaScript & Python</p>
             </div>
           </div>
 
